@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+   <meta name="description" content="Vitelglobal Provides the Best VoIP Business Phone Services in India for all businesses/Organizations. DOT authorized National International Calling Services To USA & Canada.">
+   <meta name="keywords" content="VoIP Business Phone, National International Calling Services To USA & Canada,  National Calling Services To USA & Canada, International Calling Services To USA & Canada,  National Calling Services To USA, International  Calling Services To USA, Voip Service Provider In India, voip service provider in chennai, voip service provider in hyderabad, voip service provider in bangalore, voip service provider in delhi, voip service provider in punjab">
+   <meta name="robots" content="index, follow">
+   <!-- Title -->
+   <title>Business VoIP Phone Services | International Call to USA & Canada from India-Vitelglobal.in</title>
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="https://www.vitelglobal.in/" />
+   <meta property="og:title" content="Cloud PBX Provider | CRM Integration | Conferencing" />
+   <meta property="og:description" content="Vitelglobal provides the best services in India for cloud PBX system, CRM system, Conferencing, Leased line, Business Broadband, & more." />
+   <meta property="og:image" content="https://vitelglobal.in/img/New01.jpg" />
+   <meta property="og:site_name" content="Vitelglobal" />
+   <meta name="robots" content="noindex, nofollow">
+   {% include 'topscripts.html' %}
+   <style>
+      .form-control {
+         {% comment %}  box-shadow: 1px 1px 2px 0px rgb(161 170 166 / 50%); {% endcomment %}
+         border: 1px solid #e1e1e1;
+      }  
+      .emprow {
+         display: flex;
+         flex-flow: row wrap;
+         overflow: inherit;
+         margin:0;
+      }
+      .emprow > div {
+         flex: inherit;
+         padding:0;
+         margin-right:5px;
+      }
+      .emprow input[type=radio] {
+         display: none;
+      }
+      .emprow input[type=radio]:not(:disabled) ~ label {
+         cursor: pointer;
+      }
+      .emprow input[type=radio]:disabled ~ label {
+         color: #bcc2bf;
+         border-color: #bcc2bf;
+         box-shadow: none;
+         cursor: not-allowed;
+      }
+      .emprow label {
+         height: 100%;
+         display: block;
+         background: white;
+         border: 2px solid #fdfdfd;
+         border-radius: 20px;
+         padding: 1rem;
+         margin-bottom:0;
+         text-align: center;
+         box-shadow: 0px 3px 10px -2px rgba(161, 170, 166, 0.5);
+         position: relative; 
+         border-radius: 100px;
+         align-items: center;
+         display: flex;
+         justify-content: center;
+      }
+      .emprow label h2 {
+         font-size:15px;
+         margin:0;
+      }
+      .emprow input[type=radio]:checked + label {
+         background: #20df80;
+         color: white;
+         box-shadow: 0px 0px 20px rgba(0, 255, 128, 0.75);
+      }
+      .emprow input[type=radio]:checked + label::after {
+         color: #1dc973;
+         font-family: bootstrap-icons;
+         border: 2px solid #1dc973;
+         content: "\f272";
+         font-size:16px;
+         position: absolute;
+         top: -10px;
+         left: 50%;
+         transform: translateX(-50%);
+         height:20px;
+         width:20px;
+         line-height:20px;
+         text-align: center;
+         border-radius: 50%;
+         background: white;
+         box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.25);
+      }
+      .emprow p {
+         font-weight: 900;
+      }
+      @media only screen and (max-width: 700px) {
+         .emprow {
+            flex-direction: column;
+         }
+      }
+   </style>
+</head>
+<body>
+   {% include 'header.html' %}
+   <main id="main">
+   
+      <section id="about" class="about unsubscribe-form">
+         <div class="container mt-5">
+            <div class="row justify-content-between">
+               <div class="col-lg-12">
+                  <div class="d-flex justify-content-center">
+                     <img src="/static/assets/images/unsubscribe-gifimg.gif" class="img-fluid text-center unsub-img">
+                  </div>
+               </div>
+               <div class="col-md-9 m-auto"> 
+                  <div class="unsub-sec boxshadow p-4 pb-5 bg-white">
+                  <h3 class="fw-bold text-blu mb-4 pt-4">Do you want to unsubscribe?</h3>
+                  <form method="POST" action="{%url 'unsubscribe' %}" id="unsubscribeForm " onsubmit="return unsubscribeForm()"> 
+                     {% csrf_token %}
+                     <div class="row">
+                        <div class="mb-2 col-md-4">
+                           <label class="mb-2"> Name </label> 
+                           <input type="text" name="yourname" class="form-control conInputBox" id="yourname" placeholder="Your Name">
+                           <span id="NameError" style="color: red;"></span><br>
+                        </div>
+                        <div class="col-md-4">
+                           <label class="mb-2"> Phone Number </label> 
+                           <input type="tel" class="form-control demoInputBox" id="phoneno" name="phoneno" placeholder="Your Phone Number">
+                           <span id="PhoneError" style="color: red;"></span><br>
+                        </div>
+                        <div class="mb-2 col-md-4">
+                           <label class="mb-2"> Email Address </label> 
+                           <input type="text" class="form-control demoInputBox" id="email" name="email" placeholder="Your Email">
+                           <span id="EmailError" style="color: red;"></span><br>
+                        </div>
+                        <h6 class="fw-bold text-blu mb-3">Unsubscribe from</h6> 
+                        <span id="CheckboxError" style="color: red;"></span>
+                        <div class="col-lg-5 col-md-12 col-sm-12 mb-3">
+                           <div class="promotional-mail-checkbox" id="promotional-mail-div">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input p-2" id="checkme" name="checkme" style="height: 16px;">
+                                <label class="form-check-label fw-normal ms-2 promotion-label" for="checkme" style="font-size: 14px;">
+                                 Promotional mails & Messages
+                                </label>
+                             </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 mb-3">
+                           <div class="notifications-checkbox" id="notifications-div">
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input p-2" id="checkmes" name="checkmes" style="height: 16px;">
+                                  <label class="form-check-label fw-normal ms-2 notifications-label" for="checkmes" style="font-size: 14px;">
+                                    Notifications
+                                  </label>
+                               </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                           <div class="messages-checkbox" id="mails-messages-div">
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input p-2" id="checkmed" name="checkmed" style="height: 16px;">
+                                  <label class="form-check-label fw-normal ms-2 mails-label" for="checkmed" style="font-size: 14px;">
+                                   Mails and Messages
+                                  </label>
+                               </div>
+                          </div>
+                        </div>
+                        <div class="mb-3 col-md-12 pt-3">
+                           {{ form.captcha }}
+                           <label style="color: red;">{{ error }}</label><br>
+                           <span id="errorFromCapche" style="color: red;"></span>
+                        </div>
+                     </div>
+                     <div class="d-grid gap-2 mt-2 pb-3">
+                        <button type="submit" class="btn btn-lg bt-blue me-auto" style="font-size:18px;">Submit</button>
+                     </div>
+                  </div>
+               </form>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <!-- End #main -->
+   <!-- ======= Footer ======= -->
+   {% include 'footer.html' %}
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+   
+   <script>
+   // refresh for captcha
+    $(function() {
+      // Add refresh button after field (this can be done in the template as well)
+      $('#id_captcha_1').after($('<a href="#void" class="captcha-refresh"><svg width="26" height="26" fill="none" stroke="#1c1c1c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 19v-4h-4"></path><path d="M4 13a8.1 8.1 0 0 0 15.5 2"></path><path d="M4 5v4h4"></path><path d="M20 11A8.1 8.1 0 0 0 4.5 9"></path></svg></a>'));
+  
+      // Click-handler for the refresh-link
+      $('.captcha-refresh').click(function(){
+          var $form = $(this).parents('form');
+          var url = location.protocol + "//" + window.location.hostname + ":"
+                    + location.port + "/captcha/refresh/";
+  
+          // Make the AJAX-call
+          $.getJSON(url, {}, function(json) {
+              $form.find('input[name="captcha_0"]').val(json.key);
+              $form.find('img.captcha').attr('src', json.image_url);
+          });
+  
+          return false;
+      });
+      });
+   </script>
+
+   <script>
+      function clearFormFields() {
+         document.getElementById("yourname").value = "";
+         document.getElementById("email").value = "";
+         document.getElementById("phoneno").value = "";
+         document.getElementById("checkme").checked = false;
+         document.getElementById("checkmes").checked = false;
+         document.getElementById("checkmed").checked = false;
+         document.getElementById("errorFromCapche").value = "";
+      }
+   
+      function validatePhoneNumber(phoneNumber) {
+         var phoneNumberRegex = /^\d{10,}$/; // Regex for minimum 10 digits
+         return phoneNumberRegex.test(phoneNumber);
+      }
+   
+      function validateEmail(email) {
+         var validRegex = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;
+         return validRegex.test(email);
+      }
+   
+      document.getElementById("yourname").addEventListener("input", function() {
+         document.getElementById("NameError").innerText = "";
+      });
+   
+      document.getElementById("email").addEventListener("input", function() {
+         document.getElementById("EmailError").innerText = "";
+      });
+   
+      document.getElementById("phoneno").addEventListener("input", function() {
+         document.getElementById("PhoneError").innerText = "";
+      });
+   
+      document.getElementById("checkme").addEventListener("change", function() {
+         document.getElementById("CheckboxError").innerText = "";
+      });
+   
+      document.getElementById("checkmes").addEventListener("change", function() {
+         document.getElementById("CheckboxError").innerText = "";
+      });
+   
+      document.getElementById("checkmed").addEventListener("change", function() {
+         document.getElementById("CheckboxError").innerText = "";
+      });
+
+      // Event listener for captcha input field
+      document.getElementById("id_captcha_1").addEventListener("input", function() {
+         document.getElementById("errorFromCapche").innerText = ""; // Clear captcha error message
+   });
+   
+      function unsubscribeForm() {
+         // Get form inputs
+         var name = document.getElementById("yourname").value;
+         var email = document.getElementById("email").value;
+         var phoneno = document.getElementById("phoneno").value;
+         var checkme = document.getElementById("checkme").checked;
+         var checkmes = document.getElementById("checkmes").checked;
+         var checkmed = document.getElementById("checkmed").checked;
+         var isValid = true;
+   
+         // Reset error messages
+         document.getElementById("NameError").innerText = "";
+         document.getElementById("EmailError").innerText = "";
+         document.getElementById("PhoneError").innerText = "";
+         document.getElementById("CheckboxError").innerText = "";
+   
+         // Validation checks
+         if (name.trim() == "") {
+            document.getElementById("NameError").innerText = "Please enter your name";
+            isValid = false;
+         }
+   
+         if (email.trim() == "" || !validateEmail(email)) {
+            document.getElementById("EmailError").innerText = "Please enter a valid email address";
+            isValid = false;
+         }
+   
+         if (phoneno.trim() == "" || !validatePhoneNumber(phoneno)) {
+            document.getElementById("PhoneError").innerText = "Please enter a valid phone number (minimum 10 digits)";
+            isValid = false;
+         }
+   
+         if (!checkme && !checkmes && !checkmed) {
+            document.getElementById("CheckboxError").innerText = "Please select at least one option to unsubscribe";
+            isValid = false;
+         }
+   
+         // Additional validation checks for checkboxes
+         if (checkme && checkmes && checkmed) {
+            document.getElementById("CheckboxError").innerText = "Please select only one option to unsubscribe";
+            isValid = false;
+         }
+   
+         // Additional validation checks can be added here as needed
+         var id_captcha_1 = document.getElementById("id_captcha_1").value;
+
+          if(id_captcha_1 == ""){
+            document.getElementById("errorFromCapche").innerHTML ="Please enter captcha";
+            isValid = false;
+          }
+   
+         return isValid; // Form submitted if isValid is true
+      }
+   </script>
+   
+   
+</body>
+</html>

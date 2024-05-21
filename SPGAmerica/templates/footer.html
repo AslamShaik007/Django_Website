@@ -1,0 +1,616 @@
+
+<div class="first-footer pt-80 pb-50 xs-pt-40 xs-pb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="first-footer-inner">
+                    <div class="footer-logo">
+                        <img id="footer-logo-img" class="img-center" src="/static/assets/images/spg_logo.png" alt="">
+                    </div>
+                    <div class="row no-gutters footer-box">
+                        <div class="col-md-4 widget-area">
+                                    <div class="featured-box text-center">
+                                        <p class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                          </svg></p>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h5>Our Address</h5>
+                                            </div>
+                                            <div class="featured-desc mt-1">
+                                                <p class="address"> <a href="https://www.google.com/maps/place/SPG+AMERICA/@40.550145,-74.4566472,15z/data=!4m6!3m5!1s0x89c3b886d9adae67:0xce7f8ce5623bcd87!8m2!3d40.550145!4d-74.4566472!16s%2Fg%2F11b5pjpx0k?entry=ttu" target="_blank">
+                                                15 Corporate Pl S #421, Piscataway, <br> NJ 08854, United States </a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-md-4 widget-area">
+                            <div class="featured-box text-center">
+                                <div class="featured-content">
+                                    <p class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-telephone-fill mb-1 me-1" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                      </svg></p>
+                                    <div class="featured-title">
+                                        <h5>Talk To Expert</h5>
+                                    </div>
+                                    <div class="featured-desc mt-1">
+                                        <p><a href="tel:7323437688" class="foot-phone">732-343-7688</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 widget-area">
+                            <div class="featured-box text-center">
+                                <p class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope-fill me-1" viewBox="0 0 16 16">
+                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                                  </svg></p>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5>Email Us</h5>
+                                    </div>
+                                    <div class="featured-desc mt-1">
+                                        <p><a href="mailto:careers@spgamerica.com" class="foot-mail">careers@spgamerica.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-md-3 col-sm-2"></div>
+                        <div class="col-md-6 col-sm-8">
+                            <div>
+                                <form id="subscribe-form" class="newsletter-form mt-50 xs-mt-40" method="post" action="{% url 'newsletter' %}" onsubmit="return subscribe()">
+                                    {% csrf_token %}
+                                    <div class="mailchimp-inputbox clearfix" id="subscribe-content">
+                                        <i class="fa fa-envelope-o"></i>
+                                        <input type="email" name="newsletteremail" id="newsletterAll" placeholder="Your Email Address..">
+                                        <input type="submit" value="SUBMIT" id="subscrib">
+                                    </div>
+                                    <div id="subscribe-msg"></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer Start -->
+<footer id="rs-footer" class="rs-footer">
+    
+<div class="footer-top">
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-20 footer-widget">
+    <h3 class="widget-title">About SPG AMERICA</h3>
+<div class="textwidget pb-30 wid-mob"><p>SPG America is an information technology solutions provider. We have a portfolio of IT services, which include IT consulting, application development.
+</p>
+<div class="btn-part mt-30">
+    <a class="bt-fbn" href="{% url 'contact' %}">Read More</a>
+</div>
+</div>
+</div>
+
+
+
+<div class="col-xxl-2 col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-20">
+    <h3 class="widget-title">Services</h3>
+    <ul class="site-map">
+        <li><a href="{% url 'ai-ml-research-and-development' %}">AI and ML Research and Development</a></li>
+        <li><a href="{% url 'metaverse' %}">SPG Metaverse</a> </li>
+        <li><a href="{% url 'talent-acceleration' %}">Talent Acceleration</a></li> 
+        <li><a href="{% url 'generative-ai-advisory' %}">Generative AI Advisory</a></li> 
+        <li><a href="{% url 'digital-transformation' %}">Digital Transformation</a> </li>
+        <li><a href="{% url 'workforce-experience' %}">Workforce Experience</a> </li>
+        <li><a href="{% url 'cybersecurity-advisory' %}">Cybersecurity Advisory</a> </li>
+    </ul>
+    </div>
+    <div class="col-xxl-2 col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-20">
+        <h3 class="widget-title">Industries</h3>
+        <ul class="site-map">
+            <li><a href="{% url 'business-information-and-publishing' %}">Business Information & Publishing</a></li>
+            <li><a href="{% url 'commercial-banking' %}">Retail & Commercial Banking</a></li>
+            <li><a href="{% url 'telecommunications' %}">Telecommunications</a></li>
+            <li><a href="{% url 'software-and-tech' %}">Software & Hi-Tech</a></li>
+            <li><a href="{% url 'medtech' %}">MedTech</a></li>
+            <li><a href="{% url 'education' %}">Education</a></li>
+            <li><a href="{% url 'travel-and-hospitality' %}">Travel & Hospitality</a></li>
+        </ul>
+        </div>
+
+
+        <div class=" col-xxl-2 col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-20">
+            <h3 class="widget-title">Quick Links</h3>
+            <ul class="site-map">
+                <li><a href="https://www.spgamerica.com/blog/" target="_blank">Blog</a></li>
+                <!-- <li><a href="{% url 'get-on-board' %}">Get On-Board</a></li> -->
+                <li><a href="{% url 'spg-insights' %}">SPG Insights</a></li>
+                <li><a href="{% url 'faqs' %}">FAQ</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                <li><a href="{% url 'corporate-responsibility' %}">Corporate Responsibility</a></li>
+                <!-- <li><a href="{% url 'faqs' %}">Terms & Conditions</a></li> -->
+                <li><a href="{% url 'privacy-policy' %}">Privacy Policy </a></li>
+            </ul>
+            </div>
+
+            <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-12 mt-20">
+            <h3 class="widget-title">Follow us</h3>
+            <ul class="address-widget">
+            <li>
+            <i class="flaticon-location"></i>
+            <div class="desc">
+                <a href="https://www.google.com/maps/place/SPG+AMERICA/@40.550145,-74.4566472,15z/data=!4m6!3m5!1s0x89c3b886d9adae67:0xce7f8ce5623bcd87!8m2!3d40.550145!4d-74.4566472!16s%2Fg%2F11b5pjpx0k?entry=ttu" target="_blank">
+                    15 Corporate Pl S #421, Piscataway, <br>NJ 08854, United States
+                </a>
+            </div>
+            </li>
+            <li>
+            <i class="flaticon-call"></i>
+            <div class="desc">
+            <a href="tel:7323437688">732-343-7688</a>
+            </div>
+            </li>
+            <li>
+            <i class="flaticon-email"></i>
+            <div class="desc">
+            <a href="mailto:careers@spgamerica.com">careers@spgamerica.com</a>
+            </div>
+            </li>
+            
+            </ul>
+            <ul class="footer-social md-mb-30">  
+
+                <li> 
+                <a href="https://www.linkedin.com/company/spg-americaa/" target="_blank"><span><i class="fa fa-linkedin"></i></span></a> 
+                </li>
+                <li> 
+                <a href="https://twitter.com/spg_america" target="_blank"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></span></a> 
+                </li>
+                <li> 
+                <a href="https://www.facebook.com/SPG-America-101796945069472" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
+                </li>
+                <!-- <li> 
+                <a href="" target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a> 
+                </li>
+                <li> 
+                <a href="" target="_blank"><span><i class="fa fa-youtube"></i></span></a> 
+                </li> -->
+                            
+                </ul>
+            </div>
+
+
+
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">                    
+<div class="row y-middle">
+<!--<div class="col-lg-6 text-right md-mb-10 order-last">
+ <ul class="copy-right-menu"> 
+<li><a href="#">Blog</a></li>
+<li><a href="terms-condition">Terms & Condition</a></li>
+<li><a href="privacy-policy">Privacy Policy</a></li> 
+</ul> 
+</div>-->
+<div class="col-lg-12 text-center">
+<div class="copyright">
+<p>&copy; 2023 Copyright SPG AMERICA All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer End -->
+
+<!-- start scrollUp  -->
+<div id="scrollUp" class="orange-color">
+<i class="fa fa-angle-up"></i>
+</div>
+<!-- End scrollUp  -->
+
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Your Career with Innovation and Excellence!
+          </h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body ">
+          <form method="POST" enctype="multipart/form-data" action="{% url 'careers' %}" onsubmit="return careers()"
+            id='careersForm'>
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6 mb-30">
+                <input type="text" name="yourname" class="from-control2 from-control15" id="yourname"
+                  placeholder="Your Name *">
+                <div id="error1" style="display: none"></div>
+              </div>
+
+              <div class="col-md-6 mb-30">
+                <input type="text" class="from-control2 from-control15" name="yourphone" id="yourphone"
+                  placeholder="Phone No. *" maxlength="20" minlength="10" autocomplete="off">
+                <div id="error2" style="display: none"></div>
+              </div>
+              <div class="col-md-12 mb-30">
+                <input type="text" class="from-control2 from-control15" name="youremail" id="youremail"
+                  placeholder="Your Email *">
+                <div id="error3" style="display: none"></div>
+              </div>
+              <div class="mb-3 col-md-12">
+                <select class=" from-control2 from-control15" name="cyear" id="cyear">
+                  <option value="">Years of Experience *</option>
+                  <option value="Below 1 Year">Below 1 Year</option>
+                  <option value="1+ Year">1+ Year</option>
+                  <option value="2+ Year">2+ Year</option>
+                  <option value="3+ Year">3+ Year</option>
+                  <option value="4+ Year">4+ Year</option>
+                  <option value="5+ Year">5+ Year</option>
+                  <option value="6+ Year">6+ Year</option>
+                  <option value="7+ Year">7+ Year</option>
+                  <option value="8+ Year">8+ Year</option>
+                  <option value="9+ Year">9+ Year</option>
+                  <option value="10+ Year">10+ Year</option>
+                  <option value="11+ Year">11+ Year</option>
+                  <option value="12+ Year">12+ Year</option>
+                  <option value="13+ Year">13+ Year</option>
+                  <option value="14+ Year">14+ Year</option>
+                  <option value="15+ Year">15+ Year</option>
+                  <option value="16+ Year">16+ Year</option>
+                  <option value="17+ Year">17+ Year</option>
+                  <option value="18+ Year">18+ Year</option>
+                  <option value="19+ Year">19+ Year</option>
+                  <option value="Above 20 Year">Above 20 Year</option>
+                </select>
+                <div id="error4" style="display: none;"></div>
+              </div>
+              <div class="mb-3 col-md-12">
+                <textarea class=" from-control2" rows="2" cols="80" name="cmessage" id="cmessage"
+                  placeholder="Message" maxlength="4000"></textarea>
+                <div id="error5" style="display: none;"></div>
+              </div>
+
+              <div class="mb-3 col-md-12">
+                <label for="formFile" class="form-label">Upload Resume</label>
+                <input class="from-control2 " type="file" id="formFile" accept=".pdf, .docx, .doc" name="formFile">
+                <div id="error6" style="display: none;"></div>
+              </div>
+              <!-- <input class="from-control2" name="userinfo" id="userinfo" maxlength="300" type="hidden"></input> -->
+              <div class="col-12 mb-30">
+                <div class="g-recaptcha" data-sitekey="6LfmsQokAAAAANVOstG295SGeKlrgfeimO8ua8Hq"
+                  data-callback="verifyCaptcha"></div>
+                <div id="g-recaptcha-error"></div>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <button type="submit" id="careerSubmit" class="btn bt-gre">Submit</button>
+
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+
+
+      </div>
+    </div>
+  </div>
+
+<!-- Modal ends -->
+ 
+ 
+<!-- jquery latest version -->
+<script src="/static/assets/js/jquery.min.js"></script>
+<!-- Bootstrap v4.4.1 js
+<script src="static/assets/js/bootstrap.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-v4-rtl/4.4.1-1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Menu js -->
+<script src="/static/assets/js/rsmenu-main.js"></script> 
+ 
+<!-- owl.carousel js -->
+<script src="/static/assets/js/owl.carousel.min.js"></script>
+<!-- wow js -->
+<!-- <script src="/static/assets/js/wow.min.js"></script> -->
+   <!-- owl.carousel js -->
+<script src="/static/assets/js/owl.carousel.min.js"></script>
+<!-- wow js -->
+<script src="/static/assets/js/wow.min.js"></script>
+  
+ 
+<!-- main js -->
+<script src="/static/assets/js/main.js"></script>
+
+
+ <script>
+    $('#newsletterAll').keyup(function () {
+        $('#subscribe-msg').hide();
+    })
+    function subscribe() {
+        var subEmail = document.getElementById("newsletterAll").value;
+
+        var validRegex =
+            /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;
+        if (subEmail == "") { 
+            document.getElementById("newsletterAll").style.borderColor = "orange";
+            document.getElementById("subscribe-msg").style.display = "block";
+            document.getElementById("subscribe-msg").innerHTML = "*Please enter a Email_ID*";
+            document.getElementById("subscribe-msg").style.color = "red";
+            return false;
+        } else if (!subEmail.match(validRegex)) {
+            document.getElementById("newsletterAll").style.borderColor = "orange";
+            document.getElementById("subscribe-msg").style.display = "block";
+            document.getElementById("subscribe-msg").innerHTML =
+                "*Please enter valid Email_ID*";
+            document.getElementById("subscribe-msg").style.color = "red";
+            return false;
+        } else { 
+            $('#subscrib').attr('disabled', true);
+        }
+    }
+</script>
+
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LcKKgAiAAAAACihLfAMobNdLZabLFVGu7kkMUqP"></script>
+<script>
+  $('#applyNowButton').click(function () {
+    document.getElementById("error1").style.display = "none";
+    document.getElementById("error2").style.display = "none";
+    document.getElementById("error3").style.display = "none";
+    document.getElementById("error4").style.display = "none";
+    document.getElementById("error5").style.display = "none";
+    document.getElementById("error6").style.display = "none";
+    $("#careersForm")[0].reset()
+  });
+  $('body').on('keydown', 'input', function (e) {
+    console.log(this.value);
+    if (e.which === 32 && e.target.selectionStart === 0) {
+      return false;
+    }
+  });
+
+  $('body').on('keydown', 'textarea', function (e) {
+    console.log(this.value);
+    if (e.which === 32 && e.target.selectionStart === 0) {
+      return false;
+    }
+  });
+  function setInputFilter(textbox, inputFilter, errMsg) {
+    [
+      "input",
+      "keydown",
+      "keyup",
+      "mousedown",
+      "mouseup",
+      "select",
+      "contextmenu",
+      "drop",
+      "focusout",
+    ].forEach(function (event) {
+      textbox.addEventListener(event, function (e) {
+        if (inputFilter(this.value)) {
+          if (["keydown", "mousedown", "focusout"].indexOf(e.type) >= 0) {
+            this.classList.remove("input-error");
+            this.setCustomValidity("");
+          }
+          this.oldValue = this.value;
+          this.oldSelectionStart = this.selectionStart;
+          this.oldSelectionEnd = this.selectionEnd;
+        } else if (this.hasOwnProperty("oldValue")) {
+          this.classList.add("input-error");
+          this.setCustomValidity(errMsg);
+          this.reportValidity();
+          this.value = this.oldValue;
+          this.setSelectionRange(
+            this.oldSelectionStart,
+            this.oldSelectionEnd
+          );
+        } else {
+          this.value = "";
+        }
+      });
+    });
+  }
+  setInputFilter(
+    document.getElementById("yourphone"),
+    function (value) {
+      return /^[0-9()+-\s]*\.?[0-9()+-\s]*$/.test(value);
+    },
+    "Must be an integer"
+  );
+  $('#yourname').keyup(function () {
+    $('#error1').hide();
+  })
+
+  $('#yourphone').keyup(function () {
+    $('#error2').hide();
+  })
+  $('#youremail').keyup(function () {
+    $('#error3').hide();
+  })
+  $('#cyear').change(function () {
+    $('#error4').hide();
+  })
+  $('#cmessage').keyup(function () {
+    $('#error5').hide();
+  })
+
+  $('#formFile').change(function () {
+    $('#error6').hide();
+  });
+
+
+  //validation
+  var recaptcha_response = "";
+  function verifyCaptcha(token) {
+    recaptcha_response = token;
+    document.getElementById("g-recaptcha-error").innerHTML = "";
+  }
+
+  // Contact us
+  function careers() {
+    var name = document.getElementById("yourname").value;
+    if (name == "") {
+      var input = (document.getElementById("yourname").style.borderColor = "orange");
+      document.getElementById("error1").style.display = "block";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error6").style.display = "none";
+      document.getElementById("error1").innerHTML = "*Please enter a Your Name*";
+      document.getElementById("error1").style.color = "red";
+      return false;
+    } else if (/[^a-zA-Z\-.\s/]/.test(name)) {
+      var input = (document.getElementById("yourname").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "block";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error6").style.display = "none";
+      document.getElementById("error1").innerHTML =
+        "*Special Characters & Numbers Not allowed*";
+      document.getElementById("error1").style.color = "red";
+      return false;
+    }
+    var phone = document.getElementById("yourphone").value;
+    if (phone == "") {
+      var input = (document.getElementById("yourphone").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "block";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error6").style.display = "none";
+      document.getElementById("error2").innerHTML =
+        "*Please enter a Mobile Number*";
+      document.getElementById("error2").style.color = "red";
+      return false;
+    } else if (phone.length < 10) {
+      var input = (document.getElementById("yourphone").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "block";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error6").style.display = "none";
+      document.getElementById("error2").innerHTML =
+        "*Mobile Number must be Min 10*";
+      document.getElementById("error2").style.color = "red";
+      return false;
+    }
+    var email = document.getElementById("youremail").value;
+    var validRegex =
+      /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;;
+    if (email == "") {
+      var input = (document.getElementById("youremail").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "block";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error6").style.display = "none";
+      document.getElementById("error3").innerHTML =
+        "*Please enter a Email_ID*";
+      document.getElementById("error3").style.color = "red";
+      return false;
+    } else if (!email.match(validRegex)) {
+      var input = (document.getElementById("youremail").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "block";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error6").style.display = "none";
+      document.getElementById("error3").innerHTML =
+        "*Please enter valid Email_ID*";
+      document.getElementById("error3").style.color = "red";
+      return false;
+    }
+
+    var cyear = document.getElementById("cyear").value;
+    if (cyear == "") {
+      var input = (document.getElementById("cyear").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "block";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error6").style.display = "none";
+      document.getElementById("error4").innerHTML =
+        "*Please select your experience*";
+      document.getElementById("error4").style.color = "red";
+      return false;
+    }
+
+    var cmessage = document.getElementById("cmessage").value;
+    if (cmessage == "") {
+      var input = (document.getElementById("cmessage").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "block";
+      document.getElementById("error6").style.display = "none";
+      document.getElementById("error5").innerHTML =
+        "*Please enter a Message*";
+      document.getElementById("error5").style.color = "red";
+      return false;
+    }
+
+    var formFile = document.getElementById("formFile").value;
+    if (formFile == "") {
+      var input = (document.getElementById("formFile").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error6").style.display = "block";
+      document.getElementById("error6").innerHTML =
+        "*Please select your resume*";
+      document.getElementById("error6").style.color = "red";
+      return false;
+    }
+    if (recaptcha_response.length == 0) {
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error6").style.display = "none";
+      document.getElementById("g-recaptcha-error").innerHTML =
+        '<span style="color:red;">*This field is required.</span>';
+      return false;
+    } else if (recaptcha_response.length != 0) {
+      document.getElementById("careerSubmit").disabled = true;
+    }
+  }
+
+ </script>

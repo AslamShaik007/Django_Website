@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head> 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+<meta name="description" content="Discover the top-rated business podcasts in SPG America Find your new favorite show and start listening today!"> 
+<meta name="robots" content="index, follow"> 
+<!-- Title -->
+<title>Best Business Solutions Podcast - SPG America</title>
+<meta name="" content="" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Best Business Solutions Podcast - SPG America" />
+<meta property="og:description" content="Discover the top-rated business podcasts in SPG America Find your new favorite show and start listening today!" />
+<meta property="og:url" content="https://www.spgamerica.com/" />
+<meta property="og:site_name" content="SPG America" />
+<meta property="og:image" content="https://www.spgamerica.com/static/assets/images/It-staffing.png" />
+
+{% include 'topstyle.html' %}
+</head>
+<body class="defult-home">
+
+ 
+
+<!-- Main content Start -->
+<div class="main-content">
+
+  {% include 'header.html' %}
+
+
+  <!-- Banner Section start -->
+  <div class="rs-services pt-150 bg-podcast pb-100 md-pt-30 md-pb-30">
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 md-pl-14">
+                <div class="sec-title mb-15 mt-60">
+                    <h1 class="m-0 text-white">Podcast Series that Inspire Change</h1>
+                    <div class="desc pb-30 fw-400 text-white">
+                      Listen, Learn, Lead: Uncover the Power of Insight with SPG Podcasts.</div>
+                    <div class="btn-part mb-5">
+                        <a class="banner-btn" href="{% url 'contact' %}">Discover More  <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                            </path>
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<!-- Banner Section End -->
+
+<!-- Banner Section Start -->
+ 
+
+  <!-- <div class="rs-services style4 pt-80 pb-40">
+    <div class="container">
+    <div class="row justify-content-center text-center"> 
+    <div class="col-md-12 col-lg-8">
+    <div class="sec-title mb-50 pr-85 xs-pr-0 xs-mb-0">
+   <h2 class="title  ">Tune In To Our Latest  Podcasts</h2>
+        <div class="desc desc-text mb-1 mt-2  ">
+          Increasing your digital presence with SPG America is the best way to hasten your company's growth. The technological know-how and IT solutions of our team impress industry experts. Through our full-stack IT consulting and Staffing, we deploy qualified individuals. In addition, we offer Cloud Engineering Services, Consulting, Project Management, and more.
+        </div>
+        
+     </div>
+    </div></div>
+    
+     
+    </div>
+    </div> -->
+  
+
+
+    <section class="style4 pt-80 pb-40">
+      <div class="container">
+      
+      <div class="row align-items-center">
+      {% for podcast in Podcasts %}
+        <div class="col-md-4 mb-3"> 
+          <iframe style="border-radius:12px" src="{{ podcast.purl }}" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      {% endfor %}
+      
+      
+      </div>
+      
+      </div>
+      </section>
+
+
+<!-- <div class="rs-services style5 pt-80 pb-60 xs-pt-30 md-pt-75 md-pb-80">
+  <div class="container">
+
+    <div class="row align-items-center">
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5APZokNzT8U5FrDI5wtFnp?utm_source=generator&amp;theme=0" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2GnA6k6B6A5Rfg6NhM4qtF?utm_source=generator&amp;theme=0" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4rnBhwGg3XUYlshNpLiCPs?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/6xMMaa0ODUhSpqHTQIoCCG?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7jQCWd1NzNTWTK7iyZM4Ie?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/5a3z7d765D7SIFPR6KsNWz?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1TEaHGp8oJcgVQHvubYvOW?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7FX115Ebf5fKpAoK4zW9wK?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/15PxZQU6y4DCqhsawyJTCS?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7vRMjpDJ7OX3p5dubAhSoE?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+     
+    <div class="col-md-4 mb-3"> 
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0Zd1ajAF9FhmWnunrjtE2Q?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    </div> -->
+
+ 
+ 
+</div>
+</div>
+  
+
+
+
+</div> 
+<!-- Main content End -->
+
+
+
+ 
+
+{% include 'footer.html' %}
+
+</body>
+ 
+</html>

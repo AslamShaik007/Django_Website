@@ -1,0 +1,1220 @@
+@media (max-width: 575px) {
+    .mobile-nav-toggle {
+        color: #4dc247;
+        font-size: 22px;
+    }
+
+    .request-demo-text {
+        color: #000053;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .total-thankyou-sec .paenl.panel-default .thank-demo-txt {
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .thank-enquiry a {
+        color: #000000;
+        font-size: 16px;
+    }
+
+    .paenl.panel-default .thank-enquiry {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .paenl.panel-default .social-links svg {
+        width: 22px;
+    } */
+
+    .thank-home-btn {
+        background: #000053;
+        padding: 10px 38px;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    #header.thank-you-header {
+        background: url(../img/bg.png);
+        padding: 20px 0;
+    }
+
+    #footer .footer-top h4 {
+        padding-bottom: 8px;
+    }
+
+    #footer .footer-top .footer-links {
+        margin-bottom: 0px;
+    }
+
+    #footer .footer-top .footer-contact {
+        margin-bottom: 10px;
+    }
+
+    #footer .footer-top .footer-contact p {
+        width: 98%;
+    }
+
+    #footer .footer-top {
+        padding: 40px 0 10px 0;
+        position: relative;
+    }
+
+    .modal-body .signincontainer {
+        padding: 16px 0px 12px 0px;
+    }
+
+    .button.submit-btn {
+        width: 38%;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 14px;
+    }
+
+    .button.submit-btn:hover {
+        width: 38%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .request-demo-btn:hover {
+        width: 74%;
+    }
+
+    .request-demo-btn {
+        width: 74%;
+    }
+
+    .testimonials .testimonials-slider .swiper-slide .testimonial-item h5 {
+        color: #ee751d;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+
+    .about .content .read-more {
+        margin-bottom: 20px;
+    }
+
+    .ftco-footer-widget.footer-contact .ftco-heading-2 {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-style: italic;
+        color: #ffffff;
+    }
+
+    form {
+        float: none;
+    }
+
+    #hero h1 {
+        font-size: 24px;
+        line-height: 32px;
+        width: 100%;
+    }
+
+    .main-hero {
+        padding: 90px 0px 60px 0px;
+    }
+
+    .home-sec-video {
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .main-head {
+        margin-bottom: 4px;
+    }
+
+    .faq .faq-list p {
+        margin-bottom: 0;
+        padding: 6px 0 0 29px;
+        font-size: 15px;
+    }
+
+    .faq .section-title {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .backstage-sec .google-play-img {
+        width: 160px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .backstage-sec .ios-app-img {
+        width: 160px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .testimonials {
+        padding: 50px 0px 40px 0px;
+    }
+
+    .testimonials .section-title {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .testimonials .testimonial-item p {
+        padding-left: 10px;
+        font-style: italic;
+        margin: 0 auto 15px auto;
+        color: #000;
+        line-height: 1.6;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    #about h2 {
+        margin-bottom: 10px;
+        color: #000053;
+    }
+
+    #about p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .slider-sec p {
+        color: #fff;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .slider-sec .sub-head {
+        margin-bottom: 14px;
+    }
+
+    .events-sec .person-events-sec p {
+        font-size: 15px;
+    }
+
+    .events-sec .virtual-events-sec p {
+        font-size: 15px;
+    }
+
+    .events-sec .hybrid-events-sec p {
+        font-size: 15px;
+    }
+
+    .events-sec .person-events-sec h4 {
+        font-size: 20px;
+    }
+
+    .events-sec .virtual-events-sec h4 {
+        font-size: 20px;
+    }
+
+    .events-sec .hybrid-events-sec h4 {
+        font-size: 20px;
+    }
+
+    .events-sec .caption p {
+        font-size: 15px;
+    }
+
+    .caption {
+        margin-bottom: 22px;
+    }
+
+    .strip-sec p {
+        width: 96%;
+        font-size: 15px;
+    }
+
+    .counts h2 {
+        font-size: 22px;
+        font-weight: 500;
+        padding-bottom: 0px;
+    }
+
+    .section-title h2 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .about .content h2 {
+        font-weight: 500;
+        font-size: 22px;
+        color: #000053;
+    }
+
+    .slider-sec h2 {
+        font-weight: 500;
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .strip-sec h2 {
+        font-weight: 500;
+        font-size: 22px;
+        color: #000053;
+        width: 90%;
+    }
+
+    .events-sec h2 {
+        font-size: 22px;
+        font-weight: 500;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    ul {
+        padding-left: 0rem;
+    }
+
+    ul.logo-img li {
+        width: calc(100%/2 - 20px) !important;
+    }
+
+    #hero .container,
+    #hero .container-fluid {
+        padding-top: 0px;
+    }
+
+    .footer-contact input {
+        width: 90%;
+        padding: 8px 0px 8px 10px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        background: #fff;
+        border: 0;
+        padding: 10px 20px;
+        color: #000;
+        transition: 0.4s;
+        border-radius: 5px;
+        width: 76%;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .button:hover {
+        width: 76%;
+    }
+
+    .backstage-sec .organizers-sec,
+    .backstage-sec .attendees-sec {
+        padding: 40px 10px;
+    }
+
+    .backstage-sec .organizers-sec h2,
+    .backstage-sec .attendees-sec h2 {
+        font-size: 22px;
+        width: 96%;
+        margin-bottom: 10px;
+    }
+
+    .backstage-sec .organizers-sec p,
+    .backstage-sec .attendees-sec p {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .strip-sec {
+        padding: 50px 0px 30px 0px;
+    }
+
+    .slider-sec {
+        padding: 40px 0px 50px 0px;
+    }
+
+    .about {
+        padding: 40px 0;
+    }
+
+    .backstage-sec {
+        padding: 0px 0px 40px 0px;
+    }
+
+    .counts {
+        padding: 50px 0 40px 0;
+    }
+
+    #hero h2 {
+        margin-top: 40px;
+    }
+
+    .faq {
+        padding: 50px 0px 40px 0px;
+    }
+
+    .events-sec {
+        padding: 50px 0px 40px 0px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+    .strip-sec p {
+        width: 100%;
+    }
+
+    #about p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .button.submit-btn {
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 14px;
+    }
+
+    .request-demo-text {
+        color: #000053;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .total-thankyou-sec .paenl.panel-default .thank-demo-txt {
+        font-size: 16px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .thank-enquiry a {
+        color: #000000;
+        font-size: 16px;
+    }
+
+    .paenl.panel-default .thank-enquiry {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .paenl.panel-default .social-links svg {
+        width: 22px;
+    } */
+
+    .thank-home-btn {
+        background: #000053;
+        padding: 10px 38px;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .faq .faq-list p {
+        margin-bottom: 0;
+        padding: 10px 0 0 29px;
+        font-size: 15px;
+    }
+
+    .modal-body .signincontainer {
+        padding: 10px 10px;
+    }
+
+    .free-demo-text {
+        text-align: center !important;
+        padding-top: 10px;
+    }
+
+    .request-demo-btn:hover {
+        width: 42%;
+    }
+
+    .request-demo-btn {
+        width: 42%;
+    }
+
+    .testimonials .testimonial-item p {
+        font-style: italic;
+        margin: 0 auto 15px auto;
+        color: #000;
+        line-height: 1.8;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #hero h1 {
+        font-size: 26px;
+        line-height: 34px;
+        width: 100%;
+    }
+
+    .about .content .read-more {
+        margin-bottom: 20px;
+    }
+
+    .events-sec .person-events-sec h4 {
+        font-weight: 600;
+        color: #000;
+        font-size: 22px;
+    }
+
+    .events-sec .virtual-events-sec h4 {
+        font-weight: 600;
+        color: #000;
+        font-size: 22px;
+    }
+
+    .events-sec .hybrid-events-sec h4 {
+        font-weight: 600;
+        color: #000;
+        font-size: 22px;
+    }
+
+    .testimonials .testimonials-slider .swiper-slide .testimonial-item h5 {
+        color: #ee751d;
+        text-align: center;
+        width: 80%;
+        font-size: 18px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .slider-sec h2 {
+        font-weight: 500;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .events-sec h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .strip-sec h2 {
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .about .content h2 {
+        font-weight: 500;
+        font-size: 24px;
+        color: #000053;
+    }
+
+    .counts h2 {
+        font-size: 24px;
+        font-weight: 500;
+        padding-bottom: 0px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .faq .section-title {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .faq {
+        padding: 60px 0;
+    }
+
+    .backstage-sec .organizers-sec {
+        padding: 40px 20px;
+    }
+
+    .backstage-sec .organizers-sec h2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .backstage-sec .attendees-sec h2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .backstage-sec .organizers-sec p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .backstage-sec .attendees-sec p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .backstage-sec .attendees-sec {
+        padding: 40px 20px;
+    }
+
+    .testimonials {
+        padding: 60px 0px;
+    }
+
+    .testimonials .section-title {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .sub-head {
+        margin-bottom: 10px;
+    }
+
+    .events-sec .person-events-sec {
+        padding: 40px 30px;
+    }
+
+    .events-sec .virtual-events-sec {
+        padding: 40px 30px;
+    }
+
+    .events-sec .hybrid-events-sec {
+        padding: 40px 30px;
+    }
+
+    .events-sec {
+        padding: 60px 0px 50px 0px;
+    }
+
+    .home-sec-video {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .main-head {
+        margin-bottom: 0px;
+    }
+
+    .main-hero {
+        padding: 100px 0px 100px 0px;
+    }
+
+    ul {
+        padding-left: 0rem;
+    }
+
+    form {
+        float: none;
+    }
+
+    .testimonials .testimonial-item .testimonial-img {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .footer-contact input {
+        width: 100%;
+        padding: 8px 0px 8px 10px;
+    }
+
+    #hero .container,
+    #hero .container-fluid {
+        padding-top: 20px;
+    }
+
+    #hero h2 {
+        margin-top: 60px;
+    }
+
+    .strip-sec {
+        padding: 60px 0px 50px 0px;
+    }
+
+    .slider-sec {
+        padding: 60px 0px 70px 0px;
+    }
+
+    .about {
+        padding: 40px 0;
+    }
+
+    .counts {
+        padding: 50px 0 40px 0;
+    }
+
+    .backstage-sec {
+        padding: 0px 0 40px 0;
+    }
+
+    .faq {
+        padding: 40px 0;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .modal-body .signincontainer {
+        padding: 30px 10px 30px 10px;
+    }
+
+    .button.submit-btn {
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 14px;
+    }
+
+    .total-thankyou-sec .paenl.panel-default .thank-demo-txt {
+        font-size: 16px;
+        width: 84%;
+        margin: 0 auto;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .thank-enquiry a {
+        color: #000000;
+        font-size: 18px;
+    }
+
+    .paenl.panel-default .thank-enquiry {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .paenl.panel-default .social-links svg {
+        width: 22px;
+    } */
+
+    .thank-home-btn {
+        background: #000053;
+        padding: 10px 38px;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .faq .faq-list p {
+        margin-bottom: 0;
+        padding: 10px 0 0 29px;
+        font-size: 16px;
+    }
+
+    .free-demo-text {
+        text-align: center !important;
+        padding-top: 10px;
+    }
+
+    .request-demo-btn {
+        width: 32%;
+    }
+
+    .request-demo-btn:hover {
+        width: 32%;
+    }
+
+    .testimonials .testimonial-item p {
+        font-style: italic;
+        margin: 0 auto 15px auto;
+        color: #000;
+        line-height: 1.8;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .events-sec .person-events-sec h4 {
+        font-size: 24px;
+    }
+
+    .events-sec .virtual-events-sec h4 {
+        font-size: 24px;
+    }
+
+    .events-sec .hybrid-events-sec h4 {
+        font-size: 24px;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .testimonials .testimonials-slider .swiper-slide .testimonial-item h5 {
+        color: #ee751d;
+        text-align: center;
+        width: 80%;
+        font-size: 20px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .backstage-sec .organizers-sec h2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .backstage-sec .attendees-sec h2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .backstage-sec .organizers-sec h2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+
+    .backstage-sec .attendees-sec h2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+
+    .slider-sec h2 {
+        font-weight: 500;
+        font-size: 26px;
+        color: #fff;
+    }
+
+    .events-sec h2 {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .strip-sec h2 {
+        font-weight: 500;
+        font-size: 26px;
+        width: 100%;
+    }
+
+    .about .content h2 {
+        font-weight: 500;
+        font-size: 26px;
+        color: #000053;
+    }
+
+    .counts h2 {
+        font-size: 26px;
+        font-weight: 500;
+        padding-bottom: 0px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .strip-sec p {
+        width: 94%;
+    }
+
+    .faq .section-title {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .testimonials .section-title {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .testimonials {
+        padding: 60px 0px 60px 0px;
+    }
+
+    .slider-sec .sub-head {
+        margin-bottom: 10px;
+    }
+
+    .events-sec .person-events-sec {
+        padding: 40px 40px;
+    }
+
+    .events-sec .virtual-events-sec {
+        padding: 40px 40px;
+    }
+
+    .events-sec .hybrid-events-sec {
+        padding: 40px 40px;
+    }
+
+    .events-sec .caption {
+        margin-bottom: 10px;
+    }
+
+    .events-sec {
+        padding: 60px 0px 50px 0px;
+    }
+
+    .main-head {
+        margin-bottom: 0px;
+    }
+
+    .home-sec-video {
+        width: 480px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .main-hero {
+        padding: 120px 0px 100px 0px;
+    }
+
+    form {
+        float: none;
+    }
+
+    .button {
+        width: 32%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .testimonials .testimonial-item .testimonial-img {
+        margin: 0 auto;
+        width: 52%;
+    }
+
+    .backstage-sec .organizers-sec {
+        padding: 40px 40px;
+    }
+
+    .backstage-sec .attendees-sec {
+        padding: 40px 40px;
+    }
+
+    .strip-sec {
+        padding: 60px 0px 40px 0px;
+    }
+
+    .slider-sec {
+        padding: 60px 0px 70px 0px;
+    }
+
+    .about {
+        padding: 70px 0px 60px 0px;
+    }
+
+    .counts {
+        padding: 70px 0 60px 0;
+    }
+
+    .backstage-sec {
+        padding: 0px 0 60px 0;
+    }
+
+    .faq {
+        padding: 60px 0;
+    }
+
+    .footer-contact input {
+        width: 70%;
+        padding: 8px 0px 8px 10px;
+        margin: 0 auto;
+        margin-bottom: 14px;
+    }
+
+    .ftco-footer-widget.footer-contact .ftco-heading-2 {
+        text-align: center;
+    }
+
+    #hero .container,
+    #hero .container-fluid {
+        padding-top: 14px;
+    }
+
+    #hero h2 {
+        font-weight: 600;
+        font-size: 32px;
+        color: #fff;
+        margin-top: 60px;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width:1199px) {
+    .request-demo-btn {
+        width: 42%;
+    }
+
+    .request-demo-btn:hover {
+        width: 42%;
+    }
+
+    .total-thankyou-sec .paenl.panel-default .thank-demo-txt {
+        font-size: 16px;
+        width: 76%;
+        margin: 0 auto;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .backstage-sec .attendees-sec h2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .backstage-sec .organizers-sec h2 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .about .content h2 {
+        font-weight: 500;
+        font-size: 28px;
+        margin-bottom: 10px !important;
+    }
+
+    .slider-sec h2 {
+        font-weight: 500;
+        font-size: 28px;
+        color: #fff;
+    }
+
+    .strip-sec h2 {
+        font-weight: 500;
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .events-sec h2 {
+        font-size: 28px;
+        font-weight: 500;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .events-sec .person-events-sec h4 {
+        font-size: 22px;
+    }
+
+    .events-sec .virtual-events-sec h4 {
+        font-size: 22px;
+    }
+
+    .events-sec .hybrid-events-sec h4 {
+        font-size: 22px;
+    }
+
+    .main-head {
+        margin-bottom: 0px;
+    }
+
+    #hero h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .faq .section-title {
+        text-align: center;
+        padding-bottom: 14px;
+    }
+
+    .testimonials {
+        padding: 80px 0px 80px 0px;
+    }
+
+    .testimonials .section-title {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .strip-sec p {
+        width: 96%;
+    }
+
+    .events-sec {
+        padding: 80px 0px 70px 0px;
+    }
+
+    .main-hero {
+        padding: 120px 0px 40px 0px;
+    }
+
+    .home-sec-video {
+        width: 430px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #hero .container,
+    #hero .container-fluid {
+        padding-top: 10px;
+    }
+
+    #hero h2 {
+        margin-top: 120px;
+    }
+
+    .strip-sec {
+        padding: 80px 0px;
+    }
+
+    .slider-sec {
+        padding: 80px 0px 90px 0px;
+    }
+
+    .about {
+        padding: 80px 0px 70px 0px;
+    }
+
+    .counts {
+        padding: 80px 0 70px 0;
+    }
+
+    .backstage-sec {
+        padding: 0px 0 60px 0;
+    }
+
+    .faq {
+        padding: 80px 0;
+    }
+
+    .backstage-sec .attendees-sec {
+        padding: 60px 40px;
+    }
+
+    .backstage-sec .organizers-sec {
+        padding: 60px 40px;
+    }
+
+    .backstage-sec .attendees-sec h2,
+    .backstage-sec .organizers-sec h2 {
+        width: 90%;
+    }
+
+    .backstage-sec .organizers-sec p,
+    .backstage-sec .attendees-sec p {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1399px) {
+
+    #hero .container,
+    #hero .container-fluid {
+        padding: 10px 0px 40px 0px;
+    }
+
+    .total-thankyou-sec .paenl.panel-default .thank-demo-txt {
+        font-size: 18px;
+        width: 66%;
+        margin: 0 auto;
+    }
+
+    .main-hero {
+        padding: 160px 0px 60px 0px;
+    }
+
+    .backstage-sec .attendees-sec h2 {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .backstage-sec .organizers-sec h2 {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .backstage-sec .attendees-sec {
+        padding: 60px 30px;
+    }
+
+    .backstage-sec .organizers-sec {
+        padding: 60px 30px;
+    }
+
+    .backstage-sec .organizers-sec p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .backstage-sec .attendees-sec p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    #hero h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .main-head {
+        margin-bottom: 10px;
+    }
+
+    .events-sec h2 {
+        font-size: 30px;
+        font-weight: 500;
+        width: 72%;
+        margin: 0 auto;
+    }
+
+    .strip-sec h2 {
+        font-weight: 500;
+        font-size: 30px;
+        color: #000053;
+        width: 90%;
+    }
+
+    .slider-sec h2 {
+        font-weight: 500;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    #about h2 {
+        margin-bottom: 10px;
+        color: #000053;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+}

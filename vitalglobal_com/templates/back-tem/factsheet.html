@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+<meta name="description" content="Vitel Global E-book explains how to implement the latest work module, it can assist you in learning more about how cloud communications can help you advance your business besides providing you access to the off topics and well researched resources">
+<meta name="keywords" content="VoIP Business Phone, National International Calling Services To USA & Canada,  National Calling Services To USA & Canada, International Calling Services To USA & Canada,  National Calling Services To USA, International  Calling Services To USA, Voip Service Provider In India, voip service provider in chennai, voip service provider in hyderabad, voip service provider in bangalore, voip service provider in delhi, voip service provider in punjab">
+<meta name="robots" content="index, follow"> 
+<!-- Title -->
+<title>Factsheet | Vitel Global Communications India</title>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.vitelglobal.in/" />
+<meta property="og:title" content="E-books | Vitel Global Communications India" />
+<meta property="og:description" content="Vitel Global E-book explains how to implement the latest work module, it can assist you in learning more about how cloud communications can help you advance your business besides providing you access to the off topics and well researched resources" />
+<meta property="og:image" content="https://vitelglobal.in/img/New01.jpg" />
+<meta property="og:site_name" content="Vitelglobal" /> 
+
+ {% include 'topscripts.html' %}
+</head>
+
+<body>
+
+  
+{% include 'header.html' %}
+ 
+
+<section id="cta " class="cta " style="margin-top: 130px;">
+<div class="container">
+
+<div class="row align-items-center">
+  <div class="col-md-12 ph_col">
+    
+<h3>Access to our Factsheet in a Sigle Click</h3>
+
+  </div>
+ 
+ 
+</div>
+
+</div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">{% for item in EBookdata %}
+      <div class="col-md-6"><a href=""  data-bs-toggle="modal" data-bs-target="#eBook"><img src="media/{{ item.ebook_image | safe }}" alt="ebook" class="img-fluid border" onclick="applyJob('{{item.enumber}}')"></a>
+        <h2 class="fw-bold text-blu"> “{{ item.title | safe }}”</h2>
+        <!--<p>This E-book explains how to implement the latest work module the Hybrid Work Culture in your workplace.</p> -->
+        <button href="" class="btn bt-blue btn-lg" data-bs-toggle="modal" data-bs-target="#eBook" value="hoola"  onclick="applyJob('{{item.enumber}}')">Download</button>
+      </div>{% endfor %}
+      
+    </div>
+  </div>
+</section>
+
+
+  <!-- ======= Footer ======= -->
+  
+{% include 'footer.html' %}
+
+<!-- Modal -->
+<div class="modal fade" id="eBook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <form method="POST" action="{% url 'e-books' %}" onsubmit="return ebook()" id= 'e-booksform'>
+      {% csrf_token %}
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Download E-Book</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  
+  <div id="mail-status_to" class="font-weight-bold text-success text-center" style=" height: auto;" ></div>
+  <div class="row">
+  <div class="mb-3 col-md-12">
+  <input type="text" class="form-control" id="ebookid" name='ebookid' placeholder="ebookid" hidden>
+  <input type="text" name="yourname" class="form-control" id="yourname" placeholder="Your Name *" >
+  <div id="bookerror1" style="display: none"></div>
+  </div>
+  <div class="mb-3 col-md-12">
+    <input type="text" class="form-control" name="youremail" id="youremail" placeholder="Your Email *" />
+    <div id="bookerror2" style="display: none"></div>
+    
+  </div>
+  <div class="mb-3 col-md-12"> 
+    <input type="text" class="form-control" name="yourphone" id="yourphone" placeholder="Phone No.(optional)" maxlength="20"
+    minlength="10" autocomplete="off" />
+    <div id="bookerror3" style="display: none"></div>
+  </div>
+  <div class="mb-3 form-group col-md-12">
+    <input type="text" class="form-control" name="yourorganization" id="yourorganization"
+      placeholder="Organization Name(optional)" autocomplete="off"/>
+    <div id="error2" style="display: none"></div>
+  </div>
+  
+
+  </div>
+
+  </div>
+  <div class="modal-footer">
+  <button type="reset" class="btn btn-secondary" >Reset</button>
+  <button type="submit" class="btn btn-primary" id='ebookSubmit'>Submit</button>
+  </div>
+  </div>
+  </form>
+  
+  </div>
+  </div>
+ 
+</body>
+</html>
+<script>
+  function applyJob(id) {
+    document.getElementById("ebookid").value = id;
+  }
+</script>
+<script>
+$(window).bind("pageshow", function() {
+      var form = $('form'); 
+      form[0].reset();
+    });
+  $('#yourname').on('keyup', function(){
+    $('#bookerror1').css("display", "none");
+  })
+  $('#youremail').on('keyup', function(){
+    $('#bookerror2').css("display", "none");
+  })
+  $('#yourphone').on('keyup', function(){
+    $('#bookerror3').css("display", "none");
+  })
+  $('#yourorganization').on('keyup', function(){
+    $('#error2').css("display", "none");
+  })
+  
+
+  function setInputFilter(textbox, inputFilter, errMsg) {
+      [
+        "input",
+        "keydown",
+        "keyup",
+        "mousedown",
+        "mouseup",
+        "select",
+        "contextmenu",
+        "drop",
+        "focusout",
+      ].forEach(function (event) {
+        textbox.addEventListener(event, function (e) {
+          if (inputFilter(this.value)) {
+            if (["keydown", "mousedown", "focusout"].indexOf(e.type) >= 0) {
+              this.classList.remove("input-error");
+              this.setCustomValidity("");
+            }
+            this.oldValue = this.value;
+            this.oldSelectionStart = this.selectionStart;
+            this.oldSelectionEnd = this.selectionEnd;
+          } else if (this.hasOwnProperty("oldValue")) {
+            this.classList.add("input-error");
+            this.setCustomValidity(errMsg);
+            this.reportValidity();
+            this.value = this.oldValue;
+            this.setSelectionRange(
+              this.oldSelectionStart,
+              this.oldSelectionEnd
+            );
+          } else {
+            this.value = "";
+          }
+        });
+      });
+    }
+
+    setInputFilter(
+      document.getElementById("yourphone"),
+      function (value) {
+        return /^[0-9()+-\s]*\.?[0-9()+-\s]*$/.test(value);
+      },
+      "Must be an integer"
+    );
+
+    
+// Contact us this function is for validation when clicked on save button 
+function ebook() {
+
+  var name = document.getElementById("yourname").value;
+  if (name == "") {
+    var input = (document.getElementById("yourname").style.borderColor =
+      "orange");
+    document.getElementById("bookerror1").style.display = "block";
+    document.getElementById("bookerror2").style.display = "none";
+    document.getElementById("bookerror1").innerHTML =
+      "*Please enter a Your Name*";
+    document.getElementById("bookerror1").style.color = "red";
+    return false;
+  } else if (/[^a-zA-Z\-.\s/]/.test(name)) {
+    var input = (document.getElementById("yourname").style.borderColor =
+      "orange");
+    document.getElementById("bookerror1").style.display = "block";
+    document.getElementById("bookerror2").style.display = "none";
+    document.getElementById("bookerror1").innerHTML =
+      "*Special Characters & Numbers Not allowed*";
+    document.getElementById("bookerror1").style.color = "red";
+    return false;
+  }
+  var email = document.getElementById("youremail").value;
+  var validRegex =
+  /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;;
+  if (email == "") {
+    var input = (document.getElementById("youremail").style.borderColor =
+      "orange");
+    document.getElementById("bookerror1").style.display = "none";
+    document.getElementById("bookerror2").style.display = "block";
+    document.getElementById("bookerror2").innerHTML =
+      "*Please enter a Email_ID*";
+    document.getElementById("bookerror2").style.color = "red";
+    return false;
+  } else if (!email.match(validRegex)) {
+    var input = (document.getElementById("youremail").style.borderColor =
+      "orange");
+    document.getElementById("bookerror1").style.display = "none";
+    document.getElementById("bookerror2").style.display = "block";
+    document.getElementById("bookerror2").innerHTML =
+      "*Please enter valid Email_ID*";
+    document.getElementById("bookerror2").style.color = "red";
+    return false;
+  }else if (email.match(validRegex)) {
+      document.getElementById("ebookSubmit").disabled = true;
+
+    }
+
+}
+
+</script>

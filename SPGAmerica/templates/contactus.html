@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head> 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+<meta name="description" content="Contact Us with SPG USA today! Reach out for inquiries, support, or collaboration opportunities. We're here to assist you."> 
+<meta name="robots" content="index, follow"> 
+<!-- Title -->
+<title>Contact Us | Software Programming Group USA</title>
+<meta name="" content="" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact Us | Software Programming Group USA" />
+<meta property="og:description" content="Contact Us with SPG USA today! Reach out for inquiries, support, or collaboration opportunities. We're here to assist you." />
+<meta property="og:url" content="https://www.spgamerica.com/contact-us" />
+<meta property="og:site_name" content="SPG America" />
+<meta property="og:image" content="https://www.spgamerica.com/static/assets/img/CX-strategy.jpg" />
+
+<link rel="canonical" href="https://www.spgamerica.com/contact-us"/> 
+
+<script>
+  window.history.forward(1);
+</script>
+
+{% include 'topstyle.html' %}
+<script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body class="defult-home innerp">
+
+ 
+
+<!-- Main content Start -->
+<div class="main-content">
+
+ {% include 'header.html' %}
+
+
+   <!-- Banner Section start -->
+   <div class="rs-services pt-150  bg-digital pb-100 md-pt-150">
+      <div class="container">
+      
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 col-md-6 md-mb-30 order-md-2"> </div>
+      <div class="col-lg-6 col-md-5 md-pl-14"> 
+      <div class="sec-title mb-15 mt-60"><h1 class="m-0 pb-20 text-white">Contact Us</h1>
+      <div class="desc pb-20 fw-400 text-white"> 
+          Accelerate your business transformation journey from vision to value realization. </div>
+         <div class="height-section">
+             
+          </div> 
+          <a class="bt-new" href="{% url 'contact' %}">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+            </svg></a>
+     
+  
+      </div>
+      </div>
+     
+      
+      </div> 
+       
+      </div>
+      </div>
+  <!-- Banner Section End -->
+
+
+
+<!-- Banner Section Start -->
+<div class="rs-services pt-100 pb-0 md-pt-150">
+<div class="container">
+<div class="row align-items-center justify-content-center">
+<div class="col-lg-8 text-center m-auto md-pl-14"> 
+<div class="sec-title mb-15"><h1 class="m-0 pb-20 font-32">Contact Us</h1>
+<div class="desc pb-20 fw-400">SPG is a trusted software development company that makes you an industry leader through scalable and 
+secure IT solutions. We focus on organizational digital transformation and help you to achieve profitable results.
+</div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+<!-- Banner Section End -->
+
+
+ 
+ <div class="rs-contact pt-50 pb-50 md-pt-20 md-pb-20"><div class="container"><div class="row">
+
+<div class="col-lg-7 pl-70 md-pl-14 order-md-2">
+<div class="contact-widget"><div class="sec-title2 mb-40"><div class="title testi-title">Get In Touch
+</div></div>
+
+<form method="POST" action="{% url 'contact' %}" onsubmit="return contact()" id='contactusForm'>
+  {% csrf_token %}
+<div class="row">
+<div class="col-md-6 mb-30">
+  <input type="text" name="yourname" class="from-control2" id="yourname" placeholder="Your Name" />
+  <div id="error1" style="display: none"></div>
+</div>
+<div class="col-md-6 mb-30">
+  <input type="text" class="from-control2" name="yourorganization" id="yourorganization"
+  placeholder="Organization Name" autocomplete="off" />
+  <div id="error2" style="display: none"></div>
+</div>
+<div class="col-md-6 mb-30">
+  <input type="text" class="from-control2" name="yourphone" id="yourphone" placeholder="Phone No. *" maxlength="20"
+  minlength="10" autocomplete="off" />
+  <div id="error3" style="display: none"></div>
+</div>
+<div class="col-md-6 mb-30">
+  <input type="text" class="from-control2" name="youremail" id="youremail" placeholder="Your Email" />
+  <div id="error4" style="display: none"></div>
+</div>
+<div class="col-12 mb-30">
+  <textarea class="from-control2" name="yourmessage" id="yourmessage" rows="2" maxlength="300"
+  placeholder="Message"></textarea>
+  <div id="error5" style="display: none"></div>
+</div>
+  <!-- <input class="from-control2" name="userinfo" id="userinfo" maxlength="300" type="hidden"></input> -->
+<div class="col-12 mb-30">
+<div class="g-recaptcha" data-sitekey="6LfmsQokAAAAANVOstG295SGeKlrgfeimO8ua8Hq" data-callback="verifyCaptcha"></div>
+<div id="g-recaptcha-error"></div>
+</div>
+</div>
+<div style="color: red;">{{error}}</div>
+<div class="btn-part mb-4"><button class="bt-gre" id="contactusSubmit" type="submit">Submit Now</button>
+</div>
+</form>
+</div>
+</div>
+
+
+  <div class="col-lg-5 md-mb-60"><div class="contact-box"><div class="sec-title mb-44"><div class="sub-text new-text white-color">Let's Talk</div><div class="title white-color">Speak With Expert</div></div><div class="address-box mb-24"><div class="address-icon"><i class="fa fa-phone"></i></div><div class="address-text"><span class="label">Phone:</span><a href="tel:04069030320"> 732-343-7688</a></div></div><div class="address-box mb-24"><div class="address-icon"><i class="fa fa-envelope"></i></div><div class="address-text"><span class="label">Email:</span><a href="mailto:careers@spgamerica.com">careers@spgamerica.com</a></div></div><div class="address-box"><div class="address-icon"><i class="fa fa-map-marker"></i></div><div class="address-text"><span class="label">Address:</span><div class="desc">
+ <strong>Spg America </strong><br>15 Corporate Place South Suite #421 <br>
+ 
+ Piscataway, NJ-08854</div></div></div></div></div>
+
+</div></div>
+
+<!-- <div class="map-canvas pt-120 md-pt-80">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.6135272262263!2d-74.45883128432746!3d40.55012677934982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b886ea08914f%3A0x1efa3b963dcbdf60!2s15%20Corporate%20Pl%20S%20%23421%2C%20Piscataway%2C%20NJ%2008854%2C%20USA!5e0!3m2!1sen!2sin!4v1671519842951!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+ </div>  -->
+</div>
+
+</div> 
+<!-- Main content End -->
+
+{% include 'footer.html' %}
+
+</body>
+
+<!-- <script type="application/javascript">
+  function getIP(json) {
+    document.write("My public IP address is: ", json.ip);
+    $('#userinfo').val(json.ip)
+  }
+</script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script> -->
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LcKKgAiAAAAACihLfAMobNdLZabLFVGu7kkMUqP"></script>
+<script>
+  $('body').on('keydown', 'input', function(e) {
+        console.log(this.value);
+        if (e.which === 32 &&  e.target.selectionStart === 0) {
+          return false;
+        }  
+      });
+
+      $('body').on('keydown', 'textarea', function(e) {
+        console.log(this.value);
+        if (e.which === 32 &&  e.target.selectionStart === 0) {
+          return false;
+        }  
+      });
+  $('#yourname').keyup(function () {
+    $('#error1').hide();
+  })
+
+  $('#yourphone').keyup(function () {
+    $('#error3').hide();
+  })
+  $('#youremail').keyup(function () {
+    $('#error4').hide();
+  })
+  $('#yourorganization').keyup(function () {
+    $('#error2').hide();
+  })
+  $('#yourmessage').keyup(function () {
+    $('#error5').hide();
+  })
+
+ 
+  function setInputFilter(textbox, inputFilter, errMsg) {
+    [
+      "input",
+      "keydown",
+      "keyup",
+      "mousedown",
+      "mouseup",
+      "select",
+      "contextmenu",
+      "drop",
+      "focusout",
+    ].forEach(function (event) {
+      textbox.addEventListener(event, function (e) {
+        if (inputFilter(this.value)) {
+          if (["keydown", "mousedown", "focusout"].indexOf(e.type) >= 0) {
+            this.classList.remove("input-error");
+            this.setCustomValidity("");
+          }
+          this.oldValue = this.value;
+          this.oldSelectionStart = this.selectionStart;
+          this.oldSelectionEnd = this.selectionEnd;
+        } else if (this.hasOwnProperty("oldValue")) {
+          this.classList.add("input-error");
+          this.setCustomValidity(errMsg);
+          this.reportValidity();
+          this.value = this.oldValue;
+          this.setSelectionRange(
+            this.oldSelectionStart,
+            this.oldSelectionEnd
+          );
+        } else {
+          this.value = "";
+        }
+      });
+    });
+  }
+
+  setInputFilter(
+    document.getElementById("yourphone"),
+    function (value) {
+      return /^[0-9()+-\s]*\.?[0-9()+-\s]*$/.test(value);
+    },
+    "Must be an integer"
+  );
+
+  //validation
+  var recaptcha_response = "";
+  function verifyCaptcha(token) {
+    recaptcha_response = token;
+    document.getElementById("g-recaptcha-error").innerHTML = "";
+  }
+
+  // Contact us
+  function contact() {
+    var name = document.getElementById("yourname").value;
+    if (name == "") {
+      var input = (document.getElementById("yourname").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "block";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error1").innerHTML =
+        "*Please enter a Your Name*";
+      document.getElementById("error1").style.color = "red";
+      return false;
+    } else if (/[^a-zA-Z\-.\s/]/.test(name)) {
+      var input = (document.getElementById("yourname").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "block";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error1").innerHTML =
+        "*Special Characters & Numbers Not allowed*";
+      document.getElementById("error1").style.color = "red";
+      return false;
+    }
+
+    var organization = document.getElementById("yourorganization").value;
+    if (organization == "") {
+      var input = (document.getElementById(
+        "yourorganization"
+      ).style.borderColor = "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "block";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error2").innerHTML =
+        "*Please enter Your Organization Name*";
+      document.getElementById("error2").style.color = "red";
+      return false;
+    }
+
+    var phone = document.getElementById("yourphone").value;
+    if (phone == "") {
+      var input = (document.getElementById("yourphone").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "block";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error3").innerHTML =
+        "*Please enter a Mobile Number*";
+      document.getElementById("error3").style.color = "red";
+      return false;
+    } else if (phone.length < 10) {
+      var input = (document.getElementById("yourphone").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "block";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error3").innerHTML =
+        "*Mobile Number must be Min 10*";
+      document.getElementById("error3").style.color = "red";
+      return false;
+    }
+
+    var email = document.getElementById("youremail").value;
+    var validRegex =
+    /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;;
+    if (email == "") {
+      var input = (document.getElementById("youremail").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "block";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error4").innerHTML =
+        "*Please enter a Email_ID*";
+      document.getElementById("error4").style.color = "red";
+      return false;
+    } else if (!email.match(validRegex)) {
+      var input = (document.getElementById("youremail").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "block";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("error4").innerHTML =
+        "*Please enter valid Email_ID*";
+      document.getElementById("error4").style.color = "red";
+      return false;
+    }
+
+    var textarea = document.getElementById("yourmessage").value;
+    if (textarea == "") {
+      var input = (document.getElementById("yourmessage").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "block";
+      document.getElementById("error5").innerHTML =
+        "*Please enter a Message*";
+      document.getElementById("error5").style.color = "red";
+      return false;
+    } else if (/[^0-9a-zA-Z\-=!.()+@:$&%'",.\s/?]/.test(textarea)) {
+      var input = (document.getElementById("yourmessage").style.borderColor =
+        "orange");
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "block";
+      document.getElementById("error5").innerHTML =
+        "*Special Characters & Numbers Not allowed*";
+      document.getElementById("error5").style.color = "red";
+      return false;
+    }
+    //captcha
+    if (recaptcha_response.length == 0) {
+      document.getElementById("error1").style.display = "none";
+      document.getElementById("error2").style.display = "none";
+      document.getElementById("error3").style.display = "none";
+      document.getElementById("error4").style.display = "none";
+      document.getElementById("error5").style.display = "none";
+      document.getElementById("g-recaptcha-error").innerHTML =
+        '<span style="color:red;">*This field is required.</span>';
+      return false;
+    }else if (recaptcha_response.length != 0) {
+    document.getElementById("contactusSubmit").disabled = true;
+    }
+
+  }
+
+//   $(document).ready(function() {
+//     $('#contactusForm').submit( function(event) {
+//     // disable to avoid double submission
+//     footer();
+//     // const recaptcha_response = "";
+//     if(recaptcha_response.length != 0 ) {
+//       $('#contactusSubmit').attr('disabled', true);
+//     }else {
+//       console.log("failure");
+//       return false;
+//     }
+    
+// });
+//   });
+</script>
+
+</html>

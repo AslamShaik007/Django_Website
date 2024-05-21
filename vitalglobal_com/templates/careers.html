@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+    <meta name="description" content="Vitel Global Communications need dedicated supporting employees. If you are a enthusiastic job seeker, review the following job postings and apply at, careers@vitelglobal.com" />
+    <meta name="robots" content="index, follow" />
+    <!-- Title -->
+    <title>Careers - Vitel Global Communications</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.vitelglobal.com/careers" />
+    <meta property="og:title" content="Careers - Vitel Global Communications" />
+    <meta property="og:description" content="Vitel Global Communications need dedicated supporting employees. If you are a enthusiastic job seeker, review the following job postings and apply at, careers@vitelglobal.com" />
+    <meta property="og:image" content="https://vitelglobal.com/static/assets/img/career.png" />
+    <meta property="og:site_name" content="Vitelglobal" />
+
+<link rel="canonical" href="https://www.vitelglobal.com/careers"/>
+
+    {% include 'topscripts.html' %}
+</head>
+
+<body>
+    {% include 'header.html' %}
+
+    <section class="banercc">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="text-blu m-0">We are hiring!</h1>
+                    <h2 class="text-blu mb-3 font-18">
+                        To cater growing client base, <br />we need dedicated supporting
+                        work force.
+                    </h2>
+                    <!-- <a class="btn bt-blue btn-lg mt-4 get-roll mb-4" data-bs-toggle="modal" data-bs-target="#applyNow" href="#">Apply Now</a>  --> 
+                </div>
+                <div class="col-md-6">
+                    <img src="static/assets/img/career.png" alt="VoIP Careers" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main">
+        <section id="why-us" class="why-us mt-5">
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <div class="col-12">
+                        <h4 class="text-blu mb-3 get-roll">
+                            To cater growing client base, we need dedicated supporting work
+                            force. <br />If you are a motivated job seeker, looking to join
+                            an enthusiastic team of hard working people, <br />review the
+                            following job postings and apply at,
+                            <a href="mailto:careers@vitelglobal.com" class="text-org">careers@vitelglobal.com</a>
+                        </h4>
+                    </div>
+                </div><br>
+                <div class="col-md-8">
+                    <ul class="carul">
+                      {% for item in output %}
+  
+                        <a href="joborder_id={{item.joborder_id}}" class="">
+                          <h4 class="">{{ item.title|safe }}</h4>
+                          <div class="cpos">
+                            Location: {{ item.city|safe }}, {{ item.state|safe }} |
+                            {{item.date_created|safe }}
+                          </div>
+                        </a><br>
+
+                      {% endfor %}
+                     
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+    {% include 'footer.html' %}
+
+    <div class="modal fade" id="applyNow">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-bold">Apply Now</h4>
+
+                    <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="{%url 'careers' %}" enctype="multipart/form-data" id="careersForm" onsubmit="return careers()">   
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="mb-3 col-md-12">
+                                <input type="text" value="{{ form.data.cfname}}" class="form-control demoInputBox" id="cfname" name="cfname"
+                                    placeholder="Your Name *" />
+                                <div id="error11" style="display: none;"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-md-12">
+                                <input type="text" value="{{ form.data.cemail}}" class="form-control demoInputBox" id="cemail" name="cemail"
+                                    placeholder="Email ID *" />
+                                <div id="error22" style="display: none;"></div>
+                            </div>
+                            <div class="mb-3 col-md-12">
+                                <input type="text" value="{{ form.data.cphoneno}}" class="form-control demoInputBox" id="cphoneno" name="cphoneno" maxlength="12" minlength="10"
+                                    placeholder="Phone No. *" />
+                                <div id="error33" style="display: none;"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-md-12">
+                                <select class="form-control" name="cyear" id="cyear">
+                                    <option value="">Years of Experience *</option>
+                                    <option value="Below 1 Year">Below 1 Year</option>
+                                    <option value="1+ Year">1+ Year</option>
+                                    <option value="2+ Year">2+ Year</option>
+                                    <option value="3+ Year">3+ Year</option>
+                                    <option value="4+ Year">4+ Year</option>
+                                    <option value="5+ Year">5+ Year</option>
+                                    <option value="6+ Year">6+ Year</option>
+                                    <option value="7+ Year">7+ Year</option>
+                                    <option value="8+ Year">8+ Year</option>
+                                    <option value="9+ Year">9+ Year</option>
+                                    <option value="10+ Year">10+ Year</option>
+                                    <option value="11+ Year">11+ Year</option>
+                                    <option value="12+ Year">12+ Year</option>
+                                    <option value="13+ Year">13+ Year</option>
+                                    <option value="14+ Year">14+ Year</option>
+                                    <option value="15+ Year">15+ Year</option>
+                                    <option value="16+ Year">16+ Year</option>
+                                    <option value="17+ Year">17+ Year</option>
+                                    <option value="18+ Year">18+ Year</option>
+                                    <option value="19+ Year">19+ Year</option>
+                                    <option value="Above 20 Year">Above 20 Year</option>
+                                </select>
+                                <div id="error44" style="display: none;"></div>
+                            </div>
+
+                            <div class="mb-3 col-md-12">
+                                <textarea class="form-control" rows="2" cols="80" name="cmessage" id="cmessage"
+                                    placeholder="Message"  maxlength="4000">{{ form.data.cmessage}}</textarea>
+                                <div id="error55" style="display: none;"></div>
+                            </div>
+
+                            <div class="mb-3 col-md-12">
+                                <label for="formFile" class="form-label">Upload Resume</label>
+                                <input class="form-control" type="file" id="formFile" accept=".pdf, .docx, .doc" name="formFile"/>
+                                <div id="error66" style="display: none;"></div>
+                            </div>
+                            <div>
+                                {{ form.captcha }}
+            
+                                <label style="color: red;">{{ error }}</label>
+                                <div id="errorFromCapche" style="display: block; color: red;"></div>
+                              </div>
+                            <!-- <div class="g-recaptcha" data-sitekey="6LfK-0IiAAAAAC9hJCu1oGBDdS-mJPBOvjmHv4ei" data-callback="verifyCaptcha"></div>
+                            <div id="g-recaptcha-cerror"></div> -->
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-secondary" id="careersReset">
+                        Reset
+                    </button>
+                    <button type="submit" id="careersSubmit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    // refresh for captcha
+    $(function() {
+    // Add refresh button after field (this can be done in the template as well)
+    $('#id_captcha_1').after($('<a href="#void" class="captcha-refresh"><svg width="26" height="26" fill="none" stroke="#1c1c1c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 19v-4h-4"></path><path d="M4 13a8.1 8.1 0 0 0 15.5 2"></path><path d="M4 5v4h4"></path><path d="M20 11A8.1 8.1 0 0 0 4.5 9"></path></svg></a>'));
+
+    // Click-handler for the refresh-link
+    $('.captcha-refresh').click(function(){
+        var $form = $(this).parents('form');
+        var url = location.protocol + "//" + window.location.hostname + ":"
+                  + location.port + "/captcha/refresh/";
+
+        // Make the AJAX-call
+        $.getJSON(url, {}, function(json) {
+            $form.find('input[name="captcha_0"]').val(json.key);
+            $form.find('img.captcha').attr('src', json.image_url);
+        });
+
+        return false;
+    });
+});
+    // var recaptcha_response = "";
+    // function verifyCaptcha(token) {
+    // recaptcha_response = token;
+    // document.getElementById("g-recaptcha-cerror").innerHTML = "";
+    // }
+    $("#careersReset").click(function () {
+        $('#error11').css('display', 'none');
+        $('#error22').css('display', 'none');
+        $('#error33').css('display', 'none');
+        $('#error44').css('display', 'none');
+        $('#error55').css('display', 'none');
+        $('#error66').css('display', 'none');
+        
+        $("#cfname").removeAttr('style');
+        $("#cyear").removeAttr('style');
+        $("#cemail").removeAttr('style');
+        $("#cphoneno").removeAttr('style');
+        $("#cmessage").removeAttr('style');
+        $("#formFile").removeAttr('style');
+    })
+// careers
+// careers
+    $('#cfname').on("keyup", function(){
+    $('#error11').css('display','none');
+    $("#cfname").css('border-color', "#ededed");
+  });
+  $('#cemail').on("keyup", function(){
+    $('#error22').css('display','none')
+    $("#cemail").css('border-color', "#ededed");
+  });
+  $('#cphoneno').on("keyup", function(){
+    $('#error33').css('display','none')
+    $("#cphoneno").css('border-color', "#ededed");
+  });
+  $('#cyear').on("change", function(){
+    $('#error44').css('display','none')
+    $("#cyear").css('border-color', "#ededed");
+  });
+  $('#cmessage').on("keyup", function(){
+    $('#error55').css('display','none')
+    $("#cmessage").css('border-color', "#ededed");
+  });
+  $('#formFile').on("change", function(){
+    $('#error66').css('display','none')
+    $("#formFile").css('border-color', "#ededed");
+  });
+function setInputFilter(textbox, inputFilter, errMsg) {
+    [
+      "input",
+      "keydown",
+      "keyup",
+      "mousedown",
+      "mouseup",
+      "select",
+      "contextmenu",
+      "drop",
+      "focusout",
+    ].forEach(function (event) {
+      textbox.addEventListener(event, function (e) {
+        if (inputFilter(this.value)) {
+          if (["keydown", "mousedown", "focusout"].indexOf(e.type) >= 0) {
+            this.classList.remove("input-error");
+            this.setCustomValidity("");
+          }
+          this.oldValue = this.value;
+          this.oldSelectionStart = this.selectionStart;
+          this.oldSelectionEnd = this.selectionEnd;
+        } else if (this.hasOwnProperty("oldValue")) {
+          this.classList.add("input-error");
+          this.setCustomValidity(errMsg);
+          this.reportValidity();
+          this.value = this.oldValue;
+          this.setSelectionRange(
+            this.oldSelectionStart,
+            this.oldSelectionEnd
+          );
+        } else {
+          this.value = "";
+        }
+      });
+    });
+  }
+setInputFilter(
+    document.getElementById("cphoneno"),
+    function (value) {
+      return /^[0-9()+-\s]*\.?[0-9()+-\s]*$/.test(value);
+    },
+    "Must be an integer"
+  );
+
+function careers() {
+  document.getElementById('cfname').style.borderColor = '#ededed';
+  document.getElementById('cemail').style.borderColor = '#ededed';
+  document.getElementById('cphoneno').style.borderColor = '#ededed';
+  document.getElementById('cyear').style.borderColor = '#ededed';
+  document.getElementById('cmessage').style.borderColor = '#ededed';
+  document.getElementById('formFile').style.borderColor = '#ededed';
+
+  var firstName = document.getElementById('cfname').value;
+  if (firstName == "") {
+    var input = document.getElementById('cfname').style.borderColor = 'orange';
+    document.getElementById('error11').style.display = 'block';
+    document.getElementById('error22').style.display = 'none';
+    document.getElementById('error33').style.display = 'none';
+    document.getElementById('error44').style.display = 'none';
+    document.getElementById('error55').style.display = 'none';
+    document.getElementById('error66').style.display = 'none';
+    document.getElementById('error11').innerHTML = "*Please enter a Your Name*";
+    document.getElementById('error11').style.color = 'red';
+    return false;
+  } else if (/[^a-zA-Z\-.\s/]/.test(firstName)) {
+    var input = document.getElementById('cfname').style.borderColor = 'orange';
+    document.getElementById('error11').style.display = 'block';
+    document.getElementById('error22').style.display = 'none';
+    document.getElementById('error33').style.display = 'none';
+    document.getElementById('error44').style.display = 'none';
+    document.getElementById('error55').style.display = 'none';
+    document.getElementById('error66').style.display = 'none';
+    document.getElementById('error11').innerHTML = "*Special Characters & Numbers Not allowed*";
+    document.getElementById('error11').style.color = 'red';
+    return false;
+  }
+  
+  var email = document.getElementById('cemail').value;
+  var validRegex = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;
+  if (email == "") {
+    var input = document.getElementById('cemail').style.borderColor = 'orange';
+    document.getElementById('error11').style.display = 'none';
+    document.getElementById('error22').style.display = 'block';
+    document.getElementById('error33').style.display = 'none';
+    document.getElementById('error44').style.display = 'none';
+    document.getElementById('error55').style.display = 'none';
+    document.getElementById('error66').style.display = 'none';
+    document.getElementById('error22').innerHTML = "*Please enter a Email_ID*";
+    document.getElementById('error22').style.color = 'red';
+    return false;
+  } else if (!email.match(validRegex)) {
+    var input = document.getElementById('cemail').style.borderColor = 'orange';
+    document.getElementById('error11').style.display = 'none';
+    document.getElementById('error22').style.display = 'block';
+    document.getElementById('error33').style.display = 'none';
+    document.getElementById('error44').style.display = 'none';
+    document.getElementById('error55').style.display = 'none';
+    document.getElementById('error66').style.display = 'none';
+    document.getElementById('error22').innerHTML = "*Please enter valid Email_ID*";
+    document.getElementById('error22').style.color = 'red';
+    return false;
+  }
+
+  var phone = document.getElementById('cphoneno').value;
+  if (phone == "") {
+    var input = document.getElementById('cphoneno').style.borderColor = 'orange';
+    document.getElementById('error11').style.display = 'none';
+    document.getElementById('error22').style.display = 'none';
+    document.getElementById('error33').style.display = 'block';
+    document.getElementById('error44').style.display = 'none';
+    document.getElementById('error55').style.display = 'none';
+    document.getElementById('error66').style.display = 'none';
+    document.getElementById('error33').innerHTML = "*Please enter a Mobile Number*";
+    document.getElementById('error33').style.color = 'red';
+    return false;
+  } else if (phone.length < 10) {
+    var input = document.getElementById('cphoneno').style.borderColor = 'orange';
+    document.getElementById('error11').style.display = 'none';
+    document.getElementById('error22').style.display = 'none';
+    document.getElementById('error33').style.display = 'block';
+    document.getElementById('error44').style.display = 'none';
+    document.getElementById('error55').style.display = 'none';
+    document.getElementById('error66').style.display = 'none';
+    document.getElementById('error33').innerHTML = "*Mobile Number must be Min 10*";
+    document.getElementById('error33').style.color = 'red';
+    return false;
+  }
+
+  var year = document.getElementById("cyear");
+  var strUser = year.options[year.selectedIndex].value;
+  if (strUser == "") {
+    var input = document.getElementById('cyear').style.borderColor = 'orange';
+    document.getElementById('error11').style.display = 'none';
+    document.getElementById('error22').style.display = 'none';
+    document.getElementById('error33').style.display = 'none';
+    document.getElementById('error44').style.display = 'block';
+    document.getElementById('error55').style.display = 'none';
+    document.getElementById('error66').style.display = 'none';
+    document.getElementById('error44').innerHTML = "*Please select a year*";
+    document.getElementById('error44').style.color = 'red';
+    return false;
+  }
+
+  var textarea = document.getElementById('cmessage').value;
+  if (textarea == "") {
+    var input = document.getElementById('cmessage').style.borderColor = 'orange';
+    document.getElementById('error11').style.display = 'none';
+    document.getElementById('error22').style.display = 'none';
+    document.getElementById('error33').style.display = 'none';
+    document.getElementById('error44').style.display = 'none';
+    document.getElementById('error55').style.display = 'block';
+    document.getElementById('error66').style.display = 'none';
+    document.getElementById('error55').innerHTML = "*Please enter a Message*";
+    document.getElementById('error55').style.color = 'red';
+    return false;
+  } else if (/[^0-9a-zA-Z\-=!.()+@:$&%'",.\s/?]/.test(textarea)) {
+    var input = document.getElementById('cmessage').style.borderColor = 'orange';
+    document.getElementById('error11').style.display = 'none';
+    document.getElementById('error22').style.display = 'none';
+    document.getElementById('error33').style.display = 'none';
+    document.getElementById('error44').style.display = 'none';
+    document.getElementById('error55').style.display = 'block';
+    document.getElementById('error66').style.display = 'none';
+    document.getElementById('error55').innerHTML = "*Special Characters & Numbers Not allowed*";
+    document.getElementById('error55').style.color = 'red';
+    return false;
+  }
+
+  var resume = document.getElementById('formFile').value;
+  if (resume == "") {
+    var input = document.getElementById('formFile').style.borderColor = 'orange';
+    document.getElementById('error11').style.display = 'none';
+    document.getElementById('error22').style.display = 'none';
+    document.getElementById('error33').style.display = 'none';
+    document.getElementById('error44').style.display = 'none';
+    document.getElementById('error55').style.display = 'none';
+    document.getElementById('error66').style.display = 'block';
+    document.getElementById('error66').innerHTML = "*Please upload your Resume*";
+    document.getElementById('error66').style.color = 'red';
+    return false;
+  }
+
+  //captcha
+  var id_captcha_1 = document.getElementById("id_captcha_1").value;
+
+          if(id_captcha_1 == ""){
+            document.getElementById("errorFromCapche").innerHTML =
+              "*Please enter captcha";
+              return false
+          }
+}
+</script>
+<script>
+    $('#applyNow').on('hidden.bs.modal', function () {
+    $(this).find('form').trigger('reset');
+})
+
+// $(document).ready(function() {
+//     $('#careersForm').submit( function(event) {
+//     // disable to avoid double submission
+//     footer();
+//     // const recaptcha_response = "";
+//     if(recaptcha_response.length != 0 ) {
+//       $('#careersSubmit').attr('disabled', true);
+//     }else {
+//       console.log("failure");
+//       return false;
+//     }
+    
+// });
+//   });
+</script>
+</html>

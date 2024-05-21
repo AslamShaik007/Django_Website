@@ -1,0 +1,592 @@
+<!--Full width header Start-->
+<div class="full-width-header">
+    <!--Header Start-->
+    <header id="rs-header" class="rs-header style3 header-transparent">
+        <!-- Topbar Area Start -->
+        <div class="topbar-area style2 modify1 menu-sticky">
+            <div class="container">
+                <div class="row y-middle">
+                    <div class="col-lg-8">
+                        <div class="topbar-contact">
+                            <ul>
+                                <li class="border-right">
+                                    <i class="flaticon-email"></i>
+                                    <a href="mailto:careers@spgamerica.com">careers@spgamerica.com</a>
+                                </li>
+                                <li>
+                                    <i class="flaticon-call"></i>
+                                    <a href="tel: 7323437688"> 732-343-7688</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        <div class="toolbar-sl-share pull-right">
+                            <ul>
+                                <li><a href="https://www.facebook.com/SPGAmerica" target="_blank"><i
+                                            class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/spg_america" target="_blank"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                                        </svg></a></li>
+                                <li><a href="https://www.linkedin.com/company/spgamerica/" target="_blank"><i
+                                            class="fa fa-linkedin"></i></a></li>
+                                <!-- <li><a href="https://in.pinterest.com/pranathisoftware" target="_blank"><i
+                                            class="fa fa-pinterest-p"></i></a></li> -->
+                                <!-- <li><a href="https://www.youtube.com/channel/UC4eLAPreHLSkErZ3uPHiKtg/videos"
+                                        target="_blank"><i class="fa fa-youtube"></i></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar Area End -->
+
+        <!-- Mobile menu start -->
+
+
+        <div class="menu-area menu-sticky mob-menu">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-2 d-flex justify-content-between align-items-end">
+                        <div class="logo-part">
+                            <a href="{% url 'index' %}">
+                                <img class="normal-logo" src="/static/assets/images/spg-white-logo-new.png" alt="spg">
+                                <img class="sticky-logo" src="/static/assets/images/spg_logo.png" alt="spg">
+                            </a>
+                        </div>
+                        <div class="mobile-menu">
+                            <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 text-right">
+                        <div class="rs-menu-area">
+                            <div class="main-menu">
+                                <nav class="rs-menu lg-pr-50 md-pr-0 rs-menu-close">
+                                    <ul class="nav-menu">
+                                        <li> <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-house-door-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+                                                </svg></a></li>
+
+                                        <li class="menu-item-has-children mob-menu">
+                                            <a class="menu-serv">Services</a>
+                                            <ul class="sub-menu menu-serv">
+                                                <!-- <li class="mega-menu-container menu-hov"><a
+                                                        class="menu-bold">Strategy</a></li> -->
+
+                                                <li class="meg-sub"><a href="{% url 'growth-optimization' %}">Growth Optimization</a></li>
+                                                <li class="meg-sub"><a href="{% url 'talent-acceleration' %}">Talent Acceleration</a></li>
+                                                <li class="meg-sub"><a href="{% url 'generative-ai-advisory' %}">Generative AI
+                                                    Advisory</a></li>
+                                                <li class="meg-sub"><a href="{% url 'cx-strategy-and-design' %}">CX Strategy &
+                                                        Design</a></li>
+                                                <li class="meg-sub"><a href="{% url 'next-gen-marketing' %}">Next-Gen
+                                                        Marketing</a></li>
+                                                <li class="meg-sub"><a href="{% url 'workforce-experience' %}">Workforce Experience</a></li>
+                                                <li class="meg-sub"><a href="{% url 'digital-transformation' %}">Digital Transformation</a></li>
+                                                <!-- <li class="menu-hov pt-1"><a class="menu-bold">Cloud Data & Analytics
+                                                        Artificial Intelligence</a></li> -->
+                                                <li class="meg-sub"><a
+                                                    href="{% url 'ai-ml-research-and-development' %}">AI
+                                                    & ML Research and Development</a></li>
+                                                <li class="meg-sub"><a
+                                                    href="{% url 'python-practice' %}">Python
+                                                    Practice</a></li>
+                                                <li class="meg-sub"><a
+                                                    href="{% url 'react-js-practice' %}">React
+                                                    JS Practice</a></li>
+                                                <li class="meg-sub"><a
+                                                    href="{% url 'metaverse' %}">Metaverse</a></li>
+                                                <li class="meg-sub"><a
+                                                    href="{% url 'managed-detection-response' %}">Managed
+                                                    Detection & Response</a></li>
+                                                <li class="meg-sub"><a
+                                                    href="{% url 'digital-risk-management' %}">Digital
+                                                    Risk Management</a></li>
+                                                <li class="meg-sub"><a
+                                                    href="{% url 'cybersecurity-advisory' %}">Cybersecurity
+                                                    Advisory</a></li>
+                                                <li class="meg-sub"><a
+                                                    href="{% url 'cloud-data-security' %}">Cloud
+                                                    & Data Security</a> </li>
+                                                <li class="meg-sub"><a
+                                                    href="{% url 'ransomware-protection' %}">Ransomware
+                                                    Protection</a></li>
+                                                <li class="meg-sub"><a
+                                                    href="{% url 'zero-trust-implementation' %}">Zero
+                                                    Trust Implementation</a></li>
+                                            </ul>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <li class="menu-item-has-children">
+                                            <a class="menu-serv">Industries</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="{% url 'consumer-packaged-goods' %}">Consumer
+                                                    Packaged Goods</a> </li>
+                                                <li><a href="{% url 'travel-and-hospitality' %}">Travel
+                                                    & Hospitality</a> </li>
+                                                <li><a
+                                                    href="{% url 'retail' %}">Retail</a> </li>
+                                                <li><a href="{% url 'wealth-management' %}">Wealth
+                                                    Management</a> </li>
+                                                <li><a href="{% url 'commercial-banking' %}">Retail
+                                                    & Commercial Banking</a></li>
+                                                <li><a
+                                                    href="{% url 'medtech' %}">MedTech</a></li>
+                                                <li><a
+                                                    href="{% url 'software-and-tech' %}">Software and Tech</a></li>
+                                                <li><a
+                                                    href="{% url 'education' %}">Education</a></li>
+                                                <li><a
+                                                    href="{% url 'telecommunications' %}">Telecommunications</a></li>
+                                                <li><a href="{% url 'media-and-entertainment' %}">media-and-entertainment</a></li>
+                                                <li><a
+                                                    href="{% url 'gaming' %}">Gaming</a></li>
+                                                <li><a href="{% url 'business-information-and-publishing' %}">Business
+                                                    Information & Publishing</a></li>
+                                                    <li><a
+                                                        href="{% url 'sports' %}">Sports</a></li>
+                                                        <li><a href="{% url 'metahuman-assistant' %}">Metahuman
+                                                            Assistant</a></li>
+                                                                <li><a
+                                                                    href="{% url 'energy-and-resources' %}">Energy &
+                                                                    Resources</a></li>
+                                                <!-- <div class="sub-menu-close"><i class="fa fa-times" aria-hidden="true"></i>Close</div> -->
+                                            </ul>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a>About Us</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="{% url 'corporate-responsibility' %}">Corporate Responsibility</a> </li>
+                                                <li><a href="{% url 'ethics-and-compliance' %}">Ethics & Compliance</a> </li>
+                                                <li><a href="{% url 'events' %}">Events</a> </li>
+                                                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                                <li><a href="{% url 'faqs' %}">FAQs</a></li>
+                                                <!-- <div class="sub-menu-close"><i class="fa fa-times" aria-hidden="true"></i>Close</div> -->
+                                            </ul>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                        </li>
+                                        <!-- <li class="menu-item-has-children">
+                                            <a href="#">Careers</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="{% url 'get-on-board' %}">Get On Board</a></li>
+                                                <li><a href="{% url 'relocate-with-spg' %}">Relocate With SPG</a></li>
+                                                <li><a href="{% url 'referral-program' %}">Referral Program</a></li>
+
+                                            </ul>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                        </li> -->
+
+
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Knowledge Base</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="{% url 'spg-insights' %}">SPG Insights</a></li>
+                                                <li><a href="{% url 'e-books' %}">EBooks</a></li>
+                                                <li><a href="{% url 'white-papers' %}">Whitepapers</a></li>
+                                                <li><a href="{% url 'podcasts' %}">Podcasts</a></li>
+                                                <li><a href="{% url 'press-releases' %}">Press Releases</a></li>
+                                                <!-- <div class="sub-menu-close"><i class="fa fa-times" aria-hidden="true"></i>Close</div> -->
+                                            </ul>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                        </li>
+                                        <li><a href="{% url 'careers' %}">Careers</a></li>
+
+                                    </ul> <!-- //.nav-menu -->
+                                </nav>
+                            </div> <!-- //.main-menu -->
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- mobile menu end -->
+
+        <!-- Menu Start -->
+        <div class="menu-area menu-sticky desk-menu">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="logo-part">
+                            <a href="{% url 'index' %}">
+                                <img class="normal-logo" src="/static/assets/images/spg-white-logo-new.png"
+                                    alt="spg logo">
+                                <img class="sticky-logo" src="/static/assets/images/spg_logo.png" alt="spg logo">
+                            </a>
+                        </div>
+                        <div class="mobile-menu">
+                            <a href="#" class="rs-menu-toggle rs-menu-toggle-close">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 text-right">
+                        <div class="rs-menu-area">
+                            <div class="main-menu">
+                                <nav class="rs-menu lg-pr-50 md-pr-0 rs-menu-close">
+                                    <ul class="nav-menu">
+                                        <li> <a href="{% url 'index' %}"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="currentColor"
+                                                    class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+                                                </svg></a></li>
+
+
+                                        <!-- mega menu start -->
+
+                                        <li class="rs-mega-menu mega-rs menu-item-has-children desk-menu"><a
+                                                href="#">Services</a>
+                                            <ul class="mega-menu menu-shad">
+                                                <li class="mega-menu-container">
+                                                    <div class="mega-menu-innner">
+                                                        <div class="row">
+                                                            <div class="col-12 pe-3 p-4">
+                                                                <div class="row pb-2">
+                                                                    <div class="col-6 border-end">
+                                                                        <ul class="sub-menu menu-mega">
+                                                                            <li class="mega-menu-container menu-hov"><a
+                                                                                    class="menu-bold menu-f"><span>Strategy</span></a>
+                                                                            </li>
+                                                                            <!-- <li class="menu-hov pad-top">Empowering businesses with innovative AI and Machine Learning solutions.</li> -->
+                                                                            <!-- <li><a href="{% url 'ai-ml-automation' %}">Strategy</a> </li> -->
+                                                                            <li><a
+                                                                                    href="{% url 'growth-optimization' %}">Growth
+                                                                                    Optimization</a> </li>
+                                                                            <li><a href="{% url 'talent-acceleration' %}">Talent
+                                                                                    Acceleration</a> </li>
+                                                                        </ul>
+
+                                                                        <ul class="sub-menu menu-mega mt-3">
+                                                                            <li class="mega-menu-container menu-hov"><a
+                                                                                    class="menu-bold menu-f"> <span>Cloud Data
+                                                                                    & Analytics Artificial
+                                                                                    Intelligence</span></a></li>
+                                                                            <!-- <li class="menu-hov pad-top">Empowering businesses with innovative AI and Machine Learning solutions.</li> -->
+                                                                            <!-- <li><a href="{% url 'ai-ml-automation' %}">Strategy</a> </li> -->
+                                                                            <li><a href="{% url 'generative-ai-advisory' %}">Generative
+                                                                                    AI Advisory</a> </li>
+                                                                        </ul>
+
+                                                                        <ul class="sub-menu menu-mega mt-3">
+                                                                            <li class="mega-menu-container menu-hov"><a
+                                                                                    class="menu-bold menu-f">Client
+                                                                                    Experience</a></li>
+                                                                            <!-- <li class="menu-hov pad-top">Empowering businesses with innovative AI and Machine Learning solutions.</li> -->
+                                                                            <!-- <li><a href="{% url 'ai-ml-automation' %}">Strategy</a> </li> -->
+                                                                            <li><a href="{% url 'cx-strategy-and-design' %}">CX
+                                                                                    Strategy & Design</a> </li>
+                                                                            <li><a href="{% url 'next-gen-marketing' %}">Next-Gen
+                                                                                    Marketing</a> </li>
+                                                                            <li><a href="{% url 'workforce-experience' %}">Workforce
+                                                                                    Experience</a> </li>
+                                                                            <li><a href="{% url 'digital-transformation' %}">Digital
+                                                                                    Transformation</a> </li>
+                                                                        </ul>
+
+
+
+
+                                                                    </div>
+                                                                    <div class="col-6 ps-3">
+                                                                        <ul class="sub-menu menu-mega">
+                                                                            <li><a
+                                                                                    class="menu-bold menu-f">Engineering</a>
+                                                                            </li>
+                                                                            <!-- <li class="menu-hov pad-top-d">Elevating your brand's presence and influence in the marketplace.</li> -->
+                                                                            <li><a
+                                                                                    href="{% url 'ai-ml-research-and-development' %}">AI
+                                                                                    & ML Research and Development</a>
+                                                                            </li>
+                                                                            <li><a
+                                                                                    href="{% url 'python-practice' %}">Python
+                                                                                    Practice</a> </li>
+                                                                            <li><a
+                                                                                    href="{% url 'react-js-practice' %}">React
+                                                                                    JS Practice</a> </li>
+                                                                            <li><a
+                                                                                    href="{% url 'metaverse' %}">Metaverse</a>
+                                                                            </li>
+
+                                                                        </ul>
+                                                                        <ul class="sub-menu menu-mega mt-3">
+                                                                            <li><a
+                                                                                    class="menu-bold menu-f">Cybersecurity</a>
+                                                                            </li>
+                                                                            <!-- <li class="menu-hov pad-top-d">Elevating your brand's presence and influence in the marketplace.</li> -->
+                                                                            <li><a
+                                                                                    href="{% url 'managed-detection-response' %}">Managed
+                                                                                    Detection & Response</a> </li>
+                                                                            <li><a
+                                                                                    href="{% url 'digital-risk-management' %}">Digital
+                                                                                    Risk Management</a> </li>
+                                                                            <li><a
+                                                                                    href="{% url 'cybersecurity-advisory' %}">Cybersecurity
+                                                                                    Advisory</a> </li>
+                                                                            <li><a
+                                                                                    href="{% url 'cloud-data-security' %}">Cloud
+                                                                                    & Data Security</a> </li>
+                                                                            <li><a
+                                                                                    href="{% url 'ransomware-protection' %}">Ransomware
+                                                                                    Protection</a> </li>
+                                                                            <li><a
+                                                                                    href="{% url 'zero-trust-implementation' %}">Zero
+                                                                                    Trust Implementation</a></li>
+
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- <div class="col-3">
+                                                            <a href="" class="w-100 h-100">
+                                                            <img src="static/assets/images/explore-it.jpg" alt="Responsive Chatbots" class="img-fluid h-100 w-100">
+                                                            </a>
+                                                        </div> -->
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <div class="sub-menu-close"><i class="fa fa-times"
+                                                        aria-hidden="true"></i>Close</div>
+                                            </ul>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                        </li>
+
+
+                                        <!-- mega menu end -->
+
+
+
+                                        <!-- industries start -->
+
+                                        <li class="rs-mega-menu mega-rs menu-item-has-children desk-menu">
+                                            <a>Industries</a>
+                                            <ul class="mega-menu menu-shad">
+                                                <li class="mega-menu-container">
+                                                    <div class="mega-menu-innner">
+                                                        <div class="row">
+                                                            <div class="col-12 pe-3 p-4">
+                                                                <div class="row pb-2">
+                                                                    <div class="col-6 border-end">
+                                                                        <ul class="sub-menu menu-mega">
+                                                                            <li class="mega-menu-container menu-hov"><a
+                                                                                    class="menu-bold menu-f">Consumer</a>
+                                                                            </li>
+                                                                            <!-- <li class="menu-hov pad-top">Empowering businesses with innovative AI and Machine Learning solutions.</li> -->
+                                                                            <!-- <li><a href="{% url 'ai-ml-automation' %}">Strategy</a> </li> -->
+                                                                            <li><a href="{% url 'consumer-packaged-goods' %}">Consumer
+                                                                                    Packaged Goods</a> </li>
+                                                                            <li><a href="{% url 'travel-and-hospitality' %}">Travel
+                                                                                    & Hospitality</a> </li>
+                                                                            <li><a
+                                                                                    href="{% url 'retail' %}">Retail</a>
+                                                                            </li>
+                                                                        </ul>
+
+                                                                        <ul class="sub-menu menu-mega mt-3">
+                                                                            <li class="mega-menu-container menu-hov"><a
+                                                                                    class="menu-bold menu-f">Financial
+                                                                                    Services</a></li>
+                                                                            <!-- <li class="menu-hov pad-top">Empowering businesses with innovative AI and Machine Learning solutions.</li> -->
+                                                                            <!-- <li><a href="{% url 'ai-ml-automation' %}">Strategy</a> </li> -->
+                                                                            <li><a href="{% url 'wealth-management' %}">Wealth
+                                                                                    Management</a> </li>
+                                                                            <li><a href="{% url 'commercial-banking' %}">Retail
+                                                                                    & Commercial Banking</a> </li>
+
+                                                                        </ul>
+                                                                        <ul class="sub-menu menu-mega mt-3">
+                                                                            <li><a class="menu-bold menu-f">Software &
+                                                                                    Hi-Tech</a></li>
+                                                                            <!-- <li class="menu-hov pad-top-d">Elevating your brand's presence and influence in the marketplace.</li> -->
+                                                                            <li><a
+                                                                                    href="{% url 'software-and-tech' %}">Software and Tech</a>
+                                                                            </li>
+
+                                                                        </ul>
+                                                                        <ul class="sub-menu menu-mega mt-3">
+                                                                            <li><a
+                                                                                    class="menu-bold menu-f">Education</a>
+                                                                            </li>
+                                                                            <!-- <li class="menu-hov pad-top-d">Elevating your brand's presence and influence in the marketplace.</li> -->
+                                                                            <li><a
+                                                                                    href="{% url 'education' %}">Education</a>
+                                                                            </li>
+
+                                                                        </ul>
+
+
+                                                                    </div>
+                                                                    <div class="col-6 ps-3">
+                                                                        <ul class="sub-menu menu-mega">
+                                                                            <li class="mega-menu-container menu-hov"><a
+                                                                                    class="menu-bold menu-f">Telecom,
+                                                                                    Media & Entertainment</a></li>
+                                                                            <!-- <li class="menu-hov pad-top">Empowering businesses with innovative AI and Machine Learning solutions.</li> -->
+                                                                            <!-- <li><a href="{% url 'ai-ml-automation' %}">Strategy</a> </li> -->
+                                                                            <li><a
+                                                                                    href="{% url 'telecommunications' %}">Telecommunications</a>
+                                                                            </li>
+                                                                            <li><a href="{% url 'media-and-entertainment' %}">media-and-entertainment</a> </li>
+                                                                            <li><a
+                                                                                    href="{% url 'gaming' %}">Gaming</a>
+                                                                            </li>
+                                                                            <li><a href="{% url 'business-information-and-publishing' %}">Business
+                                                                                    Information & Publishing</a> </li>
+                                                                            <li><a
+                                                                                    href="{% url 'sports' %}">Sports</a>
+                                                                            </li>
+                                                                            <li><a
+                                                                                    href="{% url 'regulations' %}">Regulations</a>
+                                                                            </li>
+                                                                            <li><a href="{% url 'metahuman-assistant' %}">Metahuman
+                                                                                    Assistant</a> </li>
+                                                                        </ul>
+                                                                        <ul class="sub-menu menu-mega mt-3">
+                                                                            <li><a class="menu-bold menu-f">Life
+                                                                                    Sciences & Healthcare</a></li>
+                                                                            <!-- <li class="menu-hov pad-top-d">Elevating your brand's presence and influence in the marketplace.</li> -->
+                                                                            <li><a
+                                                                                    href="{% url 'medtech' %}">MedTech</a>
+                                                                            </li>
+
+                                                                        </ul>
+                                                                        <ul class="sub-menu menu-mega mt-3">
+                                                                            <li><a class="menu-bold menu-f">Energy &
+                                                                                    Resources</a></li>
+                                                                            <!-- <li class="menu-hov pad-top-d">Elevating your brand's presence and influence in the marketplace.</li> -->
+                                                                            <li><a
+                                                                                    href="{% url 'energy-and-resources' %}">Energy &
+                                                                                    Resources</a>
+                                                                            </li>
+
+
+                                                                        </ul>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- <div class="col-3">
+                                                                <a href="" class="w-100 h-100">
+                                                                <img src="static/assets/images/explore-it.jpg" alt="Responsive Chatbots" class="img-fluid h-100 w-100">
+                                                                </a>
+                                                            </div> -->
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <div class="sub-menu-close"><i class="fa fa-times"
+                                                        aria-hidden="true"></i>Close</div>
+                                            </ul>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <!-- Industries end -->
+
+
+                                        <li class="menu-item-has-children">
+                                            <a href="#">
+                                                About Us</a>
+                                            <ul class="sub-menu svg-icon">
+                                                <li><a href="{% url 'corporate-responsibility' %}">Corporate
+                                                        Responsibility</a></li>
+                                                <li><a href="{% url 'ethics-and-compliance' %}">Ethics &
+                                                        Compliance</a></li>
+                                                <li><a href="{% url 'events' %}">Events</a></li>
+                                                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                                <li><a href="{% url 'faqs' %}">FAQs</a></li>
+
+                                                <!-- <div class="sub-menu-close"><i class="fa fa-times" aria-hidden="true"></i>Close</div> -->
+                                            </ul>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                        </li>
+
+                                        <!-- <li class="menu-item-has-children">
+                                            <a href="#">
+                                                Careers</a>
+                                            <ul class="sub-menu svg-icon">
+                                                <li><a href="{% url 'spg-mission-statement' %}">Get On-Board</a></li>
+                                                <li><a href="{% url 'inclusion-and-diversity' %}">Relocate with SPG</a>
+                                                </li>
+                                                <li><a href="{% url 'inclusion-and-diversity' %}">Referral Program</a>
+                                                </li>
+                                            </ul>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                        </li> -->
+
+                                      
+                                        <li class="menu-item-has-children">
+                                            <a href="#">
+                                                Knowledge Base</a>
+                                            <ul class="sub-menu svg-icon">
+                                                <li><a href="{% url 'spg-insights' %}">SPG Insights</a></li>
+                                                <li><a href="{% url 'e-books' %}">EBooks</a></li>
+                                                <li><a href="{% url 'white-papers' %}">Whitepapers</a></li>
+                                                <li><a href="{% url 'podcasts' %}">Podcasts</a></li>
+                                                <li><a href="{% url 'press-releases' %}">Press Releases</a>
+                                                </li>
+                                                <!-- <div class="sub-menu-close"><i class="fa fa-times" aria-hidden="true"></i>Close</div> -->
+                                            </ul>
+                                            <span class="rs-menu-parent"><i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></span>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'careers' %}">Careers</a>
+                                        </li>
+                                        <!-- <li>
+                                            <a href="{% url 'contact' %}">Contact us</a>
+                                        </li> -->
+
+                                    </ul> <!-- //.nav-menu -->
+                                </nav>
+                            </div> <!-- //.main-menu -->
+                            <div class="d-none d-lg-block ms-3">
+                                <a class="btn bt-redbtn" href="{% url 'careers' %}">UPLOAD RESUME</a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+    </header>
+    <!--Header End-->
+
+</div>
+<!--Full width header End-->

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+  <meta name="description" content="Vitel Global has partnered with reputed companies in providing the best services, our business partners are globally recognized">
+  <meta name="robots" content="index, follow">
+  <!-- Title -->
+  <title>Vitel Global Communications Business Partners </title>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.vitelglobal.com/partners-program" />
+  <meta property="og:title" content="Vitel Global Communications Business Partners " />
+  <meta property="og:description" content="Vitel Global has partnered with reputed companies in providing the best services, our business partners are globally recognized" />
+  <meta property="og:image" content="https://vitelglobal.com/static/assets/images/partner.webp" />
+  <meta property="og:site_name" content="Vitelglobal" />
+  <script src="forms.js"></script>
+  {% include 'topscripts.html' %}
+  <link rel="canonical" href="https://www.vitelglobal.com/partners-program"/>
+</head>
+
+<body>
+
+
+  {% include 'header.html' %}
+
+
+<section class="banercc ">
+<div class="container">
+<div class="row align-items-center justify-content-between">
+<div class="col-md-5">
+<h1>Global Partner Program </h1>
+<h4 class="text-blu f16">Making it simpler for your clients to communicate, interact, chat, share, and cooperate is possible with Vitel Global.</h4>
+<a href="#getstart" class="btn bt-blue btn-lg get-roll mb-4">Become Our Partner</a>
+</div>
+<div class="col-md-6">
+<img src="static/assets/vimages/global-partner-program.webp" alt="Global Partner" class="img-fluid br100">
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="about pb-0">
+<div class="container"> 
+<div class="row align-items-center justify-content-between"> 
+<div class="col-md-5 ov-img order-2">
+<img src="static/assets/vimages/vitelglobal-partner.webp" alt="Vitel Global Partner" class="img-fluid">
+</div> 
+<div class="col-md-6 order-md-2 "> 
+<div class="bshadow ov-content"> 
+<h3 class="fw-bold text-blu">There is an opportunity for Vitel Global Partners.</h3> 
+<p>The ability to operate from anywhere creates a big potential for the channel as companies of all kinds transition to the cloud.</p>
+<p>Reap the benefits by becoming a partner with Vitel Global right away. Vitel Global is a great option if you want to make sure that your consumers are getting a tried-and-true solution.</p>
+<p>Your consumers will gain from a simple-to-implement, simple-to-manage, and correctly sized solution. You will gain from the expansion of your clientele, the creation of fresh revenue sources, and an increase in earnings.
+</p>
+</div>
+</div> 
+</div> 
+</div> 
+</section>
+
+
+
+ 
+
+<section class="about">
+<div class="container">
+<div class="row gx-5">
+<div class="col-md-6">
+<h2 class="fw-bold text-blu mb-3">Multiple options are available through the Global Partner Program at Vitel Global.</h2>
+<h4 class="text-blu get-roll fw-bold">Joint Communication Partners</h4>
+<p>Get the customer-desired communication solution now to expand your company and boost earnings!</p>
+<p>Look into the possibility</p>
+<h4 class="text-blu get-roll fw-bold">Legacy Digital Carriers</h4>
+<p>Throughout the whole digital journey, offer a partner and consumer experience that is unparalleled.</p>
+<h4 class="text-blu get-roll fw-bold">Strategic Alliances</h4>
+<p>It is advantageous for both parties to have connections with the largest firms in the globe.</p>    
+<h4 class="text-blu get-roll fw-bold">Scheme for Recommendations</h4>
+<p>We would like to express our gratitude for the business that has been brought to us by our clients and partners. We provide a special referral program for clients and IT specialists.</p>
+</div>
+
+
+<div class="col-md-6">
+<img src="static/assets/vimages/partnership-program.webp" alt="Vitel Global Partnership" class="img-fluid mb-4">
+
+<h2 class="text-blu fw-bold">Partnership Program Advantages</h2>
+<h4 class="text-blu get-roll fw-bold">Advantages of Collaborating with Vitel Global</h4>
+<p>All Vitel Global solutions work with the existing integrations of your clients.</p>
+<h4 class="text-blu get-roll fw-bold">Set up with an ease</h4>
+<p>Our technologies integrate effortlessly with your clients' current stack to meet all of their demands for corporate communication, helpdesk, contact centers, and CRM/ERP.</p>
+<h4 class="text-blu get-roll fw-bold">Reliable and field-tested.</h4>
+<p>For more than 30 years, our solutions have helped customers and partners all around the world improve their productivity and teamwork.</p> 
+</div>    
+  </div></div>
+</section>
+
+
+  <section id="getstart" class="about pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="fw-bold">Get Started</h4>
+            </div>
+            <div class="card-body">
+              <div class="">
+                <form name="partnerForm" class="ng-pristine ng-valid" role="form" method="POST"
+                  onsubmit="return partners()" action="{% url 'partners-program' %}" id="partnerForm">
+                  {% csrf_token %}
+                  <div class="row">
+                    <div class="form-group col-lg-6">
+                      <label for="input1">First Name *</label>
+                      <input type="text" name="partner_fname" class="form-control" id="partner_fname">
+                      <div id="error1" style="display: none;"></div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label for="input1">Last Name *</label>
+                      <input type="text" name="partner_lname" class="form-control" id="partner_lname">
+                      <div id="error2" style="display: none;"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-lg-6">
+                      <label for="input3">Company Name *</label>
+                      <input type="phone" name="partner_company" class="form-control" id="partner_company">
+                      <div id="error3" style="display: none;"></div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label for="input3">State *</label>
+                      <input type="text" name="partner_state" class="form-control" id="partner_state">
+                      <div id="error4" style="display: none;"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-lg-6">
+                      <label for="input2">Email Address *</label>
+                      <input type="text" name="partner_email" class="form-control" id="partner_email">
+                      <div id="error5" style="display: none;"></div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label for="input3">Phone Number *</label>
+                      <input type="text" name="partner_phone" class="form-control" id="partner_phone" maxlength="20" minlength="10">
+                      <div id="error6" style="display: none;"></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="mb-3 col-lg-12">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" name="terms" value="true" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                By providing your phone number, you agree to receive a text message from Vitelglobal. Message and data rates may apply. Message frequency varies.
+                            </label>
+                            <div id="verror7" style="display: none"></div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div>
+                      {{ form.captcha }}
+  
+                      <label style="color: red;">{{ error }}</label>
+                      <div id="errorFromCapche" style="display: block; color: red;"></div>
+                    </div>
+                    <!-- <div class="g-recaptcha" data-sitekey="6LfK-0IiAAAAAC9hJCu1oGBDdS-mJPBOvjmHv4ei" data-callback="verifyCaptcha"></div>
+                            <div id="g-recaptcha-error"></div> -->
+                    <div class="col-md-12 col-lg-12 mt-3">
+                      <button type="submit" class="btn bt-blue btn-lg mb-4" id="partnerSubmit"> Get Start</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+ <div class="card card-panel">
+ <div class="card-header"><h3 class="text-blu">Need help?<br> We're here for you.</h3></div>
+  <div class="card-body">
+  
+  
+  
+<ul class="par_li"> 
+<li><a href="mailto:info@vitelglobal.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
+  <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM15 7.383l-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2Z"/>
+</svg> info@vitelglobal.com</a></li>
+<li>
+<a onclick="myFunction()">
+<div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+  <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+  <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+</svg></div> <div class="cbox pad0">Chat with a sales representative</div></a></li>
+<li><div class="cbox"><a href="tel:+18555584835" class="cbox"><div class="ibox">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+  </svg>
+</div> Call - 855-55V-ITEL(84835)</a></div></li>
+<li><a href="{% url 'get-rolling' %}"><div class="ibox"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+</svg></div> <div class="cbox">Request Quote</div></a></li>
+<li><a href="{% url 'voip-live-demo' %}"><div class="ibox"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+</svg></div> <div class="cbox">Live Demo</div></a></li>
+</ul>
+
+  </div>
+ </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+  {% include 'footer.html' %}
+
+
+
+</body>
+<script>
+// refresh for captcha
+$(function() {
+    // Add refresh button after field (this can be done in the template as well)
+    $('#id_captcha_1').after($('<a href="#void" class="captcha-refresh"><svg width="26" height="26" fill="none" stroke="#1c1c1c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 19v-4h-4"></path><path d="M4 13a8.1 8.1 0 0 0 15.5 2"></path><path d="M4 5v4h4"></path><path d="M20 11A8.1 8.1 0 0 0 4.5 9"></path></svg></a>'));
+
+    // Click-handler for the refresh-link
+    $('.captcha-refresh').click(function(){
+        var $form = $(this).parents('form');
+        var url = location.protocol + "//" + window.location.hostname + ":"
+                  + location.port + "/captcha/refresh/";
+
+        // Make the AJAX-call
+        $.getJSON(url, {}, function(json) {
+            $form.find('input[name="captcha_0"]').val(json.key);
+            $form.find('img.captcha').attr('src', json.image_url);
+        });
+
+        return false;
+    });
+});
+
+</script>
+
+<script>
+   $(window).bind("pageshow", function() {
+      var form = $('form'); 
+      form[0].reset();
+    });
+    
+  $('#partner_fname').on('keyup', function(){
+     $("#partner_fname").removeAttr('style');
+    $('#error1').css("display", "none");
+  })
+  $('#partner_lname').on('keyup', function(){
+     $("#partner_lname").removeAttr('style');
+    $('#error2').css("display", "none");
+  })
+  $('#partner_company').on('keyup', function(){
+     $("#partner_company").removeAttr('style');
+    $('#error3').css("display", "none");
+  })
+  $('#partner_state').on('keyup', function(){
+     $("#partner_state").removeAttr('style');
+    $('#error4').css("display", "none");
+  })
+  $('#partner_email').on('keyup', function(){
+     $("#partner_email").removeAttr('style');
+    $('#error5').css("display", "none");
+  })
+  $('#partner_phone').on('keyup', function(){
+     $("#partner_phone").removeAttr('style');
+    $('#error6').css("display", "none");
+  })
+  function setInputFilter(textbox, inputFilter, errMsg) {
+      [
+        "input",
+        "keydown",
+        "keyup",
+        "mousedown",
+        "mouseup",
+        "select",
+        "contextmenu",
+        "drop",
+        "focusout",
+      ].forEach(function (event) {
+        textbox.addEventListener(event, function (e) {
+          if (inputFilter(this.value)) {
+            if (["keydown", "mousedown", "focusout"].indexOf(e.type) >= 0) {
+              this.classList.remove("input-error");
+              this.setCustomValidity("");
+            }
+            this.oldValue = this.value;
+            this.oldSelectionStart = this.selectionStart;
+            this.oldSelectionEnd = this.selectionEnd;
+          } else if (this.hasOwnProperty("oldValue")) {
+            this.classList.add("input-error");
+            this.setCustomValidity(errMsg);
+            this.reportValidity();
+            this.value = this.oldValue;
+            this.setSelectionRange(
+              this.oldSelectionStart,
+              this.oldSelectionEnd
+            );
+          } else {
+            this.value = "";
+          }
+        });
+      });
+    }
+
+    setInputFilter(
+      document.getElementById("partner_phone"),
+      function (value) {
+        return /^[0-9()+-\s]*\.?[0-9()+-\s]*$/.test(value);
+      },
+      "Must be an integer"
+    );
+//validation
+  var recaptcha_response = "";
+    function verifyCaptcha(token) {
+    recaptcha_response = token;
+    document.getElementById("g-recaptcha-error").innerHTML = "";
+    }
+
+
+  // Partners
+function partners() {
+  var firstName = document.getElementById('partner_fname').value;
+  if (firstName == "") {
+    var input = document.getElementById('partner_fname').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'block';
+    document.getElementById('error2').style.display = 'none';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'none';
+    document.getElementById('error5').style.display = 'none';
+    document.getElementById('error6').style.display = 'none';
+    document.getElementById('error1').innerHTML = "*Please enter a First Name*";
+    document.getElementById('error1').style.color = 'red';
+    return false;
+  } else if (/[^a-zA-Z\-.\s/]/.test(firstName)) {
+    var input = document.getElementById('partner_fname').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'block';
+    document.getElementById('error2').style.display = 'none';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'none';
+    document.getElementById('error5').style.display = 'none';
+    document.getElementById('error6').style.display = 'none';
+    document.getElementById('error1').innerHTML = "*Special Characters & Numbers Not allowed*";
+    document.getElementById('error1').style.color = 'red';
+    return false;
+  }
+
+  var lastName = document.getElementById('partner_lname').value;
+  if (lastName == "") {
+    var input = document.getElementById('partner_lname').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'none';
+    document.getElementById('error2').style.display = 'block';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'none';
+    document.getElementById('error5').style.display = 'none';
+    document.getElementById('error6').style.display = 'none';
+    document.getElementById('error2').innerHTML = "*Please enter a Last Name*";
+    document.getElementById('error2').style.color = 'red';
+    return false;
+  } else if (/[^a-zA-Z\-.\s/]/.test(lastName)) {
+    var input = document.getElementById('partner_lname').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'none';
+    document.getElementById('error2').style.display = 'block';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'none';
+    document.getElementById('error5').style.display = 'none';
+    document.getElementById('error6').style.display = 'none';
+    document.getElementById('error2').innerHTML = "*Special Characters & Numbers Not allowed*";
+    document.getElementById('error2').style.color = 'red';
+    return false;
+  }
+
+  var companyName = document.getElementById('partner_company').value;
+  if (companyName == "") {
+    var input = document.getElementById('partner_company').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'none';
+    document.getElementById('error2').style.display = 'none';
+    document.getElementById('error3').style.display = 'block';
+    document.getElementById('error4').style.display = 'none';
+    document.getElementById('error5').style.display = 'none';
+    document.getElementById('error6').style.display = 'none';
+    document.getElementById('error3').innerHTML = "*Please enter a Company Name*";
+    document.getElementById('error3').style.color = 'red';
+    return false;
+  } 
+
+  var state = document.getElementById('partner_state').value;
+  if (state == "") {
+    var input = document.getElementById('partner_state').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'none';
+    document.getElementById('error2').style.display = 'none';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'block';
+    document.getElementById('error5').style.display = 'none';
+    document.getElementById('error6').style.display = 'none';
+    document.getElementById('error4').innerHTML = "*Please enter a State*";
+    document.getElementById('error4').style.color = 'red';
+    return false;
+  } else if (/[^a-zA-Z\-.\s/]/.test(state)) {
+    var input = document.getElementById('partner_state').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'none';
+    document.getElementById('error2').style.display = 'none';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'block';
+    document.getElementById('error5').style.display = 'none';
+    document.getElementById('error6').style.display = 'none';
+    document.getElementById('error4').innerHTML = "*Special Characters & Numbers Not allowed*";
+    document.getElementById('error4').style.color = 'red';
+    return false;
+  }
+
+  var email = document.getElementById('partner_email').value;
+  var validRegex = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;
+  if (email == "") {
+    var input = document.getElementById('partner_email').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'none';
+    document.getElementById('error2').style.display = 'none';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'none';
+    document.getElementById('error5').style.display = 'block';
+    document.getElementById('error6').style.display = 'none';
+    document.getElementById('error5').innerHTML = "*Please enter a Email_ID*";
+    document.getElementById('error5').style.color = 'red';
+    return false;
+  } else if (!email.match(validRegex)) {
+    var input = document.getElementById('partner_email').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'none';
+    document.getElementById('error2').style.display = 'none';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'none';
+    document.getElementById('error5').style.display = 'block';
+    document.getElementById('error6').style.display = 'none';
+    document.getElementById('error5').innerHTML = "*Please enter valid Email_ID*";
+    document.getElementById('error5').style.color = 'red';
+    return false;
+  }
+
+
+  var phone = document.getElementById('partner_phone').value;
+  if (phone == "") {
+    var input = document.getElementById('partner_phone').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'none';
+    document.getElementById('error2').style.display = 'none';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'none';
+    document.getElementById('error5').style.display = 'none';
+    document.getElementById('error6').style.display = 'block';
+    document.getElementById('error6').innerHTML = "*Please enter a Mobile Number*";
+    document.getElementById('error6').style.color = 'red';
+    return false;
+  } else if (phone.length < 10) {
+    var input = document.getElementById('partner_phone').style.borderColor = 'orange';
+    document.getElementById('error1').style.display = 'none';
+    document.getElementById('error2').style.display = 'none';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'none';
+    document.getElementById('error5').style.display = 'none';
+    document.getElementById('error6').style.display = 'block';
+    document.getElementById('error6').innerHTML = "*Mobile Number must be Min 10*";
+    document.getElementById('error6').style.color = 'red';
+    return false;
+  }
+
+    //captcha
+    if (recaptcha_response.length == 0) {
+      document.getElementById('error1').style.display = 'none';
+    document.getElementById('error2').style.display = 'none';
+    document.getElementById('error3').style.display = 'none';
+    document.getElementById('error4').style.display = 'none';
+    document.getElementById('error5').style.display = 'none';
+    document.getElementById('error6').style.display = 'none';
+      document.getElementById("g-recaptcha-error").innerHTML =
+      '<span style="color:red;">*This field is required.</span>';
+      return false;
+    }else if (recaptcha_response.length != 0) {
+      document.getElementById("partnerSubmit").disabled = true;
+    }
+}
+
+// $(document).ready(function() {
+//   $('#partnerForm').submit( function(event) {
+//   // disable to avoid double submission
+//   footer();
+//   // const recaptcha_response = "";
+//   if(recaptcha_response.length != 0 ) {
+//     $('#partnerSubmit').attr('disabled', true);
+//   }else {
+//     console.log("failure");
+//     return false;
+//   }
+  
+// });
+// });
+
+</script>
+<script>
+  // https://twitter.com/uixmat
+
+function scrollNav() {
+  $('.btn').click(function(){
+    $(".active").removeClass("active");     
+    $(this).addClass("active");
+    
+    $('html, body').stop().animate({
+      scrollTop: $($(this).attr('href')).offset().top - 160
+    }, 300);
+    return false;
+  });
+}
+scrollNav();
+</script>
+</html>

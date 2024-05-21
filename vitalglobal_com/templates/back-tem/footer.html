@@ -1,0 +1,698 @@
+<!-- <div class="bg1"></div> -->
+
+<div class="mob_footer">
+  <ul class="">
+    <li>
+<a href="{% url 'voip-live-demo' %}" title="voip phone live demo"><i class="bi bi-cast"></i> <span class="">Live Demo</span></a>
+    </li>
+    <li>
+      <a href="{% url 'get-rolling' %}" title="Request Quote"><i class="bi bi-bookmark-star"></i> <span class="">Kick Start</span></a
+      >
+    </li>
+
+<li>
+<a href="https://portal.vitelglobal.in/" target="_blank" class="d-flex align-items-center"><i class="bi bi-lock"></i> <span>vOS Login</span></a>
+</li>
+  </ul>
+</div>
+
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="{% url 'overview' %}">Overview</a></li>
+                <li><a href="{% url 'careers' %}">Careers</a></li>
+                <li><a href="https://www.vitelglobal.in/blog/" target="_blank">Blog</a></li>
+                <li><a href="{% url 'unlimited-calling-plans' %}">Plans</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                <li><a href="{% url 'terms-and-conditions' %}">Terms & Condition</a></li>
+                <li><a href="{% url 'privacy-policy' %}">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Products</h4>
+              <ul>
+                <li><a href="{% url 'cloud-based-business-phone' %}">Cloud Business Phones</a></li>  
+      <li><a href="{% url 'voip-video-conference' %}">Video Meetings</a></li>  
+      <li><a href="{% url 'team-messaging' %}">Team Messaging</a></li> 
+      <li><a href="{% url 'communication-apis' %}">Communication API's</a></li>  
+      <li><a href="{% url 'desktop-voip-app' %}">Desktop App</a></li> 
+      <li><a href="{% url 'mobile-voip-app' %}">Mobile App</a></li> 
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Features</h4>
+              <ul>
+                <li><a href="{% url 'cloud-voip-solutions' %}">Cloud VoIP Solutions</a></li>
+    <li><a href="{% url 'cloud-pbx-phone-system' %}">Cloud PBX System</a></li>
+    <li><a href="{% url 'global-scope' %}">Global Scope</a></li> 
+    <li><a href="{% url 'crm-integration' %}">CRM Integration</a></li>
+    <li><a href="{% url 'ats-integration' %}">ATS Integration</a></li>
+    <li><a href="{% url 'voip-api-integration' %}">API Integration</a></li>
+    <li><a href="{% url 'business-phone-features' %}">Business Phone Features</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 footer-info border-start">
+              <h3 class="fw-600 m-0">Subscribe To Our Newsletter</h3>
+              <p class="mb-3">
+                Join our subscribers list to get the latest news, updates and
+                special offers delivered directly in your inbox.
+              </p>
+              
+                <form
+                  class=""
+                  action="{% url 'newsletter' %}"
+                  method="POST"
+                  id="subscribeForm"
+                  onsubmit="return subscribe()"
+                ><div class="input-group">
+                  {% csrf_token %}
+                  <input
+                    type="text"
+                    name="newsletteremail"
+                    id="newsletteremail"
+                    class="form-control"
+                    placeholder="Enter Email.."
+                  />
+
+                  <button class="btn btn-primary" type="submit" name="subscrib" id="subscrib">
+                    Subscribe
+                  </button></div>
+                  <div id="suberror1" style="display: none"></div>
+                </form>
+              
+              
+                 
+               
+              
+              <div class="social-links mt-3 border-top py-3">
+                <span class="me-3">Follow Us</span>
+                <a
+                  href="https://twitter.com/vitel_global"
+                  target="_blank"
+                  class="twitter"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/VitelGlobal"
+                  target="_blank"
+                  class="facebook"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+
+                <a
+                  href="https://www.youtube.com/channel/UCrh3B9VT9xZkPsQNlyTjsxw"
+                  target="_blank"
+                  class="youtube-plus"
+                  ><i class="bx bxl-youtube"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/2295942?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A2295942%2Cidx%3A2-1-2%2CtarId%3A1476802707079%2Ctas%3Avitel%20glo"
+                  target="_blank"
+                  class="linkedin"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright text-center">
+      &copy; Copyright 2022 <strong><span>Vitelglobal.com</span></strong
+      >. All Rights Reserved.  
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+  ><i class="bi bi-arrow-up-short"></i
+></a>
+
+<!-- Vendor JS Files 
+<script src="assets/vendor/aos/aos.js"></script>-->
+<script src="/static/assets/js/jquery.min.js"></script>
+<script src="/static/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+<script src="/static/assets/js/menu.js"></script>
+<!-- <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script> 
+Template Main JS File -->
+<script src="/static/assets/js/main.js"></script>
+
+<!-- Kick Start Modal -->
+<div
+  class="modal fade"
+  id="kickStart"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-fullscreen mdm">
+    <div class="modal-content">
+      <div class="row h-100">
+        <div class="col-md-6">
+          <div class="text-end p-3">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <form>
+                <h4 class="fw-bold main-h text-center mb-5">
+                  Create A Free Account
+                </h4>
+                <div class="row">
+                  <div class="mb-3 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control demoInputBox"
+                      id="fname"
+                      name="fname"
+                      placeholder="First Name *"
+                    />
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastname"
+                      name="organizationname"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mb-3 col-md-12">
+                    <input
+                      type="text"
+                      class="form-control demoInputBox"
+                      id="email"
+                      name="email"
+                      placeholder="Email ID *"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mb-3 col-md-12">
+                    <input
+                      type="text"
+                      class="form-control demoInputBox"
+                      id="phoneno"
+                      name="phoneno"
+                      placeholder="Phone No. *"
+                      maxlength="20"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mb-3 col-md-12">
+                    <input
+                      type="text"
+                      class="form-control demoInputBox"
+                      id="phoneno"
+                      name="phoneno"
+                      placeholder=" Company *"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mb-3 col-md-12">
+                    <input
+                      type="text"
+                      class="form-control demoInputBox"
+                      id="phoneno"
+                      name="phoneno"
+                      placeholder="No Of Employes *"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mb-3 col-md-6">
+                    <select
+                      class="form-select"
+                      name="howyouknow"
+                      id="howyouknow"
+                    >
+                      <option value="">--How did you hear about us--</option>
+                      <option value="Google">Google</option>
+                      <option value="Social Media">Social Media</option>
+                      <option value="Referral">Referral</option>
+                      <option value="Email Marketing">Email Marketing</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">254785</span>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control demoInputBox"
+                        id="captchacode"
+                        name="captchacode"
+                        placeholder="Enter Captcha Code *"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-lg bt-blue">
+                  Get Started
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- <div class="modal-body cccc">
+
+</div> -->
+        </div>
+
+        <div class="col-md-6 bgcc">
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators indicators1" style="top: 400px">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="imcs">
+                  <img src="static/assets/img/ivr2.jpg" class="img-fluid" />
+                  <p>Krish</p>
+                </div>
+                <div class="imcs1 m-0 fw-bold">
+                  <p>
+                    " After Some representative placeholder content for the
+                    first slide.<br />
+                    representative placeholder content for the first"
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="imcs">
+                  <img src="static/assets/img/ivr2.jpg" class="img-fluid" />
+                  <p>Krish</p>
+                </div>
+                <div class="imcs1 m-0 fw-bold">
+                  <p>
+                    After Some representative placeholder content for the first
+                    slide.<br />
+                    representative placeholder content for the first"
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imcs">
+                  <img src="static/assets/img/ivr2.jpg" class="img-fluid" />
+                  <p>Krish</p>
+                </div>
+                <div class="imcs1 m-0 fw-bold">
+                  <p>
+                    After Some representative placeholder content for the first
+                    slide.<br />
+                    representative placeholder content for the first"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Kick Start End-->
+
+<!-- Feedback Modal -->
+<div
+  class="modal fade"
+  id="feedBack"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <form
+      method="POST"
+      action="{% url 'feedback' %}"
+      onsubmit="return footer()"
+      id="feedbackForm"
+    >
+      {% csrf_token %}
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Please rate our service
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body" style="background: white">
+          <div class="form-group-row fw-500">Business Phone Service</div>
+          <div class="form-group-row therating align-items-center">
+            <label class="starlabel" for="inputtime">Quality of Service:</label>
+            <div class="rating">
+              <input
+                id="timing5"
+                name="ktiming"
+                type="radio"
+                value="5"
+                class="radio-btn hide"
+              />
+              <label for="timing5">☆</label>
+              <input
+                id="timing4"
+                name="ktiming"
+                type="radio"
+                value="4"
+                class="radio-btn hide"
+              />
+              <label for="timing4">☆</label>
+              <input
+                id="timing3"
+                name="ktiming"
+                type="radio"
+                value="3"
+                class="radio-btn hide"
+              />
+              <label for="timing3">☆</label>
+              <input
+                id="timing2"
+                name="ktiming"
+                type="radio"
+                value="2"
+                class="radio-btn hide"
+              />
+              <label for="timing2">☆</label>
+              <input
+                id="timing1"
+                name="ktiming"
+                type="radio"
+                value="1"
+                class="radio-btn hide"
+              />
+              <label for="timing1">☆</label>
+              <div class="clear"></div>
+              <div id="ferror1" style="display: none"></div>
+            </div>
+          </div>
+          <div class="form-group-row therating align-items-center">
+            <label class="starlabel" for="inputmatch">Customer Service:</label>
+            <div class="rating">
+              <input
+                id="starmatch5"
+                name="kmatch"
+                type="radio"
+                value="5"
+                class="radio-btn hide"
+              />
+              <label for="starmatch5">☆</label>
+              <input
+                id="starmatch4"
+                name="kmatch"
+                type="radio"
+                value="4"
+                class="radio-btn hide"
+              />
+              <label for="starmatch4">☆</label>
+              <input
+                id="stamatchr3"
+                name="kmatch"
+                type="radio"
+                value="3"
+                class="radio-btn hide"
+              />
+              <label for="stamatchr3">☆</label>
+              <input
+                id="starmatch2"
+                name="kmatch"
+                type="radio"
+                value="2"
+                class="radio-btn hide"
+              />
+              <label for="starmatch2">☆</label>
+              <input
+                id="star1match"
+                name="kmatch"
+                type="radio"
+                value="1"
+                class="radio-btn hide"
+              />
+              <label for="star1match">☆</label>
+              <div class="clear"></div>
+              <div id="ferror2" style="display: none"></div>
+            </div>
+          </div>
+
+          <div class="wrapper mt-2">
+            <label for="comp">Email</label>
+            <input
+              type="text"
+              class="form-control demoInputBox"
+              id="kcomp"
+              name="kcomp"
+              placeholder=""
+            />
+            <div id="ferror3" style="display: none"></div>
+          </div>
+          <div class="wrapper mt-2">
+            <div class="form-group">
+              <label for="inputtext">Suggestion</label>
+              <textarea
+                class="input form-control comment"
+                type="textarea"
+                id="kinputcomments"
+                name="comments"
+                rows="4"
+                cols="20"
+                wrap="hard"
+                placeholder="We care about your opinion. Please share your thoughts here."
+                maxlength="2000"
+              ></textarea>
+              <div id="ferror4" style="display: none"></div>
+              <div class="g-recaptcha mt-3" data-sitekey="6LfK-0IiAAAAAC9hJCu1oGBDdS-mJPBOvjmHv4ei" data-callback="verifyCaptcha"></div>
+              <div id="g-recaptcha-error"></div>
+            </div>
+          </div>
+          <div id="show"></div>
+        </div>
+        <div class="modal-footer">
+          <div class="row mt-2" style="text-align: right">
+            <div class="col-md-12">
+              <button class="btn btn-default" type="reset">Clear</button>
+              <button type="submit" class="btn btn-primary" id="feedbackSubmit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Feedback End Modal -->
+
+ 
+
+<script>
+  //validation
+  var recaptcha_response = "";
+  function verifyCaptcha(token) {
+    recaptcha_response = token;
+    document.getElementById("g-recaptcha-error").innerHTML = "";
+  }
+
+  // footer
+  $("#timing1, #timing2, #timing3, #timing4, #timing5").click(function(){
+    $('#ferror1').css("display", "none");
+  })
+  $("#starmatch1, #starmatch2, #starmatch3, #starmatch4, #starmatch5").click(function(){
+    $('#ferror2').css("display", "none");
+  })
+  $('#kcomp').on('keyup', function(){
+    $('#ferror3').css("display", "none");
+  })
+  $('#kinputcomments').on('keyup', function(){
+    $('#ferror4').css("display", "none");
+  })
+  $('#newsletteremail').on('keyup', function(){
+    $('#suberror1').css("display", "none");
+  })
+  function footer() {
+    // alert("I am here");
+    var getSelectedValue = document.querySelector(
+      'input[name="ktiming"]:checked'
+    );
+    // alert("this is here " + getSelectedValue);
+    if (getSelectedValue == null) {
+      document.getElementById("ferror1").style.display = "block";
+      document.getElementById("ferror2").style.display = "none";
+      document.getElementById("ferror3").style.display = "none";
+      document.getElementById("ferror4").style.display = "none";
+      document.getElementById("ferror1").innerHTML = "*Selected any one";
+      document.getElementById("ferror1").style.color = "red";
+      return false;
+    }
+
+    var SelectedValue = document.querySelector('input[name="kmatch"]:checked');
+    if (SelectedValue == null) {
+      document.getElementById("ferror1").style.display = "none";
+      document.getElementById("ferror2").style.display = "block";
+      document.getElementById("ferror3").style.display = "none";
+      document.getElementById("ferror4").style.display = "none";
+      document.getElementById("ferror2").innerHTML = "*Selected any one";
+      document.getElementById("ferror2").style.color = "red";
+      return false;
+    }
+    var companyName = document.getElementById("kcomp").value;
+    var validRegex =
+    /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;
+    if (companyName == "") {
+      var input = (document.getElementById("kcomp").style.borderColor =
+        "orange");
+      document.getElementById("ferror1").style.display = "none";
+      document.getElementById("ferror2").style.display = "none";
+      document.getElementById("ferror3").style.display = "block";
+      document.getElementById("ferror4").style.display = "none";
+      document.getElementById("ferror3").innerHTML =
+        "*Please enter a Email_ID*";
+      document.getElementById("ferror3").style.color = "red";
+      return false;
+    } else if (!companyName.match(validRegex)) {
+      var input = (document.getElementById("kcomp").style.borderColor =
+        "orange");
+      document.getElementById("ferror1").style.display = "none";
+      document.getElementById("ferror2").style.display = "none";
+      document.getElementById("ferror3").style.display = "block";
+      document.getElementById("ferror4").style.display = "none";
+      document.getElementById("ferror3").innerHTML =
+        "*Please enter valid Email_ID*";
+      document.getElementById("ferror3").style.color = "red";
+      return false;
+    }
+
+    var textarea = document.getElementById("kinputcomments").value;
+    if (textarea == "") {
+      var input = (document.getElementById("kinputcomments").style.borderColor =
+        "orange");
+      document.getElementById("ferror1").style.display = "none";
+      document.getElementById("ferror2").style.display = "none";
+      document.getElementById("ferror3").style.display = "none";
+      document.getElementById("ferror4").style.display = "block";
+      document.getElementById("ferror4").innerHTML = "*Please enter a Message*";
+      document.getElementById("ferror4").style.color = "red";
+      return false;
+    } else if (/[^0-9a-zA-Z\-=!.()+@:$&%'",.\s/?]/.test(textarea)) {
+      var input = (document.getElementById("kinputcomments").style.borderColor =
+        "orange");
+      document.getElementById("ferror1").style.display = "none";
+      document.getElementById("ferror2").style.display = "none";
+      document.getElementById("ferror3").style.display = "none";
+      document.getElementById("ferror4").style.display = "block";
+      document.getElementById("ferror4").innerHTML =
+        "*Special Characters & Numbers Not allowed*";
+      document.getElementById("ferror4").style.color = "red";
+      return false;
+    }
+
+    //captcha
+    if (recaptcha_response.length == 0) {
+      document.getElementById("ferror1").style.display = "none";
+      document.getElementById("ferror2").style.display = "none";
+      document.getElementById("ferror3").style.display = "none";
+      document.getElementById("ferror4").style.display = "none";
+      document.getElementById("g-recaptcha-error").innerHTML =
+        '<span style="color:red;">*This field is required.</span>';
+      return false;
+    }else if (recaptcha_response.length != 0) {
+      document.getElementById("feedbackSubmit").disabled = true;
+    }
+
+  }
+  //subscribe
+  function subscribe() {
+    var subEmail = document.getElementById("newsletteremail").value;
+
+    var validRegex =
+    /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;
+    if (subEmail == "") {
+      document.getElementById("newsletteremail").style.borderColor = "orange";
+      document.getElementById("suberror1").style.display = "block";
+      document.getElementById("suberror1").innerHTML = "*Please enter a Email_ID*";
+      document.getElementById("suberror1").style.color = "red";
+      return false;
+    } else if (!subEmail.match(validRegex)) {
+      document.getElementById("newsletteremail").style.borderColor = "orange";
+      document.getElementById("suberror1").style.display = "block";
+      document.getElementById("suberror1").innerHTML =
+        "*Please enter valid Email_ID*";
+      document.getElementById("suberror1").style.color = "red";
+      return false;
+    }else{
+      $('#subscrib').attr('disabled', true);
+    }
+  }
+
+
+</script>
+
+
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function (){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/60537803f7ce1827093183ca/1f5b2qm3d';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+
+

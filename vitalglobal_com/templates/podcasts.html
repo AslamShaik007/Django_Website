@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+<meta name="description" content="Stay up to date with the Vitel Global Podcasts consists of topics related to education, success stories, problem solving, brand awarness, VoIP features and more.">
+<meta name="robots" content="index, follow"> 
+<!-- Title -->
+<title>Podcasts | Vitel Global Communications</title>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.vitelglobal.com/podcasts" />
+<meta property="og:title" content="Podcasts | Vitel Global Communications" />
+<meta property="og:description" content="Stay up to date with the Vitel Global Podcasts consists of topics related to education, success stories, problem solving, brand awarness, VoIP features and more." />
+<meta property="og:image" content="https://vitelglobal.com/static/assets/images/business-messageing.webp" />
+<meta property="og:site_name" content="Vitelglobal" /> 
+
+ {% include 'topscripts.html' %} 
+<link rel="canonical" href="https://www.vitelglobal.com/podcasts"/>
+
+</head>
+
+<body>
+
+  
+{% include 'header.html' %}
+ 
+
+<section class="banercc "><div class="container">
+   <div class="row align-items-center justify-content-between">
+  <div class="col-md-5">
+    <h1>Tune In for Mesmerizing Podcasts from Vitel Global </h1>
+    <h4 class="text-blu f16">Industry related topics, Most trending topics, updates happening right now all can be listened through our podcast sessions.</h4>
+    <a href="{% url 'contact' %}" class="btn bt-blue btn-lg get-roll mb-4">Listen Now</a>
+  </div>
+  <div class="col-md-6">
+    <img src="static/assets/images/business-messageing.webp" alt="VoIP Podcasts" class="img-fluid">
+  </div>
+ </div>
+
+  </div>
+</section>
+
+
+
+<section id=" " class=" " >
+<div class="container">
+
+<div class="row align-items-center">
+{% for item in Podcasts %} 
+<div class="col-md-4 mb-3"> 
+  <iframe style="border-radius:12px" src="{{item.podcast_link}}" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+{% endfor %}
+
+</div>
+
+</div>
+</section>
+
+
+
+ 
+
+
+  <!-- ======= Footer ======= -->
+  
+{% include 'footer.html' %}
+
+
+
+
+</body>
+</html>

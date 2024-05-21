@@ -1,0 +1,410 @@
+@media (max-width:992px) {
+    .banercc h1, .banercc2 h1 {
+    font-size: 35px;
+}
+.nav-menus-wrapper {
+    display: none;
+}
+}
+@media (max-width:768px) {
+ul.logo-img li {
+width: calc(100%/2 - 20px);
+}
+ul.logo-img li img {
+    width: 150px; max-width:95%;
+}
+.banercc h4, .banercc2 h4 {
+    line-height: 24px;
+    font-size: 18px;
+}
+.banercc h1, .banercc2 h1 {
+    line-height: 34px;
+    font-size: 28px;
+}
+.mtitle, .mtitle_org {
+    font-size: 22px;
+}
+    .mb-4 {
+    margin-bottom: 1rem!important;
+}
+.mt-4 {
+    margin-top: 1rem!important;
+}
+.h5, h5 {
+    font-size: 1rem;
+}
+.emprow {
+    flex-direction: row;
+}
+#topbar .container {
+    justify-content: center;
+}
+.emprow>div {
+    width: 46%;
+    margin: 0 2% 2% 0;
+}
+.testimonials .carousel-item img {
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto 10px;
+}
+.test_col {
+    margin-left: 0;
+    border-bottom: solid 5px var(--orange);
+    border-right: none;
+}
+.ph_col {
+    height: 80px;
+}
+.ph_col img {
+    top: -75px;
+    bottom: 0;
+    margin-bottom: 25px;
+    width: 250px;
+}
+.section-bg {
+    border-radius: 50% 0/5% 40%}
+.banercc h1, .banercc2 h1 {
+    font-size: 26px;
+}
+#footer {
+    padding-bottom: 100px;
+}
+.widget-visible {
+    bottom: 100px;
+}
+.f16 {
+    font-size: 16px!important;
+}
+.navigation-portrait .megamenu-panel {
+    padding: 6px;
+}
+.mtitle {
+    font-size: 1.6rem;
+}
+.mtitle-m {
+    padding-top: 20px;
+}
+.mtitle_org {
+    font-size: 1.8rem;
+}
+.discover {
+    padding: 80px 0;
+}
+.discover p {
+    font-size: 16px;
+}
+.main-h {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.text-m {
+    font-size: 1.2rem;
+}
+.bus-card .card-body-box h5, .teams-mobile {
+    font-size: 18px!important;
+}
+.get-roll {
+    font-size: 18px;
+}
+section {
+    margin: 40px 0!important;
+}
+.mt150 {
+    margin-top: 420px!important;
+}
+.icon-box-mobile {
+    margin-top: 20px;
+}
+.icon-box-mobile-2 {
+    margin-top: 40px;
+}
+.pm-m {
+    padding: 50px 0;
+}
+.f-22 {
+    font-size: 22px!important;
+}
+.fs-5, .teams-mobile-2 {
+    font-size: 17px!important;
+}
+.baner-m {
+    margin: 5px 0 0!important;
+}
+.feature_s {
+    padding: 70px 0 0!important;
+}
+.newsroom-top {
+    margin-top: 120px!important;
+}
+.f20 {
+    font-size: 20px!important;
+}
+.banercc h4, .banercc2 h4, .services h6 {
+    line-height: 24px;
+}
+.about .icon-box i, .services .icon-box i {
+    padding: 8px 10px;
+}
+.about .icon-box h4, .about .icon-box p, .services .icon-box h4, .services .icon-box p {
+    text-align: left;
+}
+.py-100 {
+    padding: 40px 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .4rem;
+    line-height: 1.2;
+}
+.about .icon-box, .services .icon-box {
+    padding: 10px;
+    border: 1px dotted #eee;
+}
+.featur .icon-box h4 {
+    text-align: center;
+}
+.h3, h3 {
+    font-size: calc(1.2rem + .5vw);
+}
+.h2, h2 {
+    font-size: calc(1.25rem + .6vw);
+}
+.blogs p, p {
+    font-size: 15px;
+    line-height: 24px;
+}
+#footer .footer-top {
+    padding: 30px 0;
+}
+#footer .footer-top .footer-links ul li {
+    padding: 8px 0;
+}
+#footer .footer-top .footer-links {
+    margin-bottom: 20px;
+}
+.chat_bo {
+    bottom: 19%}
+.header-scrolled .logo {
+    width: 500px;
+}
+#header .d-none {
+    margin-right: 2%}
+.services .icon-box .icon {
+    margin-right: 4%;
+    margin-top: 4%}
+.bus-card .mtitle-m {
+    padding-top: 0!important;
+}
+.bus-card .card-body-box p {
+    text-align: left!important;
+    font-size: 15px!important;
+    line-height: 21px;
+}
+.bus-card .card-body-box .icon-box .learn_bt {
+    text-align: left!important;
+}
+}@media (max-width:576px) {
+.learn_bt {
+    font-size: 15px;
+}
+    .featur .icon-box, .tx-center {
+    text-align: center;
+}
+.featur .icon-box {
+    display: inherit;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container {
+    max-width: 96%}
+.m-flex {
+    display: flex;
+    align-items: flex-start;
+}
+.m-flex .v_opti {
+    margin-right: 20px;
+}
+.m150, section {
+    margin: 70px 0!important;
+}
+.banercc { 
+    margin: 50px 0!important;
+}
+.v_opti {
+    width: 40px!important;
+}
+.mtitle_org {
+    font-size: 1.4rem;
+}
+.discover {
+    padding: 40px 0;
+}
+.mt-5 {
+    margin-top: 1rem!important;
+}
+.mb-5 {
+    margin-bottom: 1rem!important;
+}
+.mtitle {    
+font-size: 25px;
+    line-height: initial;
+    margin-bottom: 0px;
+}
+.nycfc, .services img {
+    margin-bottom: 20px;
+}
+.p-5 {
+    padding: 1.5rem!important;
+}
+.testimonial-area {
+    padding: 20px 0 62px;
+}
+.cta {
+    padding: 20px 0;
+}
+.banercc h1, .banercc2 h1 {
+    font-size: 22px;
+}
+.about img {
+    margin-top: 20px;
+}
+.mt150 {
+    margin-top: 40px!important;
+}
+.starlabel {
+    margin: 10px 0;
+    width: 44%}
+.emprow>div {
+    width: 46%;
+    margin: 0 2% 5% 0;
+}
+.emprow label h2 {
+    margin-bottom: 0!important;
+    padding: 5px;
+}
+.get-tit h1, .get-tit h4 {
+    font-size: 18px;
+}
+#about h2, #about h6 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.py-5 {
+    padding-top: 2rem!important;
+    padding-bottom: 2rem!important;
+}
+.h2, h2 {
+    font-size: calc(1rem + .8vw);
+}
+}@media (max-width:1024px) {
+    .bus-card .card-body-box .icon-box svg {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+.bus-card .card-body-box .icon-box {
+    padding: 10px;
+    text-align: left!important;
+    margin-bottom: 10px;
+}
+.mb-1 {
+    margin-bottom: 1.25rem!important;
+}
+}@media (max-width:500px) {
+    .part-img {
+    display: flex;
+    margin: 10px 0;
+}
+.pat_img {
+    flex: 1;
+    margin-top: 0!important;
+    padding: 0 5px;
+}
+.pat_img img {
+    height: auto;
+    min-height: 70px;
+}
+.plan_pr .packages {
+    margin: 20px 0!important;
+}
+}@media (max-width:360px) {
+    #topbar .contact-info a {
+    font-size: 10px;
+}
+}@media (min-width:999px) {
+    #sidebarMenu, .sidebarIconToggle {
+    display: none;
+}
+}@media (max-width:998px) and (min-width:767px) {
+    .d-md-block {
+    display: block!important;
+    position: absolute;
+    right: 20%}                             
+    .logo {
+        margin-top: 0px;
+    }
+
+}
+
+
+
+/* county pages start */
+@media screen and (max-width:767px) {
+    .countylist {
+        justify-content: left !important;
+    }
+    .countylist h3{
+        text-align: left !important;
+    }
+    .countyul{
+        column-count: 2;
+        padding-left: 0;
+    }
+    
+    .countyul li{
+        font-size: 14px;
+    }
+    .mb-5 {
+        margin-bottom: 1rem!important;
+    }
+   
+}
+@media (max-width:991px) and (min-width:767px) {
+    .countylist{
+        justify-content: start !important;
+
+    }
+    .countylist h3{
+        text-align: center;
+    }
+    .countyul{
+        column-count: 3;
+        padding-left: 0;
+    }
+    .mb-5 {
+        margin-bottom: 1.5rem!important;
+    }
+
+}
+/* county pages end */
+
+
+
+@media (min-width:999px) {                   
+    #sidebarMenu, .sidebarIconToggle {
+    display: none;
+}
+
+}
+
+ 
+
+@media (min-width:992px) and (max-width:998px)  {
+    .nav-menus-wrapper{
+        display: none;
+    }
+    .sidebarIconToggle {
+        top: 25px;
+        right: 10%;
+    }
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+  <meta name="description"
+    content="{{EBookdata.description}}">
+  <meta name="keywords"
+    content="{{EBookdata.keyword}}">
+  <meta name="robots" content="index, follow">
+  <!-- Title -->
+  <title> {{EBookdata.title}}</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.vitelglobal.com/e-books/{{EBookdata.perma_link}}" />
+  <meta property="og:title" content="{{EBookdata.title}}" />
+  <meta property="og:description"
+    content="{{EBookdata.description}}" />
+  <meta property="og:image" content="https://www.vitelglobal.com/media/{{EBookdata.ebook_image}}" />
+  <meta property="og:site_name" content="Vitelglobal" />
+  <link rel="canonical" href="https://www.vitelglobal.com/e-books/{{EBookdata.perma_link}}"/>
+
+  {% include 'topscripts.html' %}
+  <!-- <link rel="canonical" href="https://www.vitelglobal.com/e-books"/> -->
+
+
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+
+
+  {% include 'header.html' %}
+
+
+  <section id="cta " class="cta " style="margin-top: 130px;">
+    <div class="container">
+
+      <div class="row align-items-center">
+        <div class="col-md-12 text-center">
+
+          <h1 class="text-white">Download Vitel Global’s Latest Recent E-book Entitled</h1>
+ 
+        </div>
+        
+
+      </div>
+
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="row">
+            <div class="col-md-6">
+              
+              <h1 class="fw-bold text-blu mb-3">“{{ EBookdata.title }}”</h1>
+              {% if EBookdata.paragraph %}
+              <p class="fw-bold">{{ EBookdata.paragraph }}</p>
+              {% endif %}
+              <button href="" class="btn bt-blue btn-lg" data-bs-toggle="modal" data-bs-target="#eBook" value="hoola" onclick="applyJob('{{EBookdata.enumber}}')">Download</button>
+            </div>
+            <div class="col-md-6">
+              <a href="" data-bs-toggle="modal" data-bs-target="#eBook"><img src="https://www.vitelglobal.com/media/{{EBookdata.ebook_image}}" alt="ebook" class="img-fluid border" onclick="applyJob('{{EBookdata.enumber}}')"></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======= Footer ======= -->
+
+  {% include 'footer.html' %}
+
+  <!-- Modal -->
+  <div class="modal fade" id="eBook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form method="POST" action="{% url 'e-books' %}" onsubmit="return ebook()" id='e-booksform'>
+        {% csrf_token %}
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Download E-Book</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="mail-status_to" class="font-weight-bold text-success text-center" style=" height: auto;"></div>
+            <div class="row">
+              <div class="mb-3 col-md-12">
+                <input type="hidden" class="form-control" id="ebookid" name='ebookid' placeholder="ebookid">
+                <input type="text" value="{{ form.data.yourname}}" name="yourname" class="form-control" id="yourname" placeholder="Your Name*">
+                <div id="bookerror1" style="display: none"></div>
+              </div>
+              <div class="mb-3 col-md-12">
+                <input type="text" value="{{ form.data.youremail}}" class="form-control" name="youremail" id="youremail" placeholder="Your Email *" />
+                <div id="bookerror2" style="display: none"></div>
+
+              </div>
+              <div class="mb-3 col-md-12">
+                <input type="text" value="{{ form.data.yourphone}}" class="form-control" name="yourphone" id="yourphone"
+                  placeholder="Phone No *" maxlength="20" minlength="10" autocomplete="off" />
+                <div id="bookerror3" style="display: none"></div>
+              </div>
+              <div class="mb-3 form-group col-md-12">
+                <input type="text" value="{{ form.data.yourorganization}}" class="form-control" name="yourorganization" id="yourorganization"
+                  placeholder="Organization Name *" autocomplete="off" />
+                <div id="bookerror4" style="display: none"></div>
+              </div>
+              <div class="mb-3 form-group col-md-12">
+                <div>
+                  {{ form.captcha }}
+                  <label style="color: red;">{{ error }}</label>
+                  <div id="errorFromCapcheEbookPage" style="display: block; color: red;"></div>
+                </div>
+                <!-- <div class="g-recaptcha" data-sitekey="6LfK-0IiAAAAAC9hJCu1oGBDdS-mJPBOvjmHv4ei"
+                  data-callback="verifyCaptcha1"></div>
+                <div id="g-recaptcha-cerror1"></div> -->
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="reset" class="btn btn-secondary" id="EbooksReset">Reset</button>
+            <button type="submit" class="btn btn-primary" id='ebookSubmit'>Submit</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
+<script>
+  function applyJob(id) {
+    document.getElementById("ebookid").value = id;
+  }
+</script>
+<script>
+
+  // refresh for captcha
+  $(function() {
+    // Add refresh button after field (this can be done in the template as well)
+    $('#id_captcha_1').after($('<a href="#void" class="captcha-refresh"><svg width="26" height="26" fill="none" stroke="#1c1c1c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 19v-4h-4"></path><path d="M4 13a8.1 8.1 0 0 0 15.5 2"></path><path d="M4 5v4h4"></path><path d="M20 11A8.1 8.1 0 0 0 4.5 9"></path></svg></a>'));
+
+    // Click-handler for the refresh-link
+    $('.captcha-refresh').click(function(){
+        var $form = $(this).parents('form');
+        var url = location.protocol + "//" + window.location.hostname + ":"
+                  + location.port + "/captcha/refresh/";
+
+        // Make the AJAX-call
+        $.getJSON(url, {}, function(json) {
+            $form.find('input[name="captcha_0"]').val(json.key);
+            $form.find('img.captcha').attr('src', json.image_url);
+        });
+
+        return false;
+    });
+});
+
+
+  // var recaptcha_response1 = "";
+  // function verifyCaptcha1(token) {
+  //   recaptcha_response1 = token;
+  //   document.getElementById("g-recaptcha-cerror1").innerHTML = "";
+  // }
+  $("#EbooksReset").click(function () {
+    $('#bookerror1').css('display', 'none');
+    $('#bookerror2').css('display', 'none');
+    $('#bookerror3').css('display', 'none');
+    $('#error2').css('display', 'none');
+
+    $("#yourname").removeAttr('style');
+    $("#youremail").removeAttr('style');
+    $("#yourphone").removeAttr('style');
+    $("#yourorganization").removeAttr('style');
+  })
+  $('#yourname').on('keyup', function () {
+    $("#yourname").removeAttr('style');
+    $('#bookerror1').css("display", "none");
+  })
+  $('#youremail').on('keyup', function () {
+    $("#youremail").removeAttr('style');
+    $('#bookerror2').css("display", "none");
+  })
+  $('#yourphone').on('keyup', function () {
+    $("#yourphone").removeAttr('style');
+    $('#bookerror3').css("display", "none");
+  })
+  $('#yourorganization').on('keyup', function () {
+    $("#yourorganization").removeAttr('style');
+    $('#bookerror4').css("display", "none");
+  })
+
+
+  function setInputFilter(textbox, inputFilter, errMsg) {
+    [
+      "input",
+      "keydown",
+      "keyup",
+      "mousedown",
+      "mouseup",
+      "select",
+      "contextmenu",
+      "drop",
+      "focusout",
+    ].forEach(function (event) {
+      textbox.addEventListener(event, function (e) {
+        if (inputFilter(this.value)) {
+          if (["keydown", "mousedown", "focusout"].indexOf(e.type) >= 0) {
+            this.classList.remove("input-error");
+            this.setCustomValidity("");
+          }
+          this.oldValue = this.value;
+          this.oldSelectionStart = this.selectionStart;
+          this.oldSelectionEnd = this.selectionEnd;
+        } else if (this.hasOwnProperty("oldValue")) {
+          this.classList.add("input-error");
+          this.setCustomValidity(errMsg);
+          this.reportValidity();
+          this.value = this.oldValue;
+          this.setSelectionRange(
+            this.oldSelectionStart,
+            this.oldSelectionEnd
+          );
+        } else {
+          this.value = "";
+        }
+      });
+    });
+  }
+
+  setInputFilter(
+    document.getElementById("yourphone"),
+    function (value) {
+      return /^[0-9()+-\s]*\.?[0-9()+-\s]*$/.test(value);
+    },
+    "Must be an integer"
+  );
+
+
+  //validation
+
+  // Contact us this function is for validation when clicked on save button 
+  function ebook(e) {
+    var name = document.getElementById("yourname").value;
+    if (name == "") {
+      var input = (document.getElementById("yourname").style.borderColor =
+        "orange");
+      document.getElementById("bookerror1").style.display = "block";
+      document.getElementById("bookerror2").style.display = "none";
+      document.getElementById("bookerror3").style.display = "none";
+      document.getElementById("bookerror4").style.display = "none";
+      document.getElementById("bookerror1").innerHTML =
+        "*Please enter a Your Name*";
+      document.getElementById("bookerror1").style.color = "red";
+      return false;
+    } else if (/[^a-zA-Z\-.\s/]/.test(name)) {
+      var input = (document.getElementById("yourname").style.borderColor =
+        "orange");
+      document.getElementById("bookerror1").style.display = "block";
+      document.getElementById("bookerror2").style.display = "none";
+      document.getElementById("bookerror3").style.display = "none";
+      document.getElementById("bookerror4").style.display = "none";
+      document.getElementById("bookerror1").innerHTML =
+        "*Special Characters & Numbers Not allowed*";
+      document.getElementById("bookerror1").style.color = "red";
+      return false;
+    }
+    var email = document.getElementById("youremail").value;
+    var validRegex =
+      /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;;
+    if (email == "") {
+      var input = (document.getElementById("youremail").style.borderColor =
+        "orange");
+      document.getElementById("bookerror1").style.display = "none";
+      document.getElementById("bookerror2").style.display = "block";
+      document.getElementById("bookerror3").style.display = "none";
+      document.getElementById("bookerror4").style.display = "none";
+      document.getElementById("bookerror2").innerHTML =
+        "*Please enter a Email_ID*";
+      document.getElementById("bookerror2").style.color = "red";
+      return false;
+    } else if (!email.match(validRegex)) {
+      var input = (document.getElementById("youremail").style.borderColor =
+        "orange");
+      document.getElementById("bookerror1").style.display = "none";
+      document.getElementById("bookerror2").style.display = "block";
+      document.getElementById("bookerror3").style.display = "none";
+      document.getElementById("bookerror4").style.display = "none";
+      document.getElementById("bookerror2").innerHTML =
+        "*Please enter valid Email_ID*";
+      document.getElementById("bookerror2").style.color = "red";
+      return false;
+    }
+    var phone = document.getElementById("yourphone").value;
+    if (phone == "") {
+    var input3 = (document.getElementById("yourphone").style.borderColor = "orange");
+    document.getElementById("bookerror1").style.display = "none";
+      document.getElementById("bookerror2").style.display = "none";
+      document.getElementById("bookerror3").style.display = "block";
+      document.getElementById("bookerror4").style.display = "none";
+    document.getElementById("bookerror3").innerHTML = "*Please enter a Mobile Number*";
+    document.getElementById("bookerror3").style.color = "red";
+    return false;
+  } else if (phone.length < 10 ) {
+    var input3 = (document.getElementById("yourphone").style.borderColor =
+      "orange");
+    document.getElementById("bookerror1").style.display = "none";
+      document.getElementById("bookerror2").style.display = "none";
+      document.getElementById("bookerror3").style.display = "block";
+      document.getElementById("bookerror4").style.display = "none";
+    document.getElementById("bookerror3").innerHTML =  "*Mobile Number must be Min 10*";
+    document.getElementById("bookerror3").style.color = "red";
+    return false;
+  }
+
+   var yourorganization = document.getElementById("yourorganization").value;
+    if (yourorganization == "") {
+      var input = (document.getElementById("yourorganization").style.borderColor =
+        "orange");
+      document.getElementById("bookerror1").style.display = "none";
+      document.getElementById("bookerror2").style.display = "none";
+      document.getElementById("bookerror3").style.display = "none";
+      document.getElementById("bookerror4").style.display = "block";
+      document.getElementById("bookerror4").innerHTML =
+        "*Please enter a Your Organization*";
+      document.getElementById("bookerror4").style.color = "red";
+      return false;
+    } else if (/[^a-zA-Z\-.\s/]/.test(yourorganization)) {
+      var input = (document.getElementById("yourorganization").style.borderColor =
+        "orange");
+      document.getElementById("bookerror1").style.display = "none";
+      document.getElementById("bookerror2").style.display = "none";
+      document.getElementById("bookerror3").style.display = "none";
+      document.getElementById("bookerror4").style.display = "block";
+      document.getElementById("bookerror4").innerHTML =
+        "*Special Characters & Numbers Not allowed*";
+      document.getElementById("bookerror4").style.color = "red";
+      return false;
+    }
+  var id_captcha_1 = document.getElementById("id_captcha_1").value;
+    
+  if(id_captcha_1 == ""){
+    document.getElementById("errorFromCapcheEbookPage").innerHTML =
+      "*Please enter captcha";
+      return false
+  }
+
+  }
+
+</script>

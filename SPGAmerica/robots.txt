@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: 
+Disallow: /blog/wp-content/*
+Disallow: /static/*
+Disallow: /blog/*?s=
+
+sitemap: https://www.spgamerica.com/sitemap.xml
+
+

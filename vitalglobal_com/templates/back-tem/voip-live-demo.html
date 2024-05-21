@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Do you have queries about VoIP business phones? Register and schedule your FREE live demo today and make your work force productive with collaboration tools."
+    />
+    <meta name="robots" content="index, follow" />
+    <!-- Title -->
+    <title>
+      Schedule Your Free Live Demo with Vitel Global VoIP Service
+    </title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.vitelglobal.in/" />
+    <meta
+      property="og:title"
+      content="Cloud PBX Provider | CRM Integration | Conferencing"
+    />
+    <meta
+      property="og:description"
+      content="Do you have queries about VoIP business phones? Register and schedule your FREE live demo today and make your work force productive with collaboration tools."
+    />
+    <meta property="og:image" content="https://vitelglobal.in/img/New01.jpg" />
+    <meta property="og:site_name" content="Vitelglobal" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="static/assets/css/datepicker.min.css"
+    />
+    <style type="text/css">
+      .input-group-append {
+        cursor: pointer;
+      }
+      .form-control {
+    box-shadow: 1px 1px 2px 0px rgb(161 170 166 / 50%);
+    border: 1px solid #ededed;
+}
+    </style>
+    {% include 'topscripts.html' %}
+  </head>
+
+  <body>
+    {% include 'header.html' %}
+
+    <section id="about" class="about mt150">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6">
+            
+            <h6 class="text-org">#livedemo</h6>
+            <h4 class="fw-bold main-h">Join our next live demo.</h4>
+            <h6 class="text-blu mb-3">Fill in the form and we'll send you an invite and let’s have
+              an exciting virtual tour.</h6>
+
+<div class="card-">
+                 
+                <div class="card-body-">
+                  <form
+                    target="_blank"
+                    name="partnerForm"
+                    class=""
+                    role="form"
+                    id="liveDemoForm"
+                    method="POST"
+                    action="{% url 'voip-live-demo' %}"
+                    onsubmit="return livedemo()"
+                  >
+                    {% csrf_token %}
+                    <div class="row">
+                      <div class="col-md-12">
+                        <span class="">Select the Slot</span>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="input-group mb-4">
+                          <i class="bi bi-calendar-date input-group-text"></i>
+                          <input
+                            class="datepicker_input form-control"
+                            autocomplete="off"
+                            type="date"
+                            id="datepicker"
+                            name="datepicker"
+                          />
+                        </div>
+                        <div class="col-md-12">
+                          <div
+                            id="verror8"
+                            class="f-err"
+                            style="display: none"
+                          ></div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3 col-lg-6"><div class="mt-2">
+                        <label for="3" class="mr-15"
+                          ><input
+                            type="radio"
+                            name="time"
+                            id="time1"
+                            value="15:00"
+                          />
+                          <strong>3:00 PM EST</strong></label
+                        >
+                        <label for="4">
+                          <input
+                            type="radio"
+                            name="time"
+                            id="time2"
+                            value="16:00"
+                          />
+                          <strong>4:00 PM EST</strong>
+                        </label>
+                        <div id="verror9" style="display: none"></div>
+                      </div></div>
+                    </div>
+                    <div class="row">
+                      <div class="mb-3 col-lg-6">
+                        <label for="cname">Company Name</label>
+                        <input
+                          type="text"
+                          name="vcname"
+                          class="form-control"
+                          id="vcname"
+                        />
+                        <div id="verror1" style="display: none"></div>
+                      </div>
+                      <div class="mb-3 col-lg-6">
+                        <label for="users">No. of Users</label>
+                        <input
+                          type="text"
+                          name="vusers"
+                          class="form-control"
+                          id="vusers"
+                        />
+                        <div id="verror2" style="display: none"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="mb-3 col-lg-6">
+                        <label for="fname">Full Name</label>
+                        <input
+                          type="text"
+                          name="vfname"
+                          class="form-control"
+                          id="vfname"
+                        />
+                        <div id="verror3" style="display: none"></div>
+                      </div>
+                      <div class="mb-3 col-lg-6">
+                        <label for="designation">Designation</label>
+                        <input
+                          type="text"
+                          name="vdesignation"
+                          class="form-control"
+                          id="vdesignation"
+                          maxlength="20"
+                        />
+                        <div id="verror4" style="display: none"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="mb-3 col-lg-6">
+                        <label for="email">Work Email</label>
+                        <input
+                          type="text"
+                          name="vemail"
+                          class="form-control"
+                          id="vemail"
+                        />
+                        <div id="verror5" style="display: none"></div>
+                      </div>
+                      <div class="mb-3 col-lg-6">
+                        <label for="bphone">Business Phone No.</label>
+                        <input
+                        type="text"
+                        name="vbphone"
+                        class="form-control"
+                        id="vbphone"
+                        maxlength="20" minlength="10"
+                        />
+                        <div id="verror6" style="display: none"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="mb-3 col-lg-12">
+                        <label for="enquiry"
+                          >Where did you hear about us?</label
+                        >
+                        <select
+                          name="vabout_vitel"
+                          id="vabout_vitel"
+                          class="form-control"
+                          onchange="getAboutVitel(this.value);"
+                        >
+                          <option value="">----Select----</option>
+                          <option value="Google">Google</option>
+                          <option value="Facebook Ad">Facebook Ad</option>
+                          <option value="YouTube Ad">YouTube Ad</option>
+                          <option value="Social Media">Social Media</option>
+                          <option value="ITserve">ITserve</option>
+                          <option value="Email Marketing">Past customer of Vitel Global</option>
+                          <option value="Email Marketing">Referral from Existing customer</option>
+                          <option value="Email Marketing">Referral from ceipal</option>
+                          <option value="Email Marketing">Referral from oorwin</option>
+                          <option value="Email Marketing">Referral from jobdiva</option>
+                          <option value="Email Marketing">Referral from vultus</option>
+                          <option value="Email Marketing">Referral from Track Talents</option>
+                          <option value="Email Marketing">Referral from Vitelglobal employee</option>
+                          <option value="Email Marketing">Referral from Vitelglobal Management</option>
+                          <option value="Others">Other referral</option>
+                          <option value="Others">Others</option>
+                        </select>
+                        <div id="verror7" style="display: none"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="form-group col-md-12">
+                        <div class="g-recaptcha" data-sitekey="6LfK-0IiAAAAAC9hJCu1oGBDdS-mJPBOvjmHv4ei" data-callback="verifyCaptcha"></div>
+                            <div id="g-recaptcha-error"></div>
+                      <div class="col-md-12 col-lg-12 mt-3">
+                        <button
+                          type="submit"
+                          class="btn btn-lg bt-blue"
+                          id="liveDemoSubmit"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+
+            
+          </div>
+          
+        </div><div class="col-md-5">
+          <h3 class="text-blu fw-bold mt-5">Your overview live demo will include:</h3>
+              <ul>
+                <li>
+                  Overview about Vitel Global and 60+ Business Phone Features
+                </li>
+                <li>
+                  How to manage Vitel Global Business Phone System with Virtual
+                  Console
+                </li>
+                <li>How to use Multi devices from any location</li>
+                <li>Queries related to zero downtime migration process</li>
+              </ul>
+              <h3 class="text-blu fw-bold">We will show you how to…</h3>
+              <ul>
+                <li>Manage Cloud PBX</li>
+                <li>Monitor Call</li>
+                <li>Auto Schedule CDRs</li>
+                <li>Meet &amp; Text</li>
+                <li>Operate Softphone</li>
+                <li>Track Live Calls</li>
+              </ul>
+              <p><strong>and more!</strong></p>
+              <p>
+                After your demo, you will be assigned a dedicated Sales
+                Representative for all of your Business Phone System questions.
+                If you ever have any queries about our services, just reach out
+                and ask us.
+              </p>
+          
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <section id="about" class="about pt-0 mt-0">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-5">
+               
+            <h1 class="text-blu fw-bold">Revolutionize communications with Vitel Global Voice API</h1>
+            <h4 class="text-blu mb-5">
+              With our programmable Voice API, you can completely change the way
+              you communicate.
+            </h4>
+            <a href="{% url 'contact' %}" class="btn bt-blue btn-lg">Contact Sales</a>
+            </div>
+
+            <div class="col-md-6">
+              <img src="static/assets/img/message.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+    {% include 'footer.html' %}
+
+    <link href="static/assets/css/datepicker.min.css" rel="stylesheet" />
+    <script src="static/assets/js/datepicker.min.js"></script>
+
+    
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </body>
+
+  <script>
+  $(window).bind("pageshow", function() {
+      var form = $('form'); 
+      form[0].reset();
+    });
+
+    $(document).ready(function() {
+      $("#datepicker").on("change",function(){
+          var selected = $(this).val();
+          console.log("selected",selected)
+      var newdate = new Date();
+      var monthnum = newdate.getMonth() + 1;
+      
+      var month =  monthnum
+      if (month < 10) {
+          month = "0" + month;
+        }
+      var todayDate = newdate.getDate();
+      if (todayDate < 10) {
+          todayDate = "0" + todayDate;
+        }
+        console.log('today',todayDate);
+      var todayYear = newdate.getFullYear();
+      var todayHours = parseInt(newdate.getHours());
+      // var todayHours = parseInt(12);
+      // var data = month + "/" + todayDate + "/" + todayYear;
+      var data = todayYear + "-" + month + "-" + todayDate;
+      console.log("date",data)
+      var todayHours = parseInt(newdate.getHours());
+      console.log("hours",todayHours)
+      if(selected == data){
+        if(todayHours == 14){     
+        $("#time1").prop("disabled",true);
+        // $("#result").show().html('Please Select another Date');     
+        }       
+        if(todayHours >= 15){
+          $("#time1").prop("disabled",true);
+          $("#time2").prop("disabled",true);
+        }
+  
+      }  else if(selected > data){
+        $("#time1").prop("disabled",false);
+        $("#time2").prop("disabled",false);
+        // $("#result").show().html('Please Select slot time');
+      }
+    });
+    });
+    
+      //tomorrow date
+      var today = new Date();
+      var newdate = new Date();
+      var monthnum = newdate.getMonth() + 1;
+      
+      var month =  monthnum
+      if (month < 10) {
+          month = "0" + month;
+        }
+      var todayDate = newdate.getDate();
+      if (todayDate < 10) {
+          todayDate = "0" + todayDate;
+        }
+        console.log('today',todayDate);
+      var todayYear = newdate.getFullYear();
+      var todayHours = parseInt(newdate.getHours());
+      // var todayHours = parseInt(12);
+      // var data = month + "/" + todayDate + "/" + todayYear;
+      var data = todayYear + "-" + month + "-" + todayDate;
+     var todaytime = today.getHours();
+      // var todattimr= '14:01';
+      Date.prototype.NextDay = function (e) {
+          return new Date(
+            this.getFullYear(),
+            this.getMonth(),
+            this.getDate() + ("string" == typeof e ? parseInt(e, 10) : e)
+          );
+        };
+        //   console.log(new Date().NextDay(1));
+  
+        var tomorrowdate = new Date().NextDay(1);
+        //console.log("tomorrow date",tomorrowdate)
+        var tomorrowday = tomorrowdate.getDate();
+        var tomorrowmonth = tomorrowdate.getMonth() + 1;
+        if (tomorrowday < 10) {
+          tomorrowday = "0" + tomorrowday;
+        }
+        if (tomorrowmonth < 10) {
+          tomorrowmonth = "0" + tomorrowmonth;
+        }
+        var tomorrowyear = tomorrowdate.getFullYear();
+        var tomorrowmindate =
+          tomorrowyear + "-" + tomorrowmonth + "-" + tomorrowday;
+        //document.getElementById("datepicker").setAttribute("min", data);
+        
+        if (todaytime >= "15") {
+          document.getElementById("datepicker").setAttribute("min", tomorrowmindate);
+          // console.log(tomorrowmindate);
+        }else{
+          document.getElementById("datepicker").setAttribute("min", data);
+        }
+        $('#datepicker').on("change", function(){
+          $('#verror8').css('display','none')
+        });
+        $('#time1').on("change", function(){
+          $('#verror9').css('display','none')
+        });
+        $('#time2').on("change", function(){
+          $('#verror9').css('display','none')
+        });
+        $('#vcname').on("keyup", function(){
+          $('#verror1').css('display','none')
+        });
+        $('#vusers').on("keyup", function(){
+          $('#verror2').css('display','none')
+        });
+
+        $('#vfname').on("keyup", function(){
+          $('#verror3').css('display','none')
+        });
+        $('#vdesignation').on("keyup", function(){
+          $('#verror4').css('display','none')
+        });
+
+        $('#vemail').on("keyup", function(){
+          $('#verror5').css('display','none')
+        });
+        $('#vbphone').on("keyup", function(){
+          $('#verror6').css('display','none')
+        });
+        
+        $('#vabout_vitel').on("change", function(){
+          $('#verror7').css('display','none')
+        });
+    function setInputFilter(textbox, inputFilter, errMsg) {
+      ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop", "focusout"].forEach(function(event) {
+        textbox.addEventListener(event, function(e) {
+          if (inputFilter(this.value)) {
+            if (["keydown","mousedown","focusout"].indexOf(e.type) >= 0){
+              this.classList.remove("input-error");
+              this.setCustomValidity("");
+            }
+            this.oldValue = this.value;
+            this.oldSelectionStart = this.selectionStart;
+            this.oldSelectionEnd = this.selectionEnd;
+          } else if (this.hasOwnProperty("oldValue")) {
+            this.classList.add("input-error");
+            this.setCustomValidity(errMsg);
+            this.reportValidity();
+            this.value = this.oldValue;
+            this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+          } else {
+            this.value = "";
+          }
+        });
+      });
+    }
+    
+    setInputFilter(document.getElementById("vusers"), function(value) {
+      return /^\d*$/.test(value); }, "Must be an integer");
+    
+    setInputFilter(document.getElementById("vbphone"), function(value) {
+      return /^[0-9()+-\s]*\.?[0-9()+-\s]*$/.test(value); }, "Must be an integer");
+      //validation
+        var recaptcha_response = "";
+        function verifyCaptcha(token) {
+        recaptcha_response = token;
+        document.getElementById("g-recaptcha-error").innerHTML = "";
+        }
+
+        // live demo
+        function livedemo() {
+          // datepicker
+          var name = document.getElementById("datepicker").value;
+          if (name == "") {
+            var input = (document.getElementById("datepicker").style.borderColor =
+              "orange");
+            document.getElementById("verror8").style.display = "block";
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").innerHTML = "*Please enter a Date*";
+            document.getElementById("verror8").style.color = "red";
+            document.getElementById("verror9").style.display = "none";
+            return false;
+          } 
+
+          
+          var time1 = document.getElementById("time1").checked;
+          var time2 = document.getElementById("time2").checked;
+          
+          if (time1 == time2){
+            // console.log("1",time1);
+            // console.log("2",time2);
+            document.getElementById("verror9").style.display = "block";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror9").innerHTML = "*Please Check one slot*";
+            document.getElementById("verror9").style.color = "red";
+            return false;
+          }
+    
+          var name = document.getElementById("vcname").value;
+          if (name == "") {
+            var input = (document.getElementById("vcname").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "block";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror1").innerHTML =
+              "*Please enter a Company Name*";
+            document.getElementById("verror1").style.color = "red";
+            return false;
+          } 
+    
+          var users = document.getElementById("vusers").value;
+          if (users == "") {
+            var input = (document.getElementById("vusers").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "block";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror2").innerHTML =
+              "*Please enter No. of Users*";
+            document.getElementById("verror2").style.color = "red";
+            return false;
+          } else if (/[^0-9\-()+\s/]/.test(users)) {
+            var input = (document.getElementById("vusers").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "block";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror2").innerHTML =
+              "*Special Characters & Alphabets Not allowed*";
+            document.getElementById("verror2").style.color = "red";
+            return false;
+          }
+    
+          var fname = document.getElementById("vfname").value;
+          if (fname == "") {
+            var input = (document.getElementById("vfname").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "block";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror3").innerHTML =
+              "*Please enter a Full Name*";
+            document.getElementById("verror3").style.color = "red";
+            return false;
+          } else if (/[^a-zA-Z\-.\s/]/.test(fname)) {
+            var input = (document.getElementById("vfname").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "block";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror3").innerHTML =
+              "*Special Characters & Numbers Not allowed*";
+            document.getElementById("verror3").style.color = "red";
+            return false;
+          }
+    
+          var designation = document.getElementById("vdesignation").value;
+          if (designation == "") {
+            var input = (document.getElementById("vdesignation").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "block";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror4").innerHTML =
+              "*Please enter a Designation*";
+            document.getElementById("verror4").style.color = "red";
+            return false;
+          } else if (/[^a-zA-Z\-.\s/]/.test(designation)) {
+            var input = (document.getElementById("vdesignation").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "block";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror4").innerHTML =
+              "*Special Characters & Numbers Not allowed*";
+            document.getElementById("verror4").style.color = "red";
+            return false;
+          }
+    
+          var email = document.getElementById("vemail").value;
+          var validRegex =
+          /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;;
+          if (email == "") {
+            var input = (document.getElementById("vemail").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "block";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror5").innerHTML =
+              "*Please enter a Email_ID*";
+            document.getElementById("verror5").style.color = "red";
+            return false;
+          } else if (!email.match(validRegex)) {
+            var input = (document.getElementById("vemail").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "block";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror5").innerHTML = "*Please Enter valid Email_ID*";
+            document.getElementById("verror5").style.color = "red";
+            return false;
+          }
+    
+          var phone = document.getElementById("vbphone").value;
+          if (phone == "") {
+            var input = (document.getElementById("vbphone").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "block";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror6").innerHTML =
+              "*Please enter a Mobile Number*";
+            document.getElementById("verror6").style.color = "red";
+            return false;
+          }else if(phone.length < 10){
+            var input = (document.getElementById("vbphone").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "block";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror6").innerHTML =
+              "*Mobile Number must be Min 10*";
+            document.getElementById("verror6").style.color = "red";
+            return false;
+          }
+          
+    
+          var howYouKnow = document.getElementById("vabout_vitel");
+          var strUser = howYouKnow.options[howYouKnow.selectedIndex].value;
+          if (strUser == "") {
+            var input = (document.getElementById("vabout_vitel").style.borderColor =
+              "orange");
+            document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "block";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+            document.getElementById("verror7").innerHTML =
+              "*Please select a Location*";
+            document.getElementById("verror7").style.color = "red";
+            return false;
+          }
+    
+            //captcha
+      if (recaptcha_response.length == 0) {
+        document.getElementById("verror1").style.display = "none";
+            document.getElementById("verror2").style.display = "none";
+            document.getElementById("verror3").style.display = "none";
+            document.getElementById("verror4").style.display = "none";
+            document.getElementById("verror5").style.display = "none";
+            document.getElementById("verror6").style.display = "none";
+            document.getElementById("verror7").style.display = "none";
+            document.getElementById("verror8").style.display = "none";
+            document.getElementById("verror9").style.display = "none";
+        document.getElementById("g-recaptcha-error").innerHTML =
+        '<span style="color:red;">*This field is required.</span>';
+        return false;
+      }else if (recaptcha_response.length != 0) {
+      document.getElementById("liveDemoSubmit").disabled = true;
+    }
+        }
+      </script>
+      
+    </html>
+    

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Get rolling with our innovative solutions. Discover seamless Business phone services to propel your journey forward. Find your path to success with us today"/>
+   
+    <meta name="robots" content="index, follow" />
+    <!-- Title -->
+    <title>Request a Quote - Vitel Global Communications</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.vitelglobal.com/get-rolling" />
+    <meta
+      property="og:title"
+      content="Request a Quote - Vitel Global Communications"
+    />
+    <meta
+      property="og:description"
+      content="Get rolling with our innovative solutions. Discover seamless Business phone services to propel your journey forward. Find your path to success with us today"/>
+    <meta property="og:image" content="https://www.vitelglobal.com/static/assets/vimages/vitelglobal-new.jpg" />
+    <meta property="og:site_name" content="Vitelglobal" />
+
+    {% include 'topscripts.html' %}
+
+    <link rel="canonical" href="https://www.vitelglobal.com/get-rolling"/>
+    
+  </head>
+
+  <body>
+    {% include 'header.html' %}
+
+    <main id="main">
+      <section id="about" class="about m150">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-5">
+              <form method="POST" action="{% url 'get-rolling' %}" id="kickStartForm" onsubmit="return kickstart();">
+                {% csrf_token %}
+                <h2 class="fw-bold main-h">Request a Quote</h2>
+                <h6 class="text-blu mb-3">
+                  To get a quote, please complete the form below. Within 24
+                  hours of receiving your inquiry, we will respond.
+                </h6>
+                <div class="row">
+                  <div class="mb-3 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fname"
+                      name="fname"
+                      placeholder="First Name *"
+                      value="{{ form.data.fname}}"
+                      
+                    />
+                    <div id="error1" style="display: none"></div>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastname"
+                      name="lastname"
+                      placeholder="Last Name"
+                      value="{{ form.data.lastname}}"
+                    />
+                    <div id="error2" style="display: none"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="mb-3 col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Email ID *"
+                      value="{{ form.data.email}}"
+                    />
+                    <div id="error3" style="display: none"></div>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <input title="" 
+                      type="text"
+                      class="form-control"
+                      id="phoneno"
+                      name="phoneno"
+                      placeholder="Phone No. *"
+                      maxlength="20" minlength="10"
+                      value="{{ form.data.phoneno}}"
+                    />
+                    <div id="error4" style="display: none"></div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="mb-3 col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="comp"
+                      name="comp"
+                      placeholder=" Company *"
+                      value="{{ form.data.comp}}"
+                    />
+                    <div id="error5" style="display: none"></div>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <h6 class="mt-3">Select the size of your employees</h6>
+                  <section class="emprow mt-3">
+                    <div>
+                      <input
+                        type="radio"
+                        id="control_01"
+                        name="select"
+                        value="0 - 5"
+                      />
+                      <label for="control_01">
+                        <h2>0 - 5</h2>
+                      </label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="control_02"
+                        name="select"
+                        value="5 - 10"
+                      />
+                      <label for="control_02">
+                        <h2>5 - 10</h2>
+                      </label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="control_03"
+                        name="select"
+                        value="10 - 20"
+                      />
+                      <label for="control_03">
+                        <h2>10 - 20</h2>
+                      </label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        id="control_04"
+                        name="select"
+                        value="20 - 50"
+                      />
+                      <label for="control_04">
+                        <h2>20 - 50</h2>
+                      </label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="control_05"
+                        name="select"
+                        value="50 - 100"
+                      />
+                      <label for="control_05">
+                        <h2>50 - 100</h2>
+                      </label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="control_06"
+                        name="select"
+                        value="100+"
+                      />
+                      <label for="control_06">
+                        <h2>100+</h2>
+                      </label>
+                    </div>
+                  </section>
+                  <div id="error6" style="display: none"></div>
+                  <!-- <h3 id="disp" style= "color:green"> </h3> -->
+                </div>
+
+                <div class="row">
+                  <div class="mb-3 col-md-12">
+                    <select
+                      class="form-select form-control"
+                      name="howyouknow"
+                      id="howyouknow"
+                    >
+                      <option value="">--How did you hear about us--</option>
+                      <option value="Indiasoft Convergence">Indiasoft Convergence</option>
+                      <option value="Google">Google</option>
+                      <option value="Social Media">Social Media</option>
+                      <option value="Email Marketing">Email Marketing</option>
+                      <option value="IT Serve">IT Serve</option>
+                      <option value="Past customer of Vitel Global">Past customer of Vitel Global</option>
+                      <option value="Referral from Existing customer">Referral from Existing customer</option>
+                      <option value="Referral from ceipal">Referral from ceipal</option>
+                      <option value="Referral from oorwin">Referral from oorwin</option>
+                      <option value="Referral from jobdiva">Referral from jobdiva</option>
+                      <option value="Referral from vultus">Referral from vultus</option>
+                      <option value="Referral from Track Talents">Referral from Track Talents</option>
+                      <option value="Referral from Vitelglobal employee">Referral from Vitelglobal employee</option>
+                      <option value="Referral from Vitelglobal Management">Referral from Vitelglobal Management</option>
+                      <option value="Other referral">Other referral</option>
+                      <!-- <option value="Others">Others</option> -->
+                    </select>
+                    <div id="error7" style="display: none"></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="mb-3 col-lg-12">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" name="terms" value="true" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                By providing your phone number, you agree to receive a text message from Vitelglobal. Message and data rates may apply. Message frequency varies.
+                            </label>
+                            <div id="verror8" style="display: none"></div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="row" id="otherstextBox" style="display: none">
+                    <div class="mb-3 col-md-12">
+                      <input type="text" class="form-control" id="otherstext" name="otherstext" placeholder=" Please specify *" />
+                      <div id="errorother" style="display: none"></div>
+                    </div>
+                  </div>
+                  <!-- <div class="g-recaptcha" data-sitekey="6LfK-0IiAAAAAC9hJCu1oGBDdS-mJPBOvjmHv4ei" data-callback="verifyCaptcha"></div> -->
+                  
+                  <div>
+                    {{ form.captcha }}
+
+                    <label style="color: red;">{{ error }}</label>
+                    <div id="errorFromCapche" style="display: block; color: red;"></div>
+                  </div>
+
+                  <div>
+                  </div>
+                </div>
+                
+                <a
+                  ><button type="submit" class="btn btn-lg bt-blue mt-3" id="kickStartSubmit">
+                    Get Quote
+                  </button></a
+                >
+                <a
+                  ><button type="reset" class="btn btn-lg btn-secondary mt-3" id="kickStartreset">
+                    Reset
+                  </button></a>
+              </form>
+            </div>
+
+            <div class="col-md-6 get-tit">
+              <div class="row align-items-center">
+                <div class="col-md-12">
+                   
+                  <h1 class="fw-bold text-blu mt-4"> Save up to 72% on your Business Phone Service</h1>
+                  <h4>
+                    Seamless Unified Communication to make your business productive.
+                  </h4>
+                  
+                 <!--  <a href="{% url 'voip-live-demo' %}" class="learn_bt my-4">Get a Demo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg></a> -->
+                </div>
+                <div class="col-md-12 mt-2">
+                  <img
+                    src="https://ik.imagekit.io/vitel/video-confernce02.webp?updatedAt=1678795395821"
+                    alt="Video Conferencing"
+                    class="img-fluid br100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+    {% include 'footer.html' %}
+
+  </body>
+  <script>
+
+    // refresh for captcha
+    $(function() {
+    // Add refresh button after field (this can be done in the template as well)
+    $('#id_captcha_1').after($('<a href="#void" class="captcha-refresh"><svg width="26" height="26" fill="none" stroke="#1c1c1c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 19v-4h-4"></path><path d="M4 13a8.1 8.1 0 0 0 15.5 2"></path><path d="M4 5v4h4"></path><path d="M20 11A8.1 8.1 0 0 0 4.5 9"></path></svg></a>'));
+
+    // Click-handler for the refresh-link
+    $('.captcha-refresh').click(function(){
+        var $form = $(this).parents('form');
+        var url = location.protocol + "//" + window.location.hostname + ":"
+                  + location.port + "/captcha/refresh/";
+
+        // Make the AJAX-call
+        $.getJSON(url, {}, function(json) {
+            $form.find('input[name="captcha_0"]').val(json.key);
+            $form.find('img.captcha').attr('src', json.image_url);
+        });
+
+        return false;
+    });
+});
+
+
+    $(window).bind("pageshow", function() {
+      var form = $('form'); 
+      form[0].reset();
+    });
+    $('#otherstext').on("keyup", function () {
+        $('#errorother').css('display', 'none')
+        $("#otherstext").removeAttr('style');
+      });
+    $('#kickStartreset').click(function(){
+
+      
+      $('#error1').css('display','none');
+      $('#error2').css('display','none');
+      $('#error3').css('display','none');
+      $('#error4').css('display','none');
+      $('#error5').css('display','none');
+      $('#error6').css('display','none');
+      $('#error7').css('display','none');
+      $("#fname").removeAttr('style');
+      $("#lastname").removeAttr('style');
+      $("#email").removeAttr('style');
+      $("#phoneno").removeAttr('style');
+      $("#comp").removeAttr('style');
+      $("#howyouknow").removeAttr('style');
+    })
+    $('#fname').on("keyup", function(){
+      $('#error1').css('display','none');
+      $("#fname").removeAttr('style');
+    });
+    $('#lastname').on("keyup", function(){
+      $('#error2').css('display','none')
+      $("#lastname").removeAttr('style');
+    });
+    $('#email').on("keyup", function(){
+      $('#error3').css('display','none')
+      $("#email").removeAttr('style');
+    });
+    $('#phoneno').on("keyup", function(){
+      $('#error4').css('display','none')
+      $("#phoneno").removeAttr('style');
+    });
+    $('#comp').on("keyup", function(){
+      $('#error5').css('display','none')
+      $("#comp").removeAttr('style');
+    });
+    $('#control_01, #control_02, #control_03, #control_04').on("change", function(){
+      $('#error6').css('display','none')
+    });
+    $('#howyouknow').on("change", function(e){
+      if(e.target.value ===  "Others"){
+        $('#otherstextBox').show();
+      }else{
+        $('#otherstextBox').hide();
+      }
+      $('#error7').css('display','none')
+      $("#howyouknow").removeAttr('style');
+    });
+
+    
+    function setInputFilter(textbox, inputFilter, errMsg) {
+          [
+            "input",
+            "keydown",
+            "keyup",
+            "mousedown",
+            "mouseup",
+            "select",
+            "contextmenu",
+            "drop",
+            "focusout",
+          ].forEach(function (event) {
+            textbox.addEventListener(event, function (e) {
+              if (inputFilter(this.value)) {
+                if (["keydown", "mousedown", "focusout"].indexOf(e.type) >= 0) {
+                  this.classList.remove("input-error");
+                  this.setCustomValidity("");
+                }
+                this.oldValue = this.value;
+                this.oldSelectionStart = this.selectionStart;
+                this.oldSelectionEnd = this.selectionEnd;
+              } else if (this.hasOwnProperty("oldValue")) {
+                this.classList.add("input-error");
+                this.setCustomValidity(errMsg);
+                this.reportValidity();
+                this.value = this.oldValue;
+                this.setSelectionRange(
+                  this.oldSelectionStart,
+                  this.oldSelectionEnd
+                );
+              } else {
+                this.value = "";
+              }
+            });
+          });
+        }
+        
+
+        // async function logJSONData() {
+          
+        //   alert("enter in to function")
+        //     const response = await fetch("http://pss.pranathiss.com:86/captcha-check/", formData, { 'Content-Type': 'application/x-www-form-urlencoded' },);
+        //     alert("Before response")
+
+        //     const jsonData = await response.json();
+        //     console.log(jsonData);
+        //     alert("After respnse")
+        //     return false
+        //   }
+        setInputFilter(
+          document.getElementById("phoneno"),
+          function (value) {
+            return /^[0-9()+-\s]*\.?[0-9()+-\s]*$/.test(value);
+          },
+          "Must be an integer"
+        );
+    //validation
+      // var recaptcha_response = "";
+      //   function verifyCaptcha(token) {
+      //     recaptcha_response = token;
+      //     document.getElementById("g-recaptcha-error").innerHTML = "";
+      //   }
+       
+      function kickstart() {
+          
+          var input = (document.getElementById("fname").style.borderColor =
+            "#ededed");
+            var input1 = (document.getElementById("lastname").style.borderColor =
+            "#ededed");
+          var input2 = (document.getElementById("email").style.borderColor =
+            "#ededed");
+            var input3 = (document.getElementById("phoneno").style.borderColor =
+            "#ededed");
+            var input4 = (document.getElementById("comp").style.borderColor =
+            "#ededed");
+          var input5 = (document.getElementById("howyouknow").style.borderColor =
+            "#ededed");
+          var firstName = document.getElementById("fname").value;
+          if (firstName == "") {
+            var input = (document.getElementById("fname").style.borderColor =
+              "orange");
+            document.getElementById("error1").style.display = "block";
+            document.getElementById("error2").style.display = "none";
+            document.getElementById("error3").style.display = "none";
+            document.getElementById("error4").style.display = "none";
+            document.getElementById("error5").style.display = "none";
+            document.getElementById("error6").style.display = "none";
+            document.getElementById("error7").style.display = "none";
+            document.getElementById("error1").innerHTML =
+              "*Please enter a First Name*";
+            document.getElementById("error1").style.color = "red";
+            return false;
+          } else if (/[^a-zA-Z\-.\s/]/.test(firstName)) {
+            var input = (document.getElementById("fname").style.borderColor =
+              "orange");
+            document.getElementById("error1").style.display = "block";
+            document.getElementById("error2").style.display = "none";
+            document.getElementById("error3").style.display = "none";
+            document.getElementById("error4").style.display = "none";
+            document.getElementById("error5").style.display = "none";
+            document.getElementById("error6").style.display = "none";
+            document.getElementById("error7").style.display = "none";
+            document.getElementById("error1").innerHTML =
+              "*Special Characters & Numbers Not allowed*";
+            document.getElementById("error1").style.color = "red";
+            return false;
+          }
+    
+          var lastName = document.getElementById("lastname").value;
+          if (lastName == "") {
+            var input1 = (document.getElementById("lastname").style.borderColor =
+              "orange");
+            document.getElementById("error1").style.display = "none";
+            document.getElementById("error2").style.display = "block";
+            document.getElementById("error3").style.display = "none";
+            document.getElementById("error4").style.display = "none";
+            document.getElementById("error5").style.display = "none";
+            document.getElementById("error6").style.display = "none";
+            document.getElementById("error7").style.display = "none";
+            document.getElementById("error2").innerHTML =
+              "*Please enter a Last Name*";
+            document.getElementById("error2").style.color = "red";
+            return false;
+          } else if (/[^a-zA-Z\-.\s/]/.test(lastName)) {
+            var input1 = (document.getElementById("lastname").style.borderColor =
+              "orange");
+              
+            document.getElementById("error1").style.display = "none";
+            document.getElementById("error2").style.display = "block";
+            document.getElementById("error3").style.display = "none";
+            document.getElementById("error4").style.display = "none";
+            document.getElementById("error5").style.display = "none";
+            document.getElementById("error6").style.display = "none";
+            document.getElementById("error7").style.display = "none";
+            document.getElementById("error2").innerHTML =
+              "*Special Characters & Numbers Not allowed*";
+            document.getElementById("error2").style.color = "red";
+            return false;
+          }
+    
+          var email = document.getElementById("email").value;
+          var validRegex = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/;
+          if (email == "") {
+          var input2 = (document.getElementById("email").style.borderColor =
+          "orange");
+        document.getElementById("error1").style.display = "none";
+        document.getElementById("error2").style.display = "none";
+        document.getElementById("error3").style.display = "block";
+        document.getElementById("error4").style.display = "none";
+        document.getElementById("error5").style.display = "none";
+        document.getElementById("error6").style.display = "none";
+        document.getElementById("error7").style.display = "none";
+        document.getElementById("error3").innerHTML =
+          "*Please enter a Email_ID*";
+        document.getElementById("error3").style.color = "red";
+        return false;
+      } else if (!email.match(validRegex)) {
+        var input2 = (document.getElementById("email").style.borderColor =
+          "orange");
+        document.getElementById("error1").style.display = "none";
+        document.getElementById("error2").style.display = "none";
+        document.getElementById("error3").style.display = "block";
+        document.getElementById("error4").style.display = "none";
+        document.getElementById("error5").style.display = "none";
+        document.getElementById("error6").style.display = "none";
+        document.getElementById("error7").style.display = "none";
+        document.getElementById("error3").innerHTML =
+          "*Please enter valid Email_ID*";
+        document.getElementById("error3").style.color = "red";
+        return false;
+      }
+    
+          var phone = document.getElementById("phoneno").value;
+          if (phone == "") {
+            var input3 = (document.getElementById("phoneno").style.borderColor =
+              "orange");
+            document.getElementById("error1").style.display = "none";
+            document.getElementById("error2").style.display = "none";
+            document.getElementById("error3").style.display = "none";
+            document.getElementById("error4").style.display = "block";
+            document.getElementById("error5").style.display = "none";
+            document.getElementById("error6").style.display = "none";
+            document.getElementById("error7").style.display = "none";
+            document.getElementById("error4").innerHTML =
+              "*Please enter a Mobile Number*";
+            document.getElementById("error4").style.color = "red";
+            return false;
+          } else if (phone.length < 10 ) {
+            var input3 = (document.getElementById("phoneno").style.borderColor =
+              "orange");
+            document.getElementById("error1").style.display = "none";
+            document.getElementById("error2").style.display = "none";
+            document.getElementById("error3").style.display = "none";
+            document.getElementById("error4").style.display = "block";
+            document.getElementById("error5").style.display = "none";
+            document.getElementById("error6").style.display = "none";
+            document.getElementById("error7").style.display = "none";
+            document.getElementById("error4").innerHTML =
+              "*Mobile Number must be Min 10*";
+            document.getElementById("error4").style.color = "red";
+            return false;
+          }
+    
+          var companyName = document.getElementById("comp").value;
+          if (companyName == "") {
+            var input4 = (document.getElementById("comp").style.borderColor =
+              "orange");
+            document.getElementById("error1").style.display = "none";
+            document.getElementById("error2").style.display = "none";
+            document.getElementById("error3").style.display = "none";
+            document.getElementById("error4").style.display = "none";
+            document.getElementById("error5").style.display = "block";
+            document.getElementById("error6").style.display = "none";
+            document.getElementById("error7").style.display = "none";
+            document.getElementById("error5").innerHTML =
+              "*Please enter a Company Name*";
+            document.getElementById("error5").style.color = "red";
+            return false;
+          } 
+    
+          var getSelectedValue = document.querySelector(
+            'input[name="select"]:checked'
+          );
+          // console.log(getSelectedValue);
+          if (getSelectedValue == null) {
+            // console.log("Hi");
+            document.getElementById("error1").style.display = "none";
+            document.getElementById("error2").style.display = "none";
+            document.getElementById("error3").style.display = "none";
+            document.getElementById("error4").style.display = "none";
+            document.getElementById("error5").style.display = "none";
+            document.getElementById("error6").style.display = "block";
+            document.getElementById("error7").style.display = "none";
+            
+            document.getElementById("error6").innerHTML =
+              "*You have to selected any one";
+            document.getElementById("error6").style.color = "red";
+            return false;
+          }
+    
+          var howYouKnow = document.getElementById("howyouknow");
+          var strUser = howYouKnow.options[howYouKnow.selectedIndex].value;
+          if (strUser == "") {
+            var input5 = (document.getElementById("howyouknow").style.borderColor =
+              "orange");
+            document.getElementById("error1").style.display = "none";
+            document.getElementById("error2").style.display = "none";
+            document.getElementById("error3").style.display = "none";
+            document.getElementById("error4").style.display = "none";
+            document.getElementById("error5").style.display = "none";
+            document.getElementById("error6").style.display = "none";
+            document.getElementById("error7").style.display = "block";
+            
+            document.getElementById("error7").innerHTML =
+              "*Please select a How did You Know*";
+            document.getElementById("error7").style.color = "red";
+            return false;
+          }
+
+          var id_captcha_1 = document.getElementById("id_captcha_1").value;
+
+          if(id_captcha_1 == ""){
+            document.getElementById("errorFromCapche").innerHTML =
+              "*Please enter captcha";
+              return false
+          }
+          
+    }
+
+
+
+</script>
+      
+      
+    </html>
+    

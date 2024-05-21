@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Vitel Global is inviting you to a scheduled Zoom meeting. Topic: Live Demo Date @ Time: 2024-02-27 16:00 Eastern Time (US and Canada)
+DTEND:20240227T210000Z
+LOCATION:https://us02web.zoom.us/j/9063039626?pwd=elI3Mm1PZ203RjhoZk40Mm1uWCtzdz09
+ORGANIZER;CN=enquiry@vitelglobal.com:mailto:enquiry@vitelglobal.com
+DTSTART:20240227T200000Z
+SUMMARY:Vitel Global Live Demo @ Time: 16:00 2024-02-27 Eastern Time (US and Canada)
+UID:084e03d8-d013-46d0-8f92-6247658dacaa@084e.org
+URL:https://us02web.zoom.us/j/9063039626?pwd=elI3Mm1PZ203RjhoZk40Mm1uWCtzdz09
+END:VEVENT
+END:VCALENDAR

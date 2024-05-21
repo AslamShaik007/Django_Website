@@ -1,0 +1,73 @@
+ 
+@media (max-width: 992px) {
+    .banercc h1, .banercc2 h1 {
+       font-size: 35px;
+   }
+   }
+   
+   @media (max-width: 768px) { 
+    .emprow {
+    flex-direction: row;
+}
+#topbar .container{  justify-content:center; }
+    .emprow > div {
+    width: 46%; ;
+    margin: 0 2% 2% 0;}
+   .logo-img ul li img{height:60px;}
+   .testimonials .carousel-item img{
+   height: auto;
+   max-width: 200px;
+   margin: 0 auto 10px auto;}
+   .test_col{margin-left:0; border-bottom: solid 5px var(--orange); border-right:none;} 
+   .ph_col{height: 80px;}
+   .ph_col img{   top:-75px; bottom:0; margin-bottom: 25px; width: 250px;}
+   .section-bg{border-radius: 50% 0% / 5% 40%;}
+   .banercc h1, .banercc2 h1{font-size:30px;}
+   #footer{padding-bottom:100px;}
+   .widget-visible{bottom:100px;}
+ 
+   .f16{font-size: 16px !important;}
+   .navigation-portrait .megamenu-panel{padding: 6px;}
+   .mtitle{font-size: 1.8rem; }
+   .mtitle-m{padding-top: 20px;}
+   .mtitle_org{font-size: 1.8rem;}
+   .discover { padding: 80px 0;}    
+   .discover p {font-size: 16px;} 
+   .main-h{font-size: 1.8rem; margin: 0px;}
+   .text-m{font-size: 1.2rem;}
+   .teams-mobile{font-size: 18px !important;}
+   .get-roll{font-size: 18px;}
+    section{margin:40px 0 !important;}
+   .mt150{margin-top: 40px !important;}
+   .icon-box-mobile{margin-top: 20px;}
+   .icon-box-mobile-2{margin-top: 40px;}
+   .pm-m{padding: 50px 0;}
+   .f-22{font-size: 22px !important;}
+   .teams-mobile-2{font-size: 17px !important;}
+   .fs-5{font-size: 17px !important ;}
+   .baner-m{margin:5px 0 0 !important; }
+   .feature_s {padding: 70px 0 0 0!important;}
+   .newsroom-top{margin-top:120px !important;}
+   .f20{font-size: 20px !important;}
+ 
+   }
+    @media (max-width: 576px) { 
+        .featur .icon-box{ display:inherit; flex-wrap:wrap; text-align:center; justify-content: center;} 
+        .container{max-width:96%;}
+        .tx-center{text-align: center;}
+        .m-flex{display:flex; align-items: flex-start;}
+        .m-flex .v_opti{margin-right:20px;}
+    } 
+   @media (min-width: 1024px) {
+   
+   }
+   
+   @media (max-width: 500px) {
+    .part-img{display:flex; margin:10px 0;}
+   .pat_img{flex:1; margin-top:0!important; padding:0 5px;}
+   .pat_img img{height:auto; min-height:70px;}
+   .plan_pr .packages{margin:20px 0!important;}
+   } 
+    @media (max-width: 360px) { 
+      #topbar .contact-info a { font-size: 9px;}
+   } 

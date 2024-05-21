@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /*?
+sitemap: https://www.vitelglobal.com/sitemap.xml
